@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__ntirpc-5_0</name>
+      <children>
+        <options>gssapi</options>
+        <options>rdma</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gssapi</name>
+      <parent>net-libs__ntirpc-5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rdma</name>
+      <parent>net-libs__ntirpc-5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

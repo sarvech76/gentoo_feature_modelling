@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__glpk-5_0-r1</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>gmp</options>
+        <options>mysql</options>
+        <options>odbc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-mathematics__glpk-5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-mathematics__glpk-5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gmp</name>
+      <parent>sci-mathematics__glpk-5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>sci-mathematics__glpk-5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>odbc</name>
+      <parent>sci-mathematics__glpk-5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

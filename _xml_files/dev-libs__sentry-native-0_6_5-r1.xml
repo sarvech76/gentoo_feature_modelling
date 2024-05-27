@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__sentry-native-0_6_5-r1</name>
+      <children>
+        <options>breakpad</options>
+        <options>curl</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>breakpad</name>
+      <parent>dev-libs__sentry-native-0_6_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>dev-libs__sentry-native-0_6_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__sentry-native-0_6_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

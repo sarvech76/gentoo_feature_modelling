@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__plan9port-0_pre20230331-r1</name>
+      <children>
+        <options>abs_may_grp_1</options>
+        <options>freefonts</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_may_grp_1</name>
+      <parent>dev-util__plan9port-0_pre20230331-r1</parent>
+      <children>
+        <options>aqua</options>
+        <options>X</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>aqua</name>
+      <parent>abs_may_grp_1</parent>
+      <excludedOptions>
+        <options>X</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>abs_may_grp_1</parent>
+      <excludedOptions>
+        <options>aqua</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>freefonts</name>
+      <parent>dev-util__plan9port-0_pre20230331-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

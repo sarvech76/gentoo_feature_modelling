@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-mail__fetchmail-6_4_36</name>
+      <children>
+        <options>kerberos</options>
+        <options>nls</options>
+        <options>socks</options>
+        <options>ssl</options>
+        <options>tk</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kerberos</name>
+      <parent>net-mail__fetchmail-6_4_36</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>net-mail__fetchmail-6_4_36</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>socks</name>
+      <parent>net-mail__fetchmail-6_4_36</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-mail__fetchmail-6_4_36</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tk</name>
+      <parent>net-mail__fetchmail-6_4_36</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__reiser4progs-2_0_5</name>
+      <children>
+        <options>debug</options>
+        <options>readline</options>
+        <options>split-usr</options>
+        <options>static</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sys-fs__reiser4progs-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>sys-fs__reiser4progs-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>split-usr</name>
+      <parent>sys-fs__reiser4progs-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-fs__reiser4progs-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>sys-fs__reiser4progs-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-pda__libimobiledevice-1_3_0-r1</name>
+      <children>
+        <options>doc</options>
+        <options>gnutls</options>
+        <options>python</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>app-pda__libimobiledevice-1_3_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>app-pda__libimobiledevice-1_3_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>app-pda__libimobiledevice-1_3_0-r1</parent>
+      <children>
+        <options>python_targets_python3_10</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>python</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>app-pda__libimobiledevice-1_3_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

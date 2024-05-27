@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__qtfm-99999</name>
+      <children>
+        <options>dbus</options>
+        <options>ffmpeg</options>
+        <options>imagemagick</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>x11-misc__qtfm-99999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ffmpeg</name>
+      <parent>x11-misc__qtfm-99999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>imagemagick</name>
+      <parent>x11-misc__qtfm-99999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

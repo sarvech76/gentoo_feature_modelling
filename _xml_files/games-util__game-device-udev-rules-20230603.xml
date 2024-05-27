@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-util__game-device-udev-rules-20230603</name>
+      <children>
+        <options>acl</options>
+        <options>elogind</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acl</name>
+      <parent>games-util__game-device-udev-rules-20230603</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>elogind</name>
+      <parent>games-util__game-device-udev-rules-20230603</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>games-util__game-device-udev-rules-20230603</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(acl =&gt; (elogind | systemd))</constraint>
+  </booleanConstraints>
+</vm>

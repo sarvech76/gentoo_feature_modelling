@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-action__descent2-data-1_2</name>
+      <children>
+        <options>cdinstall</options>
+        <options>doc</options>
+        <options>videos</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cdinstall</name>
+      <parent>games-action__descent2-data-1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>games-action__descent2-data-1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>videos</name>
+      <parent>games-action__descent2-data-1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

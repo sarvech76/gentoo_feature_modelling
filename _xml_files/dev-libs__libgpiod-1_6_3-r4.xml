@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__libgpiod-1_6_3-r4</name>
+      <children>
+        <options>cxx</options>
+        <options>python</options>
+        <options>test</options>
+        <options>tools</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cxx</name>
+      <parent>dev-libs__libgpiod-1_6_3-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>dev-libs__libgpiod-1_6_3-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__libgpiod-1_6_3-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>dev-libs__libgpiod-1_6_3-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

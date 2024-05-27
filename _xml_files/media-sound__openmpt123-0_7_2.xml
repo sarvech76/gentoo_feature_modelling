@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__openmpt123-0_7_2</name>
+      <children>
+        <options>flac</options>
+        <options>portaudio</options>
+        <options>pulseaudio</options>
+        <options>sdl</options>
+        <options>sndfile</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flac</name>
+      <parent>media-sound__openmpt123-0_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>portaudio</name>
+      <parent>media-sound__openmpt123-0_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>media-sound__openmpt123-0_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>media-sound__openmpt123-0_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sndfile</name>
+      <parent>media-sound__openmpt123-0_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

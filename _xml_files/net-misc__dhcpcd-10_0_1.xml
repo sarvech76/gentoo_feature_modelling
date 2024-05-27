@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__dhcpcd-10_0_1</name>
+      <children>
+        <options>debug</options>
+        <options>embedded</options>
+        <options>ipv6</options>
+        <options>privsep</options>
+        <options>udev</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-misc__dhcpcd-10_0_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>embedded</name>
+      <parent>net-misc__dhcpcd-10_0_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>net-misc__dhcpcd-10_0_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>privsep</name>
+      <parent>net-misc__dhcpcd-10_0_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>net-misc__dhcpcd-10_0_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

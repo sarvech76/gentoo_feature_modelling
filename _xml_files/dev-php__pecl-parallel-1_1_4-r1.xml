@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-php__pecl-parallel-1_1_4-r1</name>
+      <children>
+        <options>abs_or_grp_1</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>dev-php__pecl-parallel-1_1_4-r1</parent>
+      <children>
+        <options>php_targets_php7-4</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>php_targets_php7-4</name>
+      <parent>abs_or_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

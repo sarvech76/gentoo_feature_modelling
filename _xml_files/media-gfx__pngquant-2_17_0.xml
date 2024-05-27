@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__pngquant-2_17_0</name>
+      <children>
+        <options>cpu_flags_x86_sse2</options>
+        <options>debug</options>
+        <options>lcms</options>
+        <options>openmp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>media-gfx__pngquant-2_17_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-gfx__pngquant-2_17_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lcms</name>
+      <parent>media-gfx__pngquant-2_17_0</parent>
+      <children>
+        <options>test</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>lcms</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>media-gfx__pngquant-2_17_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

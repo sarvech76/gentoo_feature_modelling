@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__yaz-3_0_53</name>
+      <children>
+        <options>debug</options>
+        <options>gnutls</options>
+        <options>icu</options>
+        <options>tcpd</options>
+        <options>ziffy</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-libs__yaz-3_0_53</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>dev-libs__yaz-3_0_53</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>icu</name>
+      <parent>dev-libs__yaz-3_0_53</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcpd</name>
+      <parent>dev-libs__yaz-3_0_53</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ziffy</name>
+      <parent>dev-libs__yaz-3_0_53</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

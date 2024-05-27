@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__irqbalance-1_9_2</name>
+      <children>
+        <options>caps</options>
+        <options>numa</options>
+        <options>selinux</options>
+        <options>systemd</options>
+        <options>tui</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>caps</name>
+      <parent>sys-apps__irqbalance-1_9_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>numa</name>
+      <parent>sys-apps__irqbalance-1_9_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-apps__irqbalance-1_9_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>sys-apps__irqbalance-1_9_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tui</name>
+      <parent>sys-apps__irqbalance-1_9_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

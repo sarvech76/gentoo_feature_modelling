@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-p2p__airdcpp-webclient-2_12_1</name>
+      <children>
+        <options>debug</options>
+        <options>nat-pmp</options>
+        <options>tbb</options>
+        <options>webui</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-p2p__airdcpp-webclient-2_12_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nat-pmp</name>
+      <parent>net-p2p__airdcpp-webclient-2_12_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tbb</name>
+      <parent>net-p2p__airdcpp-webclient-2_12_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webui</name>
+      <parent>net-p2p__airdcpp-webclient-2_12_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

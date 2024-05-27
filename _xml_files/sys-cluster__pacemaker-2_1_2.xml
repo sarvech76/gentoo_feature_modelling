@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-cluster__pacemaker-2_1_2</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>acl</options>
+        <options>smtp</options>
+        <options>snmp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>sys-cluster__pacemaker-2_1_2</parent>
+      <children>
+        <options>python_single_target_python3_10</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>abs_xor_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acl</name>
+      <parent>sys-cluster__pacemaker-2_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>smtp</name>
+      <parent>sys-cluster__pacemaker-2_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>snmp</name>
+      <parent>sys-cluster__pacemaker-2_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

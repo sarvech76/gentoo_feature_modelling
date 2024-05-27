@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__gjs-1_77_1</name>
+      <children>
+        <options>cairo</options>
+        <options>examples</options>
+        <options>readline</options>
+        <options>sysprof</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cairo</name>
+      <parent>dev-libs__gjs-1_77_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>dev-libs__gjs-1_77_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>dev-libs__gjs-1_77_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sysprof</name>
+      <parent>dev-libs__gjs-1_77_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__gjs-1_77_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

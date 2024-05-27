@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__albert-0_17_2-r1</name>
+      <children>
+        <options>debug</options>
+        <options>python</options>
+        <options>statistics</options>
+        <options>virtualbox</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>x11-misc__albert-0_17_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>x11-misc__albert-0_17_2-r1</parent>
+      <children>
+        <options>python-extensions</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python-extensions</name>
+      <parent>python</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>statistics</name>
+      <parent>x11-misc__albert-0_17_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>virtualbox</name>
+      <parent>x11-misc__albert-0_17_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

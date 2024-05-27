@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnome-base__gnome-extra-apps-41_0</name>
+      <children>
+        <options>games</options>
+        <options>share</options>
+        <options>shotwell</options>
+        <options>tracker</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>games</name>
+      <parent>gnome-base__gnome-extra-apps-41_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>share</name>
+      <parent>gnome-base__gnome-extra-apps-41_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>shotwell</name>
+      <parent>gnome-base__gnome-extra-apps-41_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tracker</name>
+      <parent>gnome-base__gnome-extra-apps-41_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

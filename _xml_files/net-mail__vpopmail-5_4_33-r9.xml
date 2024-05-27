@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-mail__vpopmail-5_4_33-r9</name>
+      <children>
+        <options>clearpasswd</options>
+        <options>ipalias</options>
+        <options>maildrop</options>
+        <options>mysql</options>
+        <options>postgres</options>
+        <options>spamassassin</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clearpasswd</name>
+      <parent>net-mail__vpopmail-5_4_33-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipalias</name>
+      <parent>net-mail__vpopmail-5_4_33-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>maildrop</name>
+      <parent>net-mail__vpopmail-5_4_33-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>net-mail__vpopmail-5_4_33-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres</name>
+      <parent>net-mail__vpopmail-5_4_33-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>spamassassin</name>
+      <parent>net-mail__vpopmail-5_4_33-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(mysql =&gt; !postgres)</constraint>
+  </booleanConstraints>
+</vm>

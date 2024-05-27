@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-irc__irssi-9999</name>
+      <children>
+        <options>otr</options>
+        <options>perl</options>
+        <options>proxy</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>otr</name>
+      <parent>net-irc__irssi-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>perl</name>
+      <parent>net-irc__irssi-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>proxy</name>
+      <parent>net-irc__irssi-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>net-irc__irssi-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

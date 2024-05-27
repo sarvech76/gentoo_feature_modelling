@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__unuran-1_8_1</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>gsl</options>
+        <options>prng</options>
+        <options>rngstreams</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-mathematics__unuran-1_8_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-mathematics__unuran-1_8_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gsl</name>
+      <parent>sci-mathematics__unuran-1_8_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>prng</name>
+      <parent>sci-mathematics__unuran-1_8_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rngstreams</name>
+      <parent>sci-mathematics__unuran-1_8_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

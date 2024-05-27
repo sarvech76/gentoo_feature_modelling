@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-plugins__gosuslugi-plugin-3_1_1_0</name>
+      <children>
+        <options>multilib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>multilib</name>
+      <parent>www-plugins__gosuslugi-plugin-3_1_1_0</parent>
+      <children>
+        <options>amd64</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>amd64</name>
+      <parent>multilib</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

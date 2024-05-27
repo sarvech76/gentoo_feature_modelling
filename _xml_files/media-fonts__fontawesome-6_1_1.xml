@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-fonts__fontawesome-6_1_1</name>
+      <children>
+        <options>abs_or_grp_1</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>media-fonts__fontawesome-6_1_1</parent>
+      <children>
+        <options>otf</options>
+        <options>ttf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>otf</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>ttf</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ttf</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>otf</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-fonts__fontawesome-6_1_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

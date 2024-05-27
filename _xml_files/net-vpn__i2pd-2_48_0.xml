@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-vpn__i2pd-2_48_0</name>
+      <children>
+        <options>cpu_flags_x86_aes</options>
+        <options>cpu_flags_x86_avx</options>
+        <options>i2p-hardening</options>
+        <options>upnp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_aes</name>
+      <parent>net-vpn__i2pd-2_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_avx</name>
+      <parent>net-vpn__i2pd-2_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>i2p-hardening</name>
+      <parent>net-vpn__i2pd-2_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>upnp</name>
+      <parent>net-vpn__i2pd-2_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

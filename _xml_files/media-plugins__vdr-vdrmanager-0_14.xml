@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-plugins__vdr-vdrmanager-0_14</name>
+      <children>
+        <options>gzip</options>
+        <options>ssl</options>
+        <options>stream</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gzip</name>
+      <parent>media-plugins__vdr-vdrmanager-0_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>media-plugins__vdr-vdrmanager-0_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>stream</name>
+      <parent>media-plugins__vdr-vdrmanager-0_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>media-plugins__vdr-vdrmanager-0_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

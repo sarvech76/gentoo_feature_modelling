@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-haskell__monad-logger-0_3_32</name>
+      <children>
+        <options>doc</options>
+        <options>hscolour</options>
+        <options>profile</options>
+        <options>template-haskell</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-haskell__monad-logger-0_3_32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hscolour</name>
+      <parent>dev-haskell__monad-logger-0_3_32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profile</name>
+      <parent>dev-haskell__monad-logger-0_3_32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>template-haskell</name>
+      <parent>dev-haskell__monad-logger-0_3_32</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

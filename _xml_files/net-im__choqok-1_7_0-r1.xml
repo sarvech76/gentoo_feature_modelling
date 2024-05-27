@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-im__choqok-1_7_0-r1</name>
+      <children>
+        <options>attica</options>
+        <options>debug</options>
+        <options>handbook</options>
+        <options>share</options>
+        <options>telepathy</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>attica</name>
+      <parent>net-im__choqok-1_7_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-im__choqok-1_7_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handbook</name>
+      <parent>net-im__choqok-1_7_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>share</name>
+      <parent>net-im__choqok-1_7_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>telepathy</name>
+      <parent>net-im__choqok-1_7_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

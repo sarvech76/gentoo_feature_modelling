@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__zathura-9999</name>
+      <children>
+        <options>seccomp</options>
+        <options>sqlite</options>
+        <options>synctex</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>seccomp</name>
+      <parent>app-text__zathura-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sqlite</name>
+      <parent>app-text__zathura-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>synctex</name>
+      <parent>app-text__zathura-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-text__zathura-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

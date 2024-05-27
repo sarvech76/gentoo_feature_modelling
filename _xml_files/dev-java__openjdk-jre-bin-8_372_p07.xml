@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-java__openjdk-jre-bin-8_372_p07</name>
+      <children>
+        <options>alsa</options>
+        <options>cups</options>
+        <options>headless-awt</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>dev-java__openjdk-jre-bin-8_372_p07</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cups</name>
+      <parent>dev-java__openjdk-jre-bin-8_372_p07</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>headless-awt</name>
+      <parent>dev-java__openjdk-jre-bin-8_372_p07</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>dev-java__openjdk-jre-bin-8_372_p07</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

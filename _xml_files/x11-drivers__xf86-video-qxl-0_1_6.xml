@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-drivers__xf86-video-qxl-0_1_6</name>
+      <children>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+        <options>xspice</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>x11-drivers__xf86-video-qxl-0_1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>x11-drivers__xf86-video-qxl-0_1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xspice</name>
+      <parent>x11-drivers__xf86-video-qxl-0_1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(xspice =&gt; (python_single_target_python3_10 ^ python_single_target_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

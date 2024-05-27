@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-action__heroes-0_21-r3</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>games-action__heroes-0_21-r3</parent>
+      <children>
+        <options>ggi</options>
+        <options>sdl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ggi</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>sdl</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>ggi</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-action__heroes-0_21-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

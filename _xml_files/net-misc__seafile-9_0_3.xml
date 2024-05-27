@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__seafile-9_0_3</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>net-misc__seafile-9_0_3</parent>
+      <children>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>python_single_target_python3_11</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>python_single_target_python3_10</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

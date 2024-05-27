@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-puzzle__pingus-0_7_6-r5</name>
+      <children>
+        <options>music</options>
+        <options>opengl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>music</name>
+      <parent>games-puzzle__pingus-0_7_6-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>games-puzzle__pingus-0_7_6-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

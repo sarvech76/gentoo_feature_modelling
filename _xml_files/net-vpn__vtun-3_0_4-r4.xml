@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-vpn__vtun-3_0_4-r4</name>
+      <children>
+        <options>lzo</options>
+        <options>socks5</options>
+        <options>ssl</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzo</name>
+      <parent>net-vpn__vtun-3_0_4-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>socks5</name>
+      <parent>net-vpn__vtun-3_0_4-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-vpn__vtun-3_0_4-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>net-vpn__vtun-3_0_4-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

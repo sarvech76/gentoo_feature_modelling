@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-i18n__pyzy-0_1_0-r3</name>
+      <children>
+        <options>boost</options>
+        <options>doc</options>
+        <options>opencc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>boost</name>
+      <parent>app-i18n__pyzy-0_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>app-i18n__pyzy-0_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencc</name>
+      <parent>app-i18n__pyzy-0_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

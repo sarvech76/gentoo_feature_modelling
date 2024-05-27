@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-themes__fluent-icon-theme-2023_06_07</name>
+      <children>
+        <options>black</options>
+        <options>hardlink</options>
+        <options>round</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>black</name>
+      <parent>x11-themes__fluent-icon-theme-2023_06_07</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hardlink</name>
+      <parent>x11-themes__fluent-icon-theme-2023_06_07</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>round</name>
+      <parent>x11-themes__fluent-icon-theme-2023_06_07</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

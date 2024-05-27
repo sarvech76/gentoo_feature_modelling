@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__debianutils-5_8</name>
+      <children>
+        <options>installkernel</options>
+        <options>static</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>installkernel</name>
+      <parent>sys-apps__debianutils-5_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-apps__debianutils-5_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

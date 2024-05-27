@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-fonts__font-bh-100dpi-1_0_4</name>
+      <children>
+        <options>nls</options>
+        <options>opentype-compat</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>media-fonts__font-bh-100dpi-1_0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opentype-compat</name>
+      <parent>media-fonts__font-bh-100dpi-1_0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-fonts__font-bh-100dpi-1_0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

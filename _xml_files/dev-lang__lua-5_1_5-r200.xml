@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__lua-5_1_5-r200</name>
+      <children>
+        <options>deprecated</options>
+        <options>readline</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>deprecated</name>
+      <parent>dev-lang__lua-5_1_5-r200</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>dev-lang__lua-5_1_5-r200</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

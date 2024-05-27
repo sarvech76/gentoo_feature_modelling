@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-news__liferea-1_12_10</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>net-news__liferea-1_12_10</parent>
+      <children>
+        <options>python_single_target_python3_10</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>abs_xor_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

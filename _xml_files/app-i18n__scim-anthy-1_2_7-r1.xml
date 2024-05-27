@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-i18n__scim-anthy-1_2_7-r1</name>
+      <children>
+        <options>gtk3</options>
+        <options>kasumi</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk3</name>
+      <parent>app-i18n__scim-anthy-1_2_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kasumi</name>
+      <parent>app-i18n__scim-anthy-1_2_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>app-i18n__scim-anthy-1_2_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

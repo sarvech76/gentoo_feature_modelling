@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-i18n__imsettings-1_8_2-r1</name>
+      <children>
+        <options>introspection</options>
+        <options>qt5</options>
+        <options>xfconf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>app-i18n__imsettings-1_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>app-i18n__imsettings-1_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xfconf</name>
+      <parent>app-i18n__imsettings-1_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__libspectre-0_2_11</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>app-text__libspectre-0_2_11</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>app-text__libspectre-0_2_11</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

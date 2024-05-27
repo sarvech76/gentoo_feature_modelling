@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libgpod-0_8_3-r5</name>
+      <children>
+        <options>gtk</options>
+        <options>ios</options>
+        <options>udev</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>media-libs__libgpod-0_8_3-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ios</name>
+      <parent>media-libs__libgpod-0_8_3-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>media-libs__libgpod-0_8_3-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

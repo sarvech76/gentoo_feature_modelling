@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__ueberzugpp-2_9_1</name>
+      <children>
+        <options>opencv</options>
+        <options>opengl</options>
+        <options>wayland</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencv</name>
+      <parent>media-gfx__ueberzugpp-2_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>media-gfx__ueberzugpp-2_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wayland</name>
+      <parent>media-gfx__ueberzugpp-2_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-gfx__ueberzugpp-2_9_1</parent>
+      <children>
+        <options>xcb-errors</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xcb-errors</name>
+      <parent>X</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

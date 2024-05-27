@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libopenraw-0_3_6</name>
+      <children>
+        <options>debug</options>
+        <options>gtk</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-libs__libopenraw-0_3_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>media-libs__libopenraw-0_3_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>media-libs__libopenraw-0_3_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

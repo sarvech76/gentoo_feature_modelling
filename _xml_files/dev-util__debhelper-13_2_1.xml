@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__debhelper-13_2_1</name>
+      <children>
+        <options>l10n_de</options>
+        <options>l10n_es</options>
+        <options>l10n_fr</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_de</name>
+      <parent>dev-util__debhelper-13_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_es</name>
+      <parent>dev-util__debhelper-13_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_fr</name>
+      <parent>dev-util__debhelper-13_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-util__debhelper-13_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

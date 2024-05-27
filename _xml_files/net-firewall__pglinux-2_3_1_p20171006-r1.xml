@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-firewall__pglinux-2_3_1_p20171006-r1</name>
+      <children>
+        <options>cron</options>
+        <options>dbus</options>
+        <options>networkmanager</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cron</name>
+      <parent>net-firewall__pglinux-2_3_1_p20171006-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>net-firewall__pglinux-2_3_1_p20171006-r1</parent>
+      <children>
+        <options>qt5</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>dbus</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>networkmanager</name>
+      <parent>net-firewall__pglinux-2_3_1_p20171006-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>net-firewall__pglinux-2_3_1_p20171006-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

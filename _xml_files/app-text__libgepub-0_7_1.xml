@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__libgepub-0_7_1</name>
+      <children>
+        <options>introspection</options>
+        <options>webkit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>app-text__libgepub-0_7_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webkit</name>
+      <parent>app-text__libgepub-0_7_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__xmlto-0_0_28-r10</name>
+      <children>
+        <options>latex</options>
+        <options>text</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>latex</name>
+      <parent>app-text__xmlto-0_0_28-r10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>text</name>
+      <parent>app-text__xmlto-0_0_28-r10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

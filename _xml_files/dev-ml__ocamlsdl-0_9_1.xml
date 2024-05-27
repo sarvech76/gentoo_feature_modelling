@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-ml__ocamlsdl-0_9_1</name>
+      <children>
+        <options>doc</options>
+        <options>ocamlopt</options>
+        <options>opengl</options>
+        <options>truetype</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-ml__ocamlsdl-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ocamlopt</name>
+      <parent>dev-ml__ocamlsdl-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>dev-ml__ocamlsdl-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>truetype</name>
+      <parent>dev-ml__ocamlsdl-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fabric__mstflint-4_23_0_p1</name>
+      <children>
+        <options>adb-generic-tools</options>
+        <options>inband</options>
+        <options>ssl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>adb-generic-tools</name>
+      <parent>sys-fabric__mstflint-4_23_0_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>inband</name>
+      <parent>sys-fabric__mstflint-4_23_0_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>sys-fabric__mstflint-4_23_0_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnustep-apps__graphos-0_7</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>gnustep-apps__graphos-0_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>gnustep-apps__graphos-0_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

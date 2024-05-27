@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__rss-glx-0_9_1-r3</name>
+      <children>
+        <options>bzip2</options>
+        <options>openal</options>
+        <options>quesoglc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>x11-misc__rss-glx-0_9_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openal</name>
+      <parent>x11-misc__rss-glx-0_9_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>quesoglc</name>
+      <parent>x11-misc__rss-glx-0_9_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

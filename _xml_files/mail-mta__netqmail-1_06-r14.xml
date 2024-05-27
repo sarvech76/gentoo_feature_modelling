@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-mta__netqmail-1_06-r14</name>
+      <children>
+        <options>authcram</options>
+        <options>gencertdaily</options>
+        <options>highvolume</options>
+        <options>pop3</options>
+        <options>qmail-spp</options>
+        <options>ssl</options>
+        <options>vanilla</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>authcram</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gencertdaily</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>highvolume</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pop3</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qmail-spp</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vanilla</name>
+      <parent>mail-mta__netqmail-1_06-r14</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(vanilla =&gt; !ssl)</constraint>
+    <constraint>(vanilla =&gt; !qmail-spp)</constraint>
+    <constraint>(vanilla =&gt; !highvolume)</constraint>
+  </booleanConstraints>
+</vm>

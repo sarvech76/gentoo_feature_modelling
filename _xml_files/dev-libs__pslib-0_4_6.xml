@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__pslib-0_4_6</name>
+      <children>
+        <options>debug</options>
+        <options>jpeg</options>
+        <options>png</options>
+        <options>tiff</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-libs__pslib-0_4_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>dev-libs__pslib-0_4_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>dev-libs__pslib-0_4_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tiff</name>
+      <parent>dev-libs__pslib-0_4_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

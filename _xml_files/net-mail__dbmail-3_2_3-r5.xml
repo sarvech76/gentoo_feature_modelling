@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-mail__dbmail-3_2_3-r5</name>
+      <children>
+        <options>ldap</options>
+        <options>sieve</options>
+        <options>ssl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ldap</name>
+      <parent>net-mail__dbmail-3_2_3-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sieve</name>
+      <parent>net-mail__dbmail-3_2_3-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-mail__dbmail-3_2_3-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

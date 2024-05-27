@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__ipmitool-1_8_19</name>
+      <children>
+        <options>openbmc</options>
+        <options>openipmi</options>
+        <options>static</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openbmc</name>
+      <parent>sys-apps__ipmitool-1_8_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openipmi</name>
+      <parent>sys-apps__ipmitool-1_8_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-apps__ipmitool-1_8_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

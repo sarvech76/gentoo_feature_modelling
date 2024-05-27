@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-backup__tsm-8_1_17_2</name>
+      <children>
+        <options>acl</options>
+        <options>java</options>
+        <options>tsm-cit</options>
+        <options>tsm-hw</options>
+        <options>vmware</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acl</name>
+      <parent>app-backup__tsm-8_1_17_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>java</name>
+      <parent>app-backup__tsm-8_1_17_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tsm-cit</name>
+      <parent>app-backup__tsm-8_1_17_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tsm-hw</name>
+      <parent>app-backup__tsm-8_1_17_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vmware</name>
+      <parent>app-backup__tsm-8_1_17_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

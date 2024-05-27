@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gui-apps__lavalauncher-2_1_0</name>
+      <children>
+        <options>man</options>
+        <options>svg</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>gui-apps__lavalauncher-2_1_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>svg</name>
+      <parent>gui-apps__lavalauncher-2_1_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

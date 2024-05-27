@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-emulation__lxdream-0_9_1-r4</name>
+      <children>
+        <options>debug</options>
+        <options>profile</options>
+        <options>pulseaudio</options>
+        <options>sdl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-emulation__lxdream-0_9_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profile</name>
+      <parent>games-emulation__lxdream-0_9_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>games-emulation__lxdream-0_9_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>games-emulation__lxdream-0_9_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

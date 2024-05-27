@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-mail__mu-1_10_4</name>
+      <children>
+        <options>emacs</options>
+        <options>readline</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>emacs</name>
+      <parent>net-mail__mu-1_10_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>net-mail__mu-1_10_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

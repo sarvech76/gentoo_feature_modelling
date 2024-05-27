@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-dialup__ppp-2_5_0-r3</name>
+      <children>
+        <options>activefilter</options>
+        <options>atm</options>
+        <options>gtk</options>
+        <options>pam</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>activefilter</name>
+      <parent>net-dialup__ppp-2_5_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>atm</name>
+      <parent>net-dialup__ppp-2_5_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>net-dialup__ppp-2_5_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>net-dialup__ppp-2_5_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>net-dialup__ppp-2_5_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

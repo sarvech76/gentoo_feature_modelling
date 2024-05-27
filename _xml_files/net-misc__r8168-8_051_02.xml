@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__r8168-8_051_02</name>
+      <children>
+        <options>dist-kernel</options>
+        <options>use-firmware</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>net-misc__r8168-8_051_02</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>use-firmware</name>
+      <parent>net-misc__r8168-8_051_02</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

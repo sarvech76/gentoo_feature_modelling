@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-emulation__mupen64plus-video-glide64mk2-2_5_9-r2</name>
+      <children>
+        <options>cpu_flags_x86_sse</options>
+        <options>gles2-only</options>
+        <options>hires</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse</name>
+      <parent>games-emulation__mupen64plus-video-glide64mk2-2_5_9-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gles2-only</name>
+      <parent>games-emulation__mupen64plus-video-glide64mk2-2_5_9-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hires</name>
+      <parent>games-emulation__mupen64plus-video-glide64mk2-2_5_9-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

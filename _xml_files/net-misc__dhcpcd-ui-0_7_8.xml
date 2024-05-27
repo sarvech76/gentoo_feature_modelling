@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__dhcpcd-ui-0_7_8</name>
+      <children>
+        <options>debug</options>
+        <options>gtk</options>
+        <options>ncurses</options>
+        <options>qt5</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-misc__dhcpcd-ui-0_7_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>net-misc__dhcpcd-ui-0_7_8</parent>
+      <children>
+        <options>libnotify</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libnotify</name>
+      <parent>gtk</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>net-misc__dhcpcd-ui-0_7_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>net-misc__dhcpcd-ui-0_7_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(qt5 =&gt; !libnotify)</constraint>
+  </booleanConstraints>
+</vm>

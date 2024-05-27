@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-servers__sniproxy-0_6_1</name>
+      <children>
+        <options>dns</options>
+        <options>largefile</options>
+        <options>rfc3339</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dns</name>
+      <parent>www-servers__sniproxy-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>largefile</name>
+      <parent>www-servers__sniproxy-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rfc3339</name>
+      <parent>www-servers__sniproxy-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>www-servers__sniproxy-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

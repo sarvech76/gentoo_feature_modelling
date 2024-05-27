@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-misc__vcontrold-0_98_11</name>
+      <children>
+        <options>man</options>
+        <options>vclient</options>
+        <options>vsim</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>app-misc__vcontrold-0_98_11</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vclient</name>
+      <parent>app-misc__vcontrold-0_98_11</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vsim</name>
+      <parent>app-misc__vcontrold-0_98_11</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

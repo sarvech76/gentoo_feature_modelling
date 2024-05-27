@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__dcraw-9_28_0-r2</name>
+      <children>
+        <options>gimp</options>
+        <options>jpeg</options>
+        <options>lcms</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gimp</name>
+      <parent>media-gfx__dcraw-9_28_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>media-gfx__dcraw-9_28_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lcms</name>
+      <parent>media-gfx__dcraw-9_28_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>media-gfx__dcraw-9_28_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

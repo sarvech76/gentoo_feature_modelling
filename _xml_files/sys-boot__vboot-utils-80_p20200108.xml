@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-boot__vboot-utils-80_p20200108</name>
+      <children>
+        <options>libzip</options>
+        <options>minimal</options>
+        <options>static</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libzip</name>
+      <parent>sys-boot__vboot-utils-80_p20200108</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>sys-boot__vboot-utils-80_p20200108</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-boot__vboot-utils-80_p20200108</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

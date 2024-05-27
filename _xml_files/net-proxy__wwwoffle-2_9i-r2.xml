@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-proxy__wwwoffle-2_9i-r2</name>
+      <children>
+        <options>gnutls</options>
+        <options>ipv6</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>net-proxy__wwwoffle-2_9i-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>net-proxy__wwwoffle-2_9i-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>net-proxy__wwwoffle-2_9i-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__fcl-9999</name>
+      <children>
+        <options>cpu_flags_x86_sse</options>
+        <options>doc</options>
+        <options>octomap</options>
+        <options>profiling</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse</name>
+      <parent>sci-libs__fcl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-libs__fcl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>octomap</name>
+      <parent>sci-libs__fcl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profiling</name>
+      <parent>sci-libs__fcl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-libs__fcl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

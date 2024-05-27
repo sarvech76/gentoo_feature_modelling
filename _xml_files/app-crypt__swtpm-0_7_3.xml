@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-crypt__swtpm-0_7_3</name>
+      <children>
+        <options>fuse</options>
+        <options>gnutls</options>
+        <options>seccomp</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fuse</name>
+      <parent>app-crypt__swtpm-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>app-crypt__swtpm-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>seccomp</name>
+      <parent>app-crypt__swtpm-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-crypt__swtpm-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

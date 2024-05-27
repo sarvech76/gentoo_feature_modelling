@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-cluster__drbd-utils-9_15_1-r2</name>
+      <children>
+        <options>pacemaker</options>
+        <options>udev</options>
+        <options>xen</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pacemaker</name>
+      <parent>sys-cluster__drbd-utils-9_15_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>sys-cluster__drbd-utils-9_15_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xen</name>
+      <parent>sys-cluster__drbd-utils-9_15_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

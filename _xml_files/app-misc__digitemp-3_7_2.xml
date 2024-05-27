@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-misc__digitemp-3_7_2</name>
+      <children>
+        <options>ds2490</options>
+        <options>ds9097</options>
+        <options>ds9097u</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ds2490</name>
+      <parent>app-misc__digitemp-3_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ds9097</name>
+      <parent>app-misc__digitemp-3_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ds9097u</name>
+      <parent>app-misc__digitemp-3_7_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

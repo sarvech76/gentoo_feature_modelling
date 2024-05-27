@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-arch__zip-3_0-r7</name>
+      <children>
+        <options>bzip2</options>
+        <options>crypt</options>
+        <options>natspec</options>
+        <options>unicode</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>app-arch__zip-3_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crypt</name>
+      <parent>app-arch__zip-3_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>natspec</name>
+      <parent>app-arch__zip-3_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unicode</name>
+      <parent>app-arch__zip-3_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

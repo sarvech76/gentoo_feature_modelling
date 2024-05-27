@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-emulation__desmume-0_9_13-r1</name>
+      <children>
+        <options>gdb</options>
+        <options>gui</options>
+        <options>openal</options>
+        <options>wifi</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gdb</name>
+      <parent>games-emulation__desmume-0_9_13-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gui</name>
+      <parent>games-emulation__desmume-0_9_13-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openal</name>
+      <parent>games-emulation__desmume-0_9_13-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wifi</name>
+      <parent>games-emulation__desmume-0_9_13-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

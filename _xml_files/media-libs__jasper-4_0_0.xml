@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__jasper-4_0_0</name>
+      <children>
+        <options>doc</options>
+        <options>heif</options>
+        <options>jpeg</options>
+        <options>opengl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-libs__jasper-4_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>heif</name>
+      <parent>media-libs__jasper-4_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>media-libs__jasper-4_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>media-libs__jasper-4_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

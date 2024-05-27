@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-im__coturn-9999</name>
+      <children>
+        <options>mongodb</options>
+        <options>mysql</options>
+        <options>postgres</options>
+        <options>redis</options>
+        <options>sqlite</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mongodb</name>
+      <parent>net-im__coturn-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>net-im__coturn-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres</name>
+      <parent>net-im__coturn-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>redis</name>
+      <parent>net-im__coturn-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sqlite</name>
+      <parent>net-im__coturn-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

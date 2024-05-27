@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__socat-1_7_4_3</name>
+      <children>
+        <options>bindist</options>
+        <options>ipv6</options>
+        <options>readline</options>
+        <options>ssl</options>
+        <options>tcpd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bindist</name>
+      <parent>net-misc__socat-1_7_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>net-misc__socat-1_7_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>net-misc__socat-1_7_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-misc__socat-1_7_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcpd</name>
+      <parent>net-misc__socat-1_7_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

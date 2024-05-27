@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-roguelike__tome-2_3_5-r1</name>
+      <children>
+        <options>gtk</options>
+        <options>sdl</options>
+        <options>X</options>
+        <options>Xaw3d</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>games-roguelike__tome-2_3_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>games-roguelike__tome-2_3_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>games-roguelike__tome-2_3_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>Xaw3d</name>
+      <parent>games-roguelike__tome-2_3_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libmypaint-1_6_1-r2</name>
+      <children>
+        <options>gegl</options>
+        <options>introspection</options>
+        <options>nls</options>
+        <options>openmp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gegl</name>
+      <parent>media-libs__libmypaint-1_6_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>media-libs__libmypaint-1_6_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>media-libs__libmypaint-1_6_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>media-libs__libmypaint-1_6_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

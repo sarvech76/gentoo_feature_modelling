@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-perl__App-Nopaste-1_13_0</name>
+      <children>
+        <options>browser</options>
+        <options>clipboard</options>
+        <options>gitlab</options>
+        <options>pastebin</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>browser</name>
+      <parent>dev-perl__App-Nopaste-1_13_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clipboard</name>
+      <parent>dev-perl__App-Nopaste-1_13_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gitlab</name>
+      <parent>dev-perl__App-Nopaste-1_13_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pastebin</name>
+      <parent>dev-perl__App-Nopaste-1_13_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-perl__App-Nopaste-1_13_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

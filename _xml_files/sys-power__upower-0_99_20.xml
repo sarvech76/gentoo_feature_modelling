@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-power__upower-0_99_20</name>
+      <children>
+        <options>doc</options>
+        <options>introspection</options>
+        <options>ios</options>
+        <options>selinux</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sys-power__upower-0_99_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>sys-power__upower-0_99_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ios</name>
+      <parent>sys-power__upower-0_99_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-power__upower-0_99_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sys-power__upower-0_99_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

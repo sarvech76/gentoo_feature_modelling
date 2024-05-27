@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-power__suspend-1_0_p20200924</name>
+      <children>
+        <options>crypt</options>
+        <options>lzo</options>
+        <options>threads</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crypt</name>
+      <parent>sys-power__suspend-1_0_p20200924</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzo</name>
+      <parent>sys-power__suspend-1_0_p20200924</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>sys-power__suspend-1_0_p20200924</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

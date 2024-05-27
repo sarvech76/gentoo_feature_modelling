@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__f2fs-tools-1_16_0</name>
+      <children>
+        <options>lz4</options>
+        <options>lzo</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lz4</name>
+      <parent>sys-fs__f2fs-tools-1_16_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzo</name>
+      <parent>sys-fs__f2fs-tools-1_16_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-fs__f2fs-tools-1_16_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

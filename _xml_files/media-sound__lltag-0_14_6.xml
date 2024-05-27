@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__lltag-0_14_6</name>
+      <children>
+        <options>flac</options>
+        <options>mp3</options>
+        <options>ogg</options>
+        <options>readline</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flac</name>
+      <parent>media-sound__lltag-0_14_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mp3</name>
+      <parent>media-sound__lltag-0_14_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ogg</name>
+      <parent>media-sound__lltag-0_14_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>media-sound__lltag-0_14_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

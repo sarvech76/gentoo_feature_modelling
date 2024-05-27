@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-chemistry__avogadro2-1_97_0</name>
+      <children>
+        <options>doc</options>
+        <options>rpc</options>
+        <options>test</options>
+        <options>vtk</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-chemistry__avogadro2-1_97_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rpc</name>
+      <parent>sci-chemistry__avogadro2-1_97_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-chemistry__avogadro2-1_97_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vtk</name>
+      <parent>sci-chemistry__avogadro2-1_97_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

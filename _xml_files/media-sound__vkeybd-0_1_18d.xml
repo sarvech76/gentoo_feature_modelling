@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__vkeybd-0_1_18d</name>
+      <children>
+        <options>alsa</options>
+        <options>lash</options>
+        <options>oss</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>media-sound__vkeybd-0_1_18d</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lash</name>
+      <parent>media-sound__vkeybd-0_1_18d</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oss</name>
+      <parent>media-sound__vkeybd-0_1_18d</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

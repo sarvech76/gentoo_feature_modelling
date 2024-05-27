@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-auth__libfprint-1_94_5</name>
+      <children>
+        <options>examples</options>
+        <options>gtk-doc</options>
+        <options>introspection</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sys-auth__libfprint-1_94_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>sys-auth__libfprint-1_94_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>sys-auth__libfprint-1_94_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

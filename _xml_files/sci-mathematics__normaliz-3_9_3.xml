@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__normaliz-3_9_3</name>
+      <children>
+        <options>doc</options>
+        <options>extras</options>
+        <options>nauty</options>
+        <options>openmp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-mathematics__normaliz-3_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>extras</name>
+      <parent>sci-mathematics__normaliz-3_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nauty</name>
+      <parent>sci-mathematics__normaliz-3_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>sci-mathematics__normaliz-3_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

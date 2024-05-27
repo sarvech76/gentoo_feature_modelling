@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-fps__chocolate-doom-3_0_1-r1</name>
+      <children>
+        <options>doc</options>
+        <options>libsamplerate</options>
+        <options>midi</options>
+        <options>png</options>
+        <options>vorbis</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>games-fps__chocolate-doom-3_0_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libsamplerate</name>
+      <parent>games-fps__chocolate-doom-3_0_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>midi</name>
+      <parent>games-fps__chocolate-doom-3_0_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>games-fps__chocolate-doom-3_0_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vorbis</name>
+      <parent>games-fps__chocolate-doom-3_0_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

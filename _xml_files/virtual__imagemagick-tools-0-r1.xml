@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>virtual__imagemagick-tools-0-r1</name>
+      <children>
+        <options>jpeg</options>
+        <options>perl</options>
+        <options>png</options>
+        <options>svg</options>
+        <options>tiff</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>virtual__imagemagick-tools-0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>perl</name>
+      <parent>virtual__imagemagick-tools-0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>virtual__imagemagick-tools-0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>svg</name>
+      <parent>virtual__imagemagick-tools-0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tiff</name>
+      <parent>virtual__imagemagick-tools-0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

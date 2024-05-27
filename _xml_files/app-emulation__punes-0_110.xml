@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emulation__punes-0_110</name>
+      <children>
+        <options>cg</options>
+        <options>ffmpeg</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cg</name>
+      <parent>app-emulation__punes-0_110</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ffmpeg</name>
+      <parent>app-emulation__punes-0_110</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>app-emulation__punes-0_110</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

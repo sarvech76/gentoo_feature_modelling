@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-wireless__bladerf-fpga-0_12_0</name>
+      <children>
+        <options>x115</options>
+        <options>x40</options>
+        <options>xA4</options>
+        <options>xA9</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x115</name>
+      <parent>net-wireless__bladerf-fpga-0_12_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x40</name>
+      <parent>net-wireless__bladerf-fpga-0_12_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xA4</name>
+      <parent>net-wireless__bladerf-fpga-0_12_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xA9</name>
+      <parent>net-wireless__bladerf-fpga-0_12_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__go-bootstrap-1_19_1</name>
+      <children>
+        <options>abi_mips_n64</options>
+        <options>abi_mips_o32</options>
+        <options>big-endian</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_mips_n64</name>
+      <parent>dev-lang__go-bootstrap-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_mips_o32</name>
+      <parent>dev-lang__go-bootstrap-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>big-endian</name>
+      <parent>dev-lang__go-bootstrap-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

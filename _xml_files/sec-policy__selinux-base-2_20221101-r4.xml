@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sec-policy__selinux-base-2_20221101-r4</name>
+      <children>
+        <options>doc</options>
+        <options>systemd</options>
+        <options>ubac</options>
+        <options>unconfined</options>
+        <options>unknown-perms</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sec-policy__selinux-base-2_20221101-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>sec-policy__selinux-base-2_20221101-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ubac</name>
+      <parent>sec-policy__selinux-base-2_20221101-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unconfined</name>
+      <parent>sec-policy__selinux-base-2_20221101-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unknown-perms</name>
+      <parent>sec-policy__selinux-base-2_20221101-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

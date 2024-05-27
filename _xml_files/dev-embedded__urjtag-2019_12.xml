@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-embedded__urjtag-2019_12</name>
+      <children>
+        <options>ftd2xx</options>
+        <options>ftdi</options>
+        <options>readline</options>
+        <options>usb</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ftd2xx</name>
+      <parent>dev-embedded__urjtag-2019_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ftdi</name>
+      <parent>dev-embedded__urjtag-2019_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>dev-embedded__urjtag-2019_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>usb</name>
+      <parent>dev-embedded__urjtag-2019_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

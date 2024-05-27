@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-misc__jq-1_7_rc2</name>
+      <children>
+        <options>oniguruma</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oniguruma</name>
+      <parent>app-misc__jq-1_7_rc2</parent>
+      <children>
+        <options>test</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>oniguruma</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>app-misc__jq-1_7_rc2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-rpg__kqlives-0_99-r100</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>cheats</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>games-rpg__kqlives-0_99-r100</parent>
+      <children>
+        <options>lua_single_target_lua5-1</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>abs_xor_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cheats</name>
+      <parent>games-rpg__kqlives-0_99-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-rpg__kqlives-0_99-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

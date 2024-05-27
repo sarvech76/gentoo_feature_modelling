@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__qjackctl-9999</name>
+      <children>
+        <options>alsa</options>
+        <options>dbus</options>
+        <options>debug</options>
+        <options>portaudio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>media-sound__qjackctl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>media-sound__qjackctl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-sound__qjackctl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>portaudio</name>
+      <parent>media-sound__qjackctl-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

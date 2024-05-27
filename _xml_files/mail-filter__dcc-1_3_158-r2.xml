@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-filter__dcc-1_3_158-r2</name>
+      <children>
+        <options>cgi</options>
+        <options>ipv6</options>
+        <options>milter</options>
+        <options>rrdtool</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cgi</name>
+      <parent>mail-filter__dcc-1_3_158-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>mail-filter__dcc-1_3_158-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>milter</name>
+      <parent>mail-filter__dcc-1_3_158-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rrdtool</name>
+      <parent>mail-filter__dcc-1_3_158-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__lapack-3_10_1</name>
+      <children>
+        <options>deprecated</options>
+        <options>doc</options>
+        <options>eselect-ldso</options>
+        <options>lapacke</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>deprecated</name>
+      <parent>sci-libs__lapack-3_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-libs__lapack-3_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>eselect-ldso</name>
+      <parent>sci-libs__lapack-3_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lapacke</name>
+      <parent>sci-libs__lapack-3_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-libs__lapack-3_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

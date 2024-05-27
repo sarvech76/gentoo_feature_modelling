@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__libfstrcmp-0_7-r3</name>
+      <children>
+        <options>doc</options>
+        <options>static-libs</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-libs__libfstrcmp-0_7-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-libs__libfstrcmp-0_7-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__libfstrcmp-0_7-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

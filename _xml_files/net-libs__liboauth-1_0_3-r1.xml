@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__liboauth-1_0_3-r1</name>
+      <children>
+        <options>curl</options>
+        <options>doc</options>
+        <options>nss</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>net-libs__liboauth-1_0_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-libs__liboauth-1_0_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nss</name>
+      <parent>net-libs__liboauth-1_0_3-r1</parent>
+      <children>
+        <options>bindist</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bindist</name>
+      <parent>nss</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

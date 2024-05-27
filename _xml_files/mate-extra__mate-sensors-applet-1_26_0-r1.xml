@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mate-extra__mate-sensors-applet-1_26_0-r1</name>
+      <children>
+        <options>dbus</options>
+        <options>hddtemp</options>
+        <options>libnotify</options>
+        <options>lm-sensors</options>
+        <options>video_cards_nvidia</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>mate-extra__mate-sensors-applet-1_26_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hddtemp</name>
+      <parent>mate-extra__mate-sensors-applet-1_26_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libnotify</name>
+      <parent>mate-extra__mate-sensors-applet-1_26_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lm-sensors</name>
+      <parent>mate-extra__mate-sensors-applet-1_26_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_nvidia</name>
+      <parent>mate-extra__mate-sensors-applet-1_26_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

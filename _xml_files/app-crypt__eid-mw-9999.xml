@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-crypt__eid-mw-9999</name>
+      <children>
+        <options>gtk</options>
+        <options>p11-kit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>app-crypt__eid-mw-9999</parent>
+      <children>
+        <options>dialogs</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dialogs</name>
+      <parent>gtk</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>p11-kit</name>
+      <parent>app-crypt__eid-mw-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

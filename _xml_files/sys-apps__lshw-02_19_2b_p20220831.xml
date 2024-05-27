@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__lshw-02_19_2b_p20220831</name>
+      <children>
+        <options>gtk</options>
+        <options>sqlite</options>
+        <options>static</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>sys-apps__lshw-02_19_2b_p20220831</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sqlite</name>
+      <parent>sys-apps__lshw-02_19_2b_p20220831</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-apps__lshw-02_19_2b_p20220831</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(static =&gt; !gtk)</constraint>
+    <constraint>(static =&gt; !sqlite)</constraint>
+  </booleanConstraints>
+</vm>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__xdg-utils-1_1_3_p20210805-r1</name>
+      <children>
+        <options>dbus</options>
+        <options>doc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>x11-misc__xdg-utils-1_1_3_p20210805-r1</parent>
+      <children>
+        <options>gnome</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnome</name>
+      <parent>dbus</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>x11-misc__xdg-utils-1_1_3_p20210805-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

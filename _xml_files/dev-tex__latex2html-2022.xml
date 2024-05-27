@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-tex__latex2html-2022</name>
+      <children>
+        <options>gif</options>
+        <options>png</options>
+        <options>svg</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gif</name>
+      <parent>dev-tex__latex2html-2022</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>dev-tex__latex2html-2022</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>svg</name>
+      <parent>dev-tex__latex2html-2022</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

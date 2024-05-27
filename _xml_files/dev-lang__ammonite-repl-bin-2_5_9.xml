@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__ammonite-repl-bin-2_5_9</name>
+      <children>
+        <options>scala2-13</options>
+        <options>scala3-0</options>
+        <options>scala3-1</options>
+        <options>scala3-2</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>scala2-13</name>
+      <parent>dev-lang__ammonite-repl-bin-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>scala3-0</name>
+      <parent>dev-lang__ammonite-repl-bin-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>scala3-1</name>
+      <parent>dev-lang__ammonite-repl-bin-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>scala3-2</name>
+      <parent>dev-lang__ammonite-repl-bin-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

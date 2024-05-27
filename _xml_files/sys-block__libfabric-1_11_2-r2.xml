@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-block__libfabric-1_11_2-r2</name>
+      <children>
+        <options>cuda</options>
+        <options>efa</options>
+        <options>rocr</options>
+        <options>usnic</options>
+        <options>verbs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cuda</name>
+      <parent>sys-block__libfabric-1_11_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>efa</name>
+      <parent>sys-block__libfabric-1_11_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rocr</name>
+      <parent>sys-block__libfabric-1_11_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>usnic</name>
+      <parent>sys-block__libfabric-1_11_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>verbs</name>
+      <parent>sys-block__libfabric-1_11_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

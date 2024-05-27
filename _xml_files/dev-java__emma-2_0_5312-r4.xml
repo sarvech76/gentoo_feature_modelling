@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-java__emma-2_0_5312-r4</name>
+      <children>
+        <options>launcher</options>
+        <options>source</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>launcher</name>
+      <parent>dev-java__emma-2_0_5312-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>source</name>
+      <parent>dev-java__emma-2_0_5312-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

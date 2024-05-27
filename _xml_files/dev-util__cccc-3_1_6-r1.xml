@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__cccc-3_1_6-r1</name>
+      <children>
+        <options>apidoc</options>
+        <options>debug</options>
+        <options>doc</options>
+        <options>mfc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>apidoc</name>
+      <parent>dev-util__cccc-3_1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-util__cccc-3_1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-util__cccc-3_1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mfc</name>
+      <parent>dev-util__cccc-3_1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

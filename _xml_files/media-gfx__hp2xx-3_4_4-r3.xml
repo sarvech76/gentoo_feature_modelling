@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__hp2xx-3_4_4-r3</name>
+      <children>
+        <options>jpeg</options>
+        <options>png</options>
+        <options>tiff</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>media-gfx__hp2xx-3_4_4-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>media-gfx__hp2xx-3_4_4-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tiff</name>
+      <parent>media-gfx__hp2xx-3_4_4-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-gfx__hp2xx-3_4_4-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

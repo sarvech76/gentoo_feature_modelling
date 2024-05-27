@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-auth__munge-0_5_15</name>
+      <children>
+        <options>debug</options>
+        <options>gcrypt</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sys-auth__munge-0_5_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gcrypt</name>
+      <parent>sys-auth__munge-0_5_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>sys-auth__munge-0_5_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

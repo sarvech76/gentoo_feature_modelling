@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__tinyxml-2_6_2-r5</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>static-libs</options>
+        <options>stl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-libs__tinyxml-2_6_2-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-libs__tinyxml-2_6_2-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-libs__tinyxml-2_6_2-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>stl</name>
+      <parent>dev-libs__tinyxml-2_6_2-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

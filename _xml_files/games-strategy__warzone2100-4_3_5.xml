@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-strategy__warzone2100-4_3_5</name>
+      <children>
+        <options>debug</options>
+        <options>discord</options>
+        <options>nls</options>
+        <options>videos</options>
+        <options>vulkan</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-strategy__warzone2100-4_3_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>discord</name>
+      <parent>games-strategy__warzone2100-4_3_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-strategy__warzone2100-4_3_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>videos</name>
+      <parent>games-strategy__warzone2100-4_3_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vulkan</name>
+      <parent>games-strategy__warzone2100-4_3_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

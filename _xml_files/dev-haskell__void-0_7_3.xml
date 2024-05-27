@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-haskell__void-0_7_3</name>
+      <children>
+        <options>doc</options>
+        <options>hscolour</options>
+        <options>profile</options>
+        <options>safe</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-haskell__void-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hscolour</name>
+      <parent>dev-haskell__void-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profile</name>
+      <parent>dev-haskell__void-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>safe</name>
+      <parent>dev-haskell__void-0_7_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

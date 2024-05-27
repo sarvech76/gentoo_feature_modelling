@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-apps__knotes-23_04_3</name>
+      <children>
+        <options>debug</options>
+        <options>handbook</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>kde-apps__knotes-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handbook</name>
+      <parent>kde-apps__knotes-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>kde-apps__knotes-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

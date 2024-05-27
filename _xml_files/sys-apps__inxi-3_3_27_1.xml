@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__inxi-3_3_27_1</name>
+      <children>
+        <options>bluetooth</options>
+        <options>hddtemp</options>
+        <options>opengl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bluetooth</name>
+      <parent>sys-apps__inxi-3_3_27_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hddtemp</name>
+      <parent>sys-apps__inxi-3_3_27_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>sys-apps__inxi-3_3_27_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

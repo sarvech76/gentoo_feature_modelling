@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-filter__spamprobe-1_4d-r2</name>
+      <children>
+        <options>berkdb</options>
+        <options>gif</options>
+        <options>jpeg</options>
+        <options>png</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>berkdb</name>
+      <parent>mail-filter__spamprobe-1_4d-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gif</name>
+      <parent>mail-filter__spamprobe-1_4d-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>mail-filter__spamprobe-1_4d-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>mail-filter__spamprobe-1_4d-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

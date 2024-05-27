@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-engines__frobtads-2_0</name>
+      <children>
+        <options>debug</options>
+        <options>tads2compiler</options>
+        <options>tads3compiler</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-engines__frobtads-2_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tads2compiler</name>
+      <parent>games-engines__frobtads-2_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tads3compiler</name>
+      <parent>games-engines__frobtads-2_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

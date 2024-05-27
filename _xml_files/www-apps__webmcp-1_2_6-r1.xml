@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-apps__webmcp-1_2_6-r1</name>
+      <children>
+        <options>lua_single_target_lua5-1</options>
+        <options>lua_single_target_lua5-3</options>
+        <options>lua_single_target_lua5-4</options>
+        <options>lua_single_target_luajit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>www-apps__webmcp-1_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-3</name>
+      <parent>www-apps__webmcp-1_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-4</name>
+      <parent>www-apps__webmcp-1_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_luajit</name>
+      <parent>www-apps__webmcp-1_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

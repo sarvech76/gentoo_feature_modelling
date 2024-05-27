@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__spotify-1_2_13</name>
+      <children>
+        <options>libnotify</options>
+        <options>local-playback</options>
+        <options>pax-kernel</options>
+        <options>pulseaudio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libnotify</name>
+      <parent>media-sound__spotify-1_2_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>local-playback</name>
+      <parent>media-sound__spotify-1_2_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pax-kernel</name>
+      <parent>media-sound__spotify-1_2_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>media-sound__spotify-1_2_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

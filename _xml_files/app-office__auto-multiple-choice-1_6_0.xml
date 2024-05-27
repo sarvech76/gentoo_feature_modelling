@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-office__auto-multiple-choice-1_6_0</name>
+      <children>
+        <options>l10n_ar</options>
+        <options>l10n_es</options>
+        <options>l10n_fr</options>
+        <options>l10n_ja</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_ar</name>
+      <parent>app-office__auto-multiple-choice-1_6_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_es</name>
+      <parent>app-office__auto-multiple-choice-1_6_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_fr</name>
+      <parent>app-office__auto-multiple-choice-1_6_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_ja</name>
+      <parent>app-office__auto-multiple-choice-1_6_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-board__xboard-4_9_1</name>
+      <children>
+        <options>default-font</options>
+        <options>gtk</options>
+        <options>nls</options>
+        <options>Xaw3d</options>
+        <options>zippy</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>default-font</name>
+      <parent>games-board__xboard-4_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>games-board__xboard-4_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-board__xboard-4_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>Xaw3d</name>
+      <parent>games-board__xboard-4_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zippy</name>
+      <parent>games-board__xboard-4_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

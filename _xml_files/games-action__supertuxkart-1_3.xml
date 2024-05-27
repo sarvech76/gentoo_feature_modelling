@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-action__supertuxkart-1_3</name>
+      <children>
+        <options>debug</options>
+        <options>nettle</options>
+        <options>recorder</options>
+        <options>sqlite</options>
+        <options>wiimote</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-action__supertuxkart-1_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nettle</name>
+      <parent>games-action__supertuxkart-1_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>recorder</name>
+      <parent>games-action__supertuxkart-1_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sqlite</name>
+      <parent>games-action__supertuxkart-1_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wiimote</name>
+      <parent>games-action__supertuxkart-1_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-games__guichan-0_8_2</name>
+      <children>
+        <options>allegro</options>
+        <options>opengl</options>
+        <options>sdl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>allegro</name>
+      <parent>dev-games__guichan-0_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>dev-games__guichan-0_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>dev-games__guichan-0_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

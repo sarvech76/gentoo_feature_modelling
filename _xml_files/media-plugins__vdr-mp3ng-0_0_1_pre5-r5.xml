@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-plugins__vdr-mp3ng-0_0_1_pre5-r5</name>
+      <children>
+        <options>oss</options>
+        <options>vorbis</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oss</name>
+      <parent>media-plugins__vdr-mp3ng-0_0_1_pre5-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vorbis</name>
+      <parent>media-plugins__vdr-mp3ng-0_0_1_pre5-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

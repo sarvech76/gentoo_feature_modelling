@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__flowgrind-0_8_2</name>
+      <children>
+        <options>doc</options>
+        <options>gsl</options>
+        <options>pcap</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-analyzer__flowgrind-0_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gsl</name>
+      <parent>net-analyzer__flowgrind-0_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcap</name>
+      <parent>net-analyzer__flowgrind-0_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

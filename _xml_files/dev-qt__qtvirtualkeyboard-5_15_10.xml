@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-qt__qtvirtualkeyboard-5_15_10</name>
+      <children>
+        <options>debug</options>
+        <options>handwriting</options>
+        <options>spell</options>
+        <options>test</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-qt__qtvirtualkeyboard-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handwriting</name>
+      <parent>dev-qt__qtvirtualkeyboard-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>spell</name>
+      <parent>dev-qt__qtvirtualkeyboard-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-qt__qtvirtualkeyboard-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>dev-qt__qtvirtualkeyboard-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

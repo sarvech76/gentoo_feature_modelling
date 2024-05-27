@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-devel__kgcc64-12_3_1_p20230825</name>
+      <children>
+        <options>nls</options>
+        <options>test</options>
+        <options>vanilla</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>sys-devel__kgcc64-12_3_1_p20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sys-devel__kgcc64-12_3_1_p20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vanilla</name>
+      <parent>sys-devel__kgcc64-12_3_1_p20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

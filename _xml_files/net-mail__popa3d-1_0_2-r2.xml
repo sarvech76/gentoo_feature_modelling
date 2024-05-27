@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-mail__popa3d-1_0_2-r2</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>pam</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>net-mail__popa3d-1_0_2-r2</parent>
+      <children>
+        <options>maildir</options>
+        <options>mbox</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>maildir</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>mbox</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mbox</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>maildir</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>net-mail__popa3d-1_0_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emulation__xen-4_15_4</name>
+      <children>
+        <options>debug</options>
+        <options>efi</options>
+        <options>flask</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>app-emulation__xen-4_15_4</parent>
+      <children>
+        <options>arm</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>arm</name>
+      <parent>debug</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>efi</name>
+      <parent>app-emulation__xen-4_15_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flask</name>
+      <parent>app-emulation__xen-4_15_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

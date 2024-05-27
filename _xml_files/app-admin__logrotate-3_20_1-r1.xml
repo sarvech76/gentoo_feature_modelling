@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-admin__logrotate-3_20_1-r1</name>
+      <children>
+        <options>acl</options>
+        <options>cron</options>
+        <options>selinux</options>
+        <options>verify-sig</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acl</name>
+      <parent>app-admin__logrotate-3_20_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cron</name>
+      <parent>app-admin__logrotate-3_20_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>app-admin__logrotate-3_20_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>verify-sig</name>
+      <parent>app-admin__logrotate-3_20_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

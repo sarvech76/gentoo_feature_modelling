@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emacs__emacs-w3m-1_4_632_p20230801</name>
+      <children>
+        <options>gzip-el</options>
+        <options>l10n_ja</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gzip-el</name>
+      <parent>app-emacs__emacs-w3m-1_4_632_p20230801</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_ja</name>
+      <parent>app-emacs__emacs-w3m-1_4_632_p20230801</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

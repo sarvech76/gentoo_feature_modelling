@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnustep-base__gnustep-back-xlib-0_29_0</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>opengl</options>
+        <options>xim</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>gnustep-base__gnustep-back-xlib-0_29_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>gnustep-base__gnustep-back-xlib-0_29_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>gnustep-base__gnustep-back-xlib-0_29_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xim</name>
+      <parent>gnustep-base__gnustep-back-xlib-0_29_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

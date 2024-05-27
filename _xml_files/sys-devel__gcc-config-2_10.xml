@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-devel__gcc-config-2_10</name>
+      <children>
+        <options>cc-wrappers</options>
+        <options>native-symlinks</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cc-wrappers</name>
+      <parent>sys-devel__gcc-config-2_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>native-symlinks</name>
+      <parent>sys-devel__gcc-config-2_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-libs__compiler-rt-18_0_0_pre20230825</name>
+      <children>
+        <options>abi_x86_32</options>
+        <options>abi_x86_64</options>
+        <options>clang</options>
+        <options>debug</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_32</name>
+      <parent>sys-libs__compiler-rt-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_64</name>
+      <parent>sys-libs__compiler-rt-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clang</name>
+      <parent>sys-libs__compiler-rt-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sys-libs__compiler-rt-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sys-libs__compiler-rt-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

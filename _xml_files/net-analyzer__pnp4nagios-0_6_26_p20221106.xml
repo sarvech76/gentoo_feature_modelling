@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__pnp4nagios-0_6_26_p20221106</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>apache2</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>net-analyzer__pnp4nagios-0_6_26_p20221106</parent>
+      <children>
+        <options>icinga</options>
+        <options>nagios</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>icinga</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>nagios</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nagios</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>icinga</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>apache2</name>
+      <parent>net-analyzer__pnp4nagios-0_6_26_p20221106</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

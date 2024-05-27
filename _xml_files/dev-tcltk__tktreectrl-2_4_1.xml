@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-tcltk__tktreectrl-2_4_1</name>
+      <children>
+        <options>debug</options>
+        <options>shellicon</options>
+        <options>test</options>
+        <options>threads</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-tcltk__tktreectrl-2_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>shellicon</name>
+      <parent>dev-tcltk__tktreectrl-2_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-tcltk__tktreectrl-2_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>dev-tcltk__tktreectrl-2_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>dev-tcltk__tktreectrl-2_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

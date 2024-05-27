@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-tv__v4l-utils-1_22_1-r1</name>
+      <children>
+        <options>bpf</options>
+        <options>dvb</options>
+        <options>opengl</options>
+        <options>qt5</options>
+        <options>udev</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bpf</name>
+      <parent>media-tv__v4l-utils-1_22_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dvb</name>
+      <parent>media-tv__v4l-utils-1_22_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>media-tv__v4l-utils-1_22_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>media-tv__v4l-utils-1_22_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>media-tv__v4l-utils-1_22_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

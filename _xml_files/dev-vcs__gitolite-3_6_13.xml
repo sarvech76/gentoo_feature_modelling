@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-vcs__gitolite-3_6_13</name>
+      <children>
+        <options>selinux</options>
+        <options>test</options>
+        <options>tools</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>dev-vcs__gitolite-3_6_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-vcs__gitolite-3_6_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>dev-vcs__gitolite-3_6_13</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

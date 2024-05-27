@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnustep-base__gnustep-make-2_8_0-r1</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>libobjc2</options>
+        <options>native-exceptions</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>gnustep-base__gnustep-make-2_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>gnustep-base__gnustep-make-2_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libobjc2</name>
+      <parent>gnustep-base__gnustep-make-2_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>native-exceptions</name>
+      <parent>gnustep-base__gnustep-make-2_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

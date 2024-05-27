@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-firmware__edk2-ovmf-202105-r2</name>
+      <children>
+        <options>amd64</options>
+        <options>binary</options>
+        <options>secureboot</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>amd64</name>
+      <parent>sys-firmware__edk2-ovmf-202105-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>binary</name>
+      <parent>sys-firmware__edk2-ovmf-202105-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>secureboot</name>
+      <parent>sys-firmware__edk2-ovmf-202105-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(!amd64 =&gt; binary)</constraint>
+  </booleanConstraints>
+</vm>

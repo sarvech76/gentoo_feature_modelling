@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__cyberjack-3_99_5_p15</name>
+      <children>
+        <options>static-libs</options>
+        <options>threads</options>
+        <options>tools</options>
+        <options>udev</options>
+        <options>xml</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-libs__cyberjack-3_99_5_p15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>dev-libs__cyberjack-3_99_5_p15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>dev-libs__cyberjack-3_99_5_p15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>dev-libs__cyberjack-3_99_5_p15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xml</name>
+      <parent>dev-libs__cyberjack-3_99_5_p15</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

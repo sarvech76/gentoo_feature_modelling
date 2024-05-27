@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-fps__alephone-99999999</name>
+      <children>
+        <options>alsa</options>
+        <options>curl</options>
+        <options>speex</options>
+        <options>upnp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>games-fps__alephone-99999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>games-fps__alephone-99999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>speex</name>
+      <parent>games-fps__alephone-99999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>upnp</name>
+      <parent>games-fps__alephone-99999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

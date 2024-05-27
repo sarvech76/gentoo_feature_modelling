@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__dmraid-1_0_0_rc16-r7</name>
+      <children>
+        <options>intel-led</options>
+        <options>led</options>
+        <options>mini</options>
+        <options>static</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>intel-led</name>
+      <parent>sys-fs__dmraid-1_0_0_rc16-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>led</name>
+      <parent>sys-fs__dmraid-1_0_0_rc16-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mini</name>
+      <parent>sys-fs__dmraid-1_0_0_rc16-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-fs__dmraid-1_0_0_rc16-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

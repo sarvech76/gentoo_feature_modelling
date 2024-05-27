@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-geosciences__merkaartor-9999</name>
+      <children>
+        <options>debug</options>
+        <options>exif</options>
+        <options>gps</options>
+        <options>libproxy</options>
+        <options>webengine</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sci-geosciences__merkaartor-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>exif</name>
+      <parent>sci-geosciences__merkaartor-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gps</name>
+      <parent>sci-geosciences__merkaartor-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libproxy</name>
+      <parent>sci-geosciences__merkaartor-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webengine</name>
+      <parent>sci-geosciences__merkaartor-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-plasma__kinfocenter-5_27_7</name>
+      <children>
+        <options>debug</options>
+        <options>gles2-only</options>
+        <options>handbook</options>
+        <options>usb</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>kde-plasma__kinfocenter-5_27_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gles2-only</name>
+      <parent>kde-plasma__kinfocenter-5_27_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handbook</name>
+      <parent>kde-plasma__kinfocenter-5_27_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>usb</name>
+      <parent>kde-plasma__kinfocenter-5_27_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

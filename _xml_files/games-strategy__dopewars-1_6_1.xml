@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-strategy__dopewars-1_6_1</name>
+      <children>
+        <options>gnome</options>
+        <options>gtk</options>
+        <options>ncurses</options>
+        <options>nls</options>
+        <options>sdl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnome</name>
+      <parent>games-strategy__dopewars-1_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>games-strategy__dopewars-1_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>games-strategy__dopewars-1_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-strategy__dopewars-1_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>games-strategy__dopewars-1_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

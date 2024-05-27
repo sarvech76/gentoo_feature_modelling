@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__alt-ergo-2_4_3</name>
+      <children>
+        <options>examples</options>
+        <options>gui</options>
+        <options>ocamlopt</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-mathematics__alt-ergo-2_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gui</name>
+      <parent>sci-mathematics__alt-ergo-2_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ocamlopt</name>
+      <parent>sci-mathematics__alt-ergo-2_4_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

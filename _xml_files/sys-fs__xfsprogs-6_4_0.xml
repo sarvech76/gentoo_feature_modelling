@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__xfsprogs-6_4_0</name>
+      <children>
+        <options>icu</options>
+        <options>libedit</options>
+        <options>nls</options>
+        <options>selinux</options>
+        <options>split-usr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>icu</name>
+      <parent>sys-fs__xfsprogs-6_4_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libedit</name>
+      <parent>sys-fs__xfsprogs-6_4_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>sys-fs__xfsprogs-6_4_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-fs__xfsprogs-6_4_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>split-usr</name>
+      <parent>sys-fs__xfsprogs-6_4_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-p2p__mktorrent-1_1_p20210130</name>
+      <children>
+        <options>debug</options>
+        <options>ssl</options>
+        <options>threads</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-p2p__mktorrent-1_1_p20210130</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-p2p__mktorrent-1_1_p20210130</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>net-p2p__mktorrent-1_1_p20210130</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

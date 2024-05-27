@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__m4ri-20200125</name>
+      <children>
+        <options>cpu_flags_x86_sse2</options>
+        <options>debug</options>
+        <options>openmp</options>
+        <options>png</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>sci-libs__m4ri-20200125</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sci-libs__m4ri-20200125</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>sci-libs__m4ri-20200125</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>sci-libs__m4ri-20200125</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>sci-libs__m4ri-20200125</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

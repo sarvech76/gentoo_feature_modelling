@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__sysprof-3_48_0</name>
+      <children>
+        <options>gtk</options>
+        <options>test</options>
+        <options>unwind</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>dev-util__sysprof-3_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-util__sysprof-3_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unwind</name>
+      <parent>dev-util__sysprof-3_48_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

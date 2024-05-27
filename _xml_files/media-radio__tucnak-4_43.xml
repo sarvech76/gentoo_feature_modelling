@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-radio__tucnak-4_43</name>
+      <children>
+        <options>alsa</options>
+        <options>fftw</options>
+        <options>gpm</options>
+        <options>hamlib</options>
+        <options>suid</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>media-radio__tucnak-4_43</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fftw</name>
+      <parent>media-radio__tucnak-4_43</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gpm</name>
+      <parent>media-radio__tucnak-4_43</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hamlib</name>
+      <parent>media-radio__tucnak-4_43</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>suid</name>
+      <parent>media-radio__tucnak-4_43</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

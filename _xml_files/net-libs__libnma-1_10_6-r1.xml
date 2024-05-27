@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__libnma-1_10_6-r1</name>
+      <children>
+        <options>gtk-doc</options>
+        <options>introspection</options>
+        <options>pkcs11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>net-libs__libnma-1_10_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>net-libs__libnma-1_10_6-r1</parent>
+      <children>
+        <options>vala</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vala</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pkcs11</name>
+      <parent>net-libs__libnma-1_10_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

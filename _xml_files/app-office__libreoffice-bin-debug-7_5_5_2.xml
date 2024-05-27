@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-office__libreoffice-bin-debug-7_5_5_2</name>
+      <children>
+        <options>gnome</options>
+        <options>java</options>
+        <options>kde</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnome</name>
+      <parent>app-office__libreoffice-bin-debug-7_5_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>java</name>
+      <parent>app-office__libreoffice-bin-debug-7_5_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kde</name>
+      <parent>app-office__libreoffice-bin-debug-7_5_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

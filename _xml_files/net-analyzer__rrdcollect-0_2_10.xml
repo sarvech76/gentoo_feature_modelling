@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__rrdcollect-0_2_10</name>
+      <children>
+        <options>exec</options>
+        <options>librrd</options>
+        <options>pcre</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>exec</name>
+      <parent>net-analyzer__rrdcollect-0_2_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>librrd</name>
+      <parent>net-analyzer__rrdcollect-0_2_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcre</name>
+      <parent>net-analyzer__rrdcollect-0_2_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

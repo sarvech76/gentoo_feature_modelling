@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-libs__timezone-data-2023a</name>
+      <children>
+        <options>leaps-timezone</options>
+        <options>nls</options>
+        <options>zic-slim</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>leaps-timezone</name>
+      <parent>sys-libs__timezone-data-2023a</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>sys-libs__timezone-data-2023a</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zic-slim</name>
+      <parent>sys-libs__timezone-data-2023a</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

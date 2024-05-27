@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-backup__tarsnap-1_0_40</name>
+      <children>
+        <options>acl</options>
+        <options>bzip2</options>
+        <options>lzma</options>
+        <options>xattr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acl</name>
+      <parent>app-backup__tarsnap-1_0_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>app-backup__tarsnap-1_0_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzma</name>
+      <parent>app-backup__tarsnap-1_0_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xattr</name>
+      <parent>app-backup__tarsnap-1_0_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

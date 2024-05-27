@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-action__hotline-miami-1_0_9a_p20140221-r3</name>
+      <children>
+        <options>bundled-libs</options>
+        <options>launcher</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bundled-libs</name>
+      <parent>games-action__hotline-miami-1_0_9a_p20140221-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>launcher</name>
+      <parent>games-action__hotline-miami-1_0_9a_p20140221-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

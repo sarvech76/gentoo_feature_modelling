@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-apps__xpra-html5-6_1</name>
+      <children>
+        <options>brotli</options>
+        <options>gzip</options>
+        <options>minify</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>brotli</name>
+      <parent>www-apps__xpra-html5-6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gzip</name>
+      <parent>www-apps__xpra-html5-6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minify</name>
+      <parent>www-apps__xpra-html5-6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__tea-47_0_0</name>
+      <children>
+        <options>aspell</options>
+        <options>djvu</options>
+        <options>hunspell</options>
+        <options>pdf</options>
+        <options>qml</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>aspell</name>
+      <parent>app-editors__tea-47_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>djvu</name>
+      <parent>app-editors__tea-47_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hunspell</name>
+      <parent>app-editors__tea-47_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pdf</name>
+      <parent>app-editors__tea-47_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qml</name>
+      <parent>app-editors__tea-47_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

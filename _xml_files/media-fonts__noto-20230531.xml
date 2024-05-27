@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-fonts__noto-20230531</name>
+      <children>
+        <options>cjk</options>
+        <options>extra</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cjk</name>
+      <parent>media-fonts__noto-20230531</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>extra</name>
+      <parent>media-fonts__noto-20230531</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-fonts__noto-20230531</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

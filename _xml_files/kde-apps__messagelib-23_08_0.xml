@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-apps__messagelib-23_08_0</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>speech</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>kde-apps__messagelib-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>kde-apps__messagelib-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>speech</name>
+      <parent>kde-apps__messagelib-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>kde-apps__messagelib-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__drumstick-2_6_1-r1</name>
+      <children>
+        <options>doc</options>
+        <options>fluidsynth</options>
+        <options>network</options>
+        <options>pulseaudio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-sound__drumstick-2_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fluidsynth</name>
+      <parent>media-sound__drumstick-2_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>network</name>
+      <parent>media-sound__drumstick-2_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>media-sound__drumstick-2_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

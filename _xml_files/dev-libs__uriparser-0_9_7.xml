@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__uriparser-0_9_7</name>
+      <children>
+        <options>doc</options>
+        <options>unicode</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-libs__uriparser-0_9_7</parent>
+      <children>
+        <options>qt5</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>doc</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unicode</name>
+      <parent>dev-libs__uriparser-0_9_7</parent>
+      <children>
+        <options>test</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>unicode</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

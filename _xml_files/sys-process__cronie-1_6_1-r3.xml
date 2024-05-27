@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-process__cronie-1_6_1-r3</name>
+      <children>
+        <options>anacron</options>
+        <options>inotify</options>
+        <options>pam</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>anacron</name>
+      <parent>sys-process__cronie-1_6_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>inotify</name>
+      <parent>sys-process__cronie-1_6_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>sys-process__cronie-1_6_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-process__cronie-1_6_1-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

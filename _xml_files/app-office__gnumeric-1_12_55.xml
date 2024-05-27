@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-office__gnumeric-1_12_55</name>
+      <children>
+        <options>introspection</options>
+        <options>libgda</options>
+        <options>perl</options>
+        <options>python_targets_python3_10</options>
+        <options>python_targets_python3_11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>app-office__gnumeric-1_12_55</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libgda</name>
+      <parent>app-office__gnumeric-1_12_55</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>perl</name>
+      <parent>app-office__gnumeric-1_12_55</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>app-office__gnumeric-1_12_55</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_11</name>
+      <parent>app-office__gnumeric-1_12_55</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(introspection =&gt; (python_targets_python3_10 | python_targets_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

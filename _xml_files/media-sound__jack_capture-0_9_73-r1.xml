@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__jack_capture-0_9_73-r1</name>
+      <children>
+        <options>mp3</options>
+        <options>ogg</options>
+        <options>osc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mp3</name>
+      <parent>media-sound__jack_capture-0_9_73-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ogg</name>
+      <parent>media-sound__jack_capture-0_9_73-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>osc</name>
+      <parent>media-sound__jack_capture-0_9_73-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

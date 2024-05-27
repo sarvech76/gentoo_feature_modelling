@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__netcdf-fortran-4_6_1</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>test</options>
+        <options>zstd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-libs__netcdf-fortran-4_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-libs__netcdf-fortran-4_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-libs__netcdf-fortran-4_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zstd</name>
+      <parent>sci-libs__netcdf-fortran-4_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

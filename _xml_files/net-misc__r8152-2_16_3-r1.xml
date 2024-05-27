@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__r8152-2_16_3-r1</name>
+      <children>
+        <options>center-tap-short</options>
+        <options>dist-kernel</options>
+        <options>modules-sign</options>
+        <options>strip</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>center-tap-short</name>
+      <parent>net-misc__r8152-2_16_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>net-misc__r8152-2_16_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>modules-sign</name>
+      <parent>net-misc__r8152-2_16_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>strip</name>
+      <parent>net-misc__r8152-2_16_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

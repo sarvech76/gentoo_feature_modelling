@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__apt-cacher-ng-9999</name>
+      <children>
+        <options>doc</options>
+        <options>fuse</options>
+        <options>systemd</options>
+        <options>tcpd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-misc__apt-cacher-ng-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fuse</name>
+      <parent>net-misc__apt-cacher-ng-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>net-misc__apt-cacher-ng-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcpd</name>
+      <parent>net-misc__apt-cacher-ng-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

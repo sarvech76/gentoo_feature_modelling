@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emulation__libvirt-glib-4_0_0</name>
+      <children>
+        <options>gtk-doc</options>
+        <options>introspection</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>app-emulation__libvirt-glib-4_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>app-emulation__libvirt-glib-4_0_0</parent>
+      <children>
+        <options>vala</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vala</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-emulation__libvirt-glib-4_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

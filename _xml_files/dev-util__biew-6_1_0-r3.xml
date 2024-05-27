@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__biew-6_1_0-r3</name>
+      <children>
+        <options>cpu_flags_x86_mmx</options>
+        <options>cpu_flags_x86_sse</options>
+        <options>gpm</options>
+        <options>x86</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_mmx</name>
+      <parent>dev-util__biew-6_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse</name>
+      <parent>dev-util__biew-6_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gpm</name>
+      <parent>dev-util__biew-6_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x86</name>
+      <parent>dev-util__biew-6_1_0-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

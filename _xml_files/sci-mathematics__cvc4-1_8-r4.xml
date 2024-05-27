@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__cvc4-1_8-r4</name>
+      <children>
+        <options>cln</options>
+        <options>proofs</options>
+        <options>readline</options>
+        <options>statistics</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cln</name>
+      <parent>sci-mathematics__cvc4-1_8-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>proofs</name>
+      <parent>sci-mathematics__cvc4-1_8-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>sci-mathematics__cvc4-1_8-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>statistics</name>
+      <parent>sci-mathematics__cvc4-1_8-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

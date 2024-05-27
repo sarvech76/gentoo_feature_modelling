@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__htslib-1_17</name>
+      <children>
+        <options>bzip2</options>
+        <options>curl</options>
+        <options>lzma</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>sci-libs__htslib-1_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>sci-libs__htslib-1_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzma</name>
+      <parent>sci-libs__htslib-1_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

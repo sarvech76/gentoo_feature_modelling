@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__gnome-latex-3_46_0</name>
+      <children>
+        <options>introspection</options>
+        <options>latexmk</options>
+        <options>rubber</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>app-editors__gnome-latex-3_46_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>latexmk</name>
+      <parent>app-editors__gnome-latex-3_46_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rubber</name>
+      <parent>app-editors__gnome-latex-3_46_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

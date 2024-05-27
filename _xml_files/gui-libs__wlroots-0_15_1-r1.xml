@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gui-libs__wlroots-0_15_1-r1</name>
+      <children>
+        <options>tinywl</options>
+        <options>vulkan</options>
+        <options>X</options>
+        <options>x11-backend</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tinywl</name>
+      <parent>gui-libs__wlroots-0_15_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vulkan</name>
+      <parent>gui-libs__wlroots-0_15_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>gui-libs__wlroots-0_15_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x11-backend</name>
+      <parent>gui-libs__wlroots-0_15_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

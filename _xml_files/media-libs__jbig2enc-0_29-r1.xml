@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__jbig2enc-0_29-r1</name>
+      <children>
+        <options>gif</options>
+        <options>jpeg</options>
+        <options>png</options>
+        <options>tiff</options>
+        <options>webp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gif</name>
+      <parent>media-libs__jbig2enc-0_29-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>media-libs__jbig2enc-0_29-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>media-libs__jbig2enc-0_29-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tiff</name>
+      <parent>media-libs__jbig2enc-0_29-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webp</name>
+      <parent>media-libs__jbig2enc-0_29-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

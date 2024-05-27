@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__libxmlb-0_3_14</name>
+      <children>
+        <options>doc</options>
+        <options>introspection</options>
+        <options>stemmer</options>
+        <options>test</options>
+        <options>zstd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-libs__libxmlb-0_3_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>dev-libs__libxmlb-0_3_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>stemmer</name>
+      <parent>dev-libs__libxmlb-0_3_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__libxmlb-0_3_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zstd</name>
+      <parent>dev-libs__libxmlb-0_3_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

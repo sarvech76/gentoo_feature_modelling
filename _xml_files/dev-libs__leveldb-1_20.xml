@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__leveldb-1_20</name>
+      <children>
+        <options>snappy</options>
+        <options>static-libs</options>
+        <options>tcmalloc</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>snappy</name>
+      <parent>dev-libs__leveldb-1_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-libs__leveldb-1_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcmalloc</name>
+      <parent>dev-libs__leveldb-1_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__leveldb-1_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(snappy =&gt; !static-libs)</constraint>
+  </booleanConstraints>
+</vm>

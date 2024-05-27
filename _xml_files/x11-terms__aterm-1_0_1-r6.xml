@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-terms__aterm-1_0_1-r6</name>
+      <children>
+        <options>background</options>
+        <options>cjk</options>
+        <options>xgetdefault</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>background</name>
+      <parent>x11-terms__aterm-1_0_1-r6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cjk</name>
+      <parent>x11-terms__aterm-1_0_1-r6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xgetdefault</name>
+      <parent>x11-terms__aterm-1_0_1-r6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

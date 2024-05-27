@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__sngrep-1_7_0</name>
+      <children>
+        <options>eep</options>
+        <options>gnutls</options>
+        <options>pcre</options>
+        <options>ssl</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>eep</name>
+      <parent>net-analyzer__sngrep-1_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>net-analyzer__sngrep-1_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcre</name>
+      <parent>net-analyzer__sngrep-1_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-analyzer__sngrep-1_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>net-analyzer__sngrep-1_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

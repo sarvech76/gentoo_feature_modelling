@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-sports__speed-dreams-2_2_3</name>
+      <children>
+        <options>debug</options>
+        <options>osggraph</options>
+        <options>webstats</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-sports__speed-dreams-2_2_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>osggraph</name>
+      <parent>games-sports__speed-dreams-2_2_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webstats</name>
+      <parent>games-sports__speed-dreams-2_2_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

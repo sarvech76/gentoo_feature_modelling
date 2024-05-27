@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-php__PEAR-HTTP_Request2-2_5_1</name>
+      <children>
+        <options>curl</options>
+        <options>fileinfo</options>
+        <options>ssl</options>
+        <options>test</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>dev-php__PEAR-HTTP_Request2-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fileinfo</name>
+      <parent>dev-php__PEAR-HTTP_Request2-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>dev-php__PEAR-HTTP_Request2-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-php__PEAR-HTTP_Request2-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>dev-php__PEAR-HTTP_Request2-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

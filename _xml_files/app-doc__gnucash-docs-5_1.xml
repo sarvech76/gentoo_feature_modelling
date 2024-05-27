@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-doc__gnucash-docs-5_1</name>
+      <children>
+        <options>l10n_de</options>
+        <options>l10n_it</options>
+        <options>l10n_ja</options>
+        <options>l10n_pt</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_de</name>
+      <parent>app-doc__gnucash-docs-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_it</name>
+      <parent>app-doc__gnucash-docs-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_ja</name>
+      <parent>app-doc__gnucash-docs-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_pt</name>
+      <parent>app-doc__gnucash-docs-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

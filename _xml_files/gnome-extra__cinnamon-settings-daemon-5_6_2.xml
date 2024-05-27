@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnome-extra__cinnamon-settings-daemon-5_6_2</name>
+      <children>
+        <options>colord</options>
+        <options>cups</options>
+        <options>input_devices_wacom</options>
+        <options>smartcard</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>colord</name>
+      <parent>gnome-extra__cinnamon-settings-daemon-5_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cups</name>
+      <parent>gnome-extra__cinnamon-settings-daemon-5_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>input_devices_wacom</name>
+      <parent>gnome-extra__cinnamon-settings-daemon-5_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>smartcard</name>
+      <parent>gnome-extra__cinnamon-settings-daemon-5_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>gnome-extra__cinnamon-settings-daemon-5_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

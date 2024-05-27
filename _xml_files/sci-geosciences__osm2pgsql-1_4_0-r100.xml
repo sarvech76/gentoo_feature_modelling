@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-geosciences__osm2pgsql-1_4_0-r100</name>
+      <children>
+        <options>lua</options>
+        <options>lua_single_target_lua5-1</options>
+        <options>lua_single_target_lua5-3</options>
+        <options>lua_single_target_lua5-4</options>
+        <options>lua_single_target_luajit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua</name>
+      <parent>sci-geosciences__osm2pgsql-1_4_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>sci-geosciences__osm2pgsql-1_4_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-3</name>
+      <parent>sci-geosciences__osm2pgsql-1_4_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-4</name>
+      <parent>sci-geosciences__osm2pgsql-1_4_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_luajit</name>
+      <parent>sci-geosciences__osm2pgsql-1_4_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(lua =&gt; (((lua_single_target_luajit ^ lua_single_target_lua5-1) ^ lua_single_target_lua5-3) ^ lua_single_target_lua5-4))</constraint>
+  </booleanConstraints>
+</vm>

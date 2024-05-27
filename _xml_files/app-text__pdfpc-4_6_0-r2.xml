@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__pdfpc-4_6_0-r2</name>
+      <children>
+        <options>gstreamer</options>
+        <options>soup</options>
+        <options>webkit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gstreamer</name>
+      <parent>app-text__pdfpc-4_6_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>soup</name>
+      <parent>app-text__pdfpc-4_6_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webkit</name>
+      <parent>app-text__pdfpc-4_6_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

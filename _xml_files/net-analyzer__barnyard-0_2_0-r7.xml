@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__barnyard-0_2_0-r7</name>
+      <children>
+        <options>mysql</options>
+        <options>postgres</options>
+        <options>sguil</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>net-analyzer__barnyard-0_2_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres</name>
+      <parent>net-analyzer__barnyard-0_2_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sguil</name>
+      <parent>net-analyzer__barnyard-0_2_0-r7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

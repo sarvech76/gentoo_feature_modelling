@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-plasma__powerdevil-5_27_7-r1</name>
+      <children>
+        <options>brightness-control</options>
+        <options>caps</options>
+        <options>debug</options>
+        <options>handbook</options>
+        <options>wireless</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>brightness-control</name>
+      <parent>kde-plasma__powerdevil-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>caps</name>
+      <parent>kde-plasma__powerdevil-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>kde-plasma__powerdevil-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handbook</name>
+      <parent>kde-plasma__powerdevil-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wireless</name>
+      <parent>kde-plasma__powerdevil-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

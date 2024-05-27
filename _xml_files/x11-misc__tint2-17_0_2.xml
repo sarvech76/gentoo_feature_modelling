@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__tint2-17_0_2</name>
+      <children>
+        <options>battery</options>
+        <options>startup-notification</options>
+        <options>svg</options>
+        <options>tint2conf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>battery</name>
+      <parent>x11-misc__tint2-17_0_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>startup-notification</name>
+      <parent>x11-misc__tint2-17_0_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>svg</name>
+      <parent>x11-misc__tint2-17_0_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tint2conf</name>
+      <parent>x11-misc__tint2-17_0_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

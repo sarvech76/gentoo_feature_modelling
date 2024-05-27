@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__mandelbulber-2_28-r1</name>
+      <children>
+        <options>joystick</options>
+        <options>opencl</options>
+        <options>openexr</options>
+        <options>sndfile</options>
+        <options>tiff</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>joystick</name>
+      <parent>media-gfx__mandelbulber-2_28-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencl</name>
+      <parent>media-gfx__mandelbulber-2_28-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openexr</name>
+      <parent>media-gfx__mandelbulber-2_28-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sndfile</name>
+      <parent>media-gfx__mandelbulber-2_28-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tiff</name>
+      <parent>media-gfx__mandelbulber-2_28-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

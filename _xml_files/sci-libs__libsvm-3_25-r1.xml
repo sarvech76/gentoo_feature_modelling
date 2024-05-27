@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__libsvm-3_25-r1</name>
+      <children>
+        <options>java</options>
+        <options>openmp</options>
+        <options>python</options>
+        <options>tools</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>java</name>
+      <parent>sci-libs__libsvm-3_25-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>sci-libs__libsvm-3_25-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>sci-libs__libsvm-3_25-r1</parent>
+      <children>
+        <options>python_targets_python3_10</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>python</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>sci-libs__libsvm-3_25-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

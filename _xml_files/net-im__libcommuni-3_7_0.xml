@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-im__libcommuni-3_7_0</name>
+      <children>
+        <options>examples</options>
+        <options>qml</options>
+        <options>test</options>
+        <options>uchardet</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>net-im__libcommuni-3_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qml</name>
+      <parent>net-im__libcommuni-3_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-im__libcommuni-3_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>uchardet</name>
+      <parent>net-im__libcommuni-3_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

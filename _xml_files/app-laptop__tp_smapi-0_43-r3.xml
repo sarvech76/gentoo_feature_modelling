@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-laptop__tp_smapi-0_43-r3</name>
+      <children>
+        <options>dist-kernel</options>
+        <options>hdaps</options>
+        <options>modules-sign</options>
+        <options>strip</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>app-laptop__tp_smapi-0_43-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hdaps</name>
+      <parent>app-laptop__tp_smapi-0_43-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>modules-sign</name>
+      <parent>app-laptop__tp_smapi-0_43-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>strip</name>
+      <parent>app-laptop__tp_smapi-0_43-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

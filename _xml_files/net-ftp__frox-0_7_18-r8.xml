@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-ftp__frox-0_7_18-r8</name>
+      <children>
+        <options>clamav</options>
+        <options>ssl</options>
+        <options>transparent</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clamav</name>
+      <parent>net-ftp__frox-0_7_18-r8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-ftp__frox-0_7_18-r8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>transparent</name>
+      <parent>net-ftp__frox-0_7_18-r8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

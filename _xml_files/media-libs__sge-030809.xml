@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__sge-030809</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>image</options>
+        <options>truetype</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-libs__sge-030809</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>media-libs__sge-030809</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>image</name>
+      <parent>media-libs__sge-030809</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>truetype</name>
+      <parent>media-libs__sge-030809</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

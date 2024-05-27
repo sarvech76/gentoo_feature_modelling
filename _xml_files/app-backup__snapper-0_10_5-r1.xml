@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-backup__snapper-0_10_5-r1</name>
+      <children>
+        <options>lvm</options>
+        <options>pam</options>
+        <options>systemd</options>
+        <options>test</options>
+        <options>xattr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lvm</name>
+      <parent>app-backup__snapper-0_10_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>app-backup__snapper-0_10_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>app-backup__snapper-0_10_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-backup__snapper-0_10_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xattr</name>
+      <parent>app-backup__snapper-0_10_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

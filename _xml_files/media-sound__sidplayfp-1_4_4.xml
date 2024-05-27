@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__sidplayfp-1_4_4</name>
+      <children>
+        <options>alsa</options>
+        <options>oss</options>
+        <options>pulseaudio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>media-sound__sidplayfp-1_4_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oss</name>
+      <parent>media-sound__sidplayfp-1_4_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>media-sound__sidplayfp-1_4_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

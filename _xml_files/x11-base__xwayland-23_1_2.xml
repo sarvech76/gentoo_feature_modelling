@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-base__xwayland-23_1_2</name>
+      <children>
+        <options>selinux</options>
+        <options>unwind</options>
+        <options>video_cards_nvidia</options>
+        <options>xcsecurity</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>x11-base__xwayland-23_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unwind</name>
+      <parent>x11-base__xwayland-23_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_nvidia</name>
+      <parent>x11-base__xwayland-23_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xcsecurity</name>
+      <parent>x11-base__xwayland-23_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

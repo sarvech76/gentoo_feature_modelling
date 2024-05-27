@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-irc__epic5-2_0_1-r2</name>
+      <children>
+        <options>archive</options>
+        <options>perl</options>
+        <options>socks5</options>
+        <options>tcl</options>
+        <options>valgrind</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>archive</name>
+      <parent>net-irc__epic5-2_0_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>perl</name>
+      <parent>net-irc__epic5-2_0_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>socks5</name>
+      <parent>net-irc__epic5-2_0_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcl</name>
+      <parent>net-irc__epic5-2_0_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>valgrind</name>
+      <parent>net-irc__epic5-2_0_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

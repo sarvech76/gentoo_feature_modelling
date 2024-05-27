@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-apps__kdenetwork-meta-23_04_3</name>
+      <children>
+        <options>bittorrent</options>
+        <options>dropbox</options>
+        <options>samba</options>
+        <options>telepathy</options>
+        <options>webengine</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bittorrent</name>
+      <parent>kde-apps__kdenetwork-meta-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dropbox</name>
+      <parent>kde-apps__kdenetwork-meta-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>samba</name>
+      <parent>kde-apps__kdenetwork-meta-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>telepathy</name>
+      <parent>kde-apps__kdenetwork-meta-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webengine</name>
+      <parent>kde-apps__kdenetwork-meta-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

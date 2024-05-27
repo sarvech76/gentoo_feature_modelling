@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__diffutils-3_8</name>
+      <children>
+        <options>nls</options>
+        <options>static</options>
+        <options>verify-sig</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>sys-apps__diffutils-3_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>sys-apps__diffutils-3_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>verify-sig</name>
+      <parent>sys-apps__diffutils-3_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

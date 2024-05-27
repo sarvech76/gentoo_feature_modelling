@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__gawk-5_2_1</name>
+      <children>
+        <options>mpfr</options>
+        <options>nls</options>
+        <options>pma</options>
+        <options>readline</options>
+        <options>verify-sig</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mpfr</name>
+      <parent>sys-apps__gawk-5_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>sys-apps__gawk-5_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pma</name>
+      <parent>sys-apps__gawk-5_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>sys-apps__gawk-5_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>verify-sig</name>
+      <parent>sys-apps__gawk-5_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-perl__perl-ldap-0_680_0</name>
+      <children>
+        <options>sasl</options>
+        <options>ssl</options>
+        <options>test</options>
+        <options>xml</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sasl</name>
+      <parent>dev-perl__perl-ldap-0_680_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>dev-perl__perl-ldap-0_680_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-perl__perl-ldap-0_680_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xml</name>
+      <parent>dev-perl__perl-ldap-0_680_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

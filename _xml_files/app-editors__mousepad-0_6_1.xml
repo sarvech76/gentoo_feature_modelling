@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__mousepad-0_6_1</name>
+      <children>
+        <options>policykit</options>
+        <options>shortcuts</options>
+        <options>spell</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>policykit</name>
+      <parent>app-editors__mousepad-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>shortcuts</name>
+      <parent>app-editors__mousepad-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>spell</name>
+      <parent>app-editors__mousepad-0_6_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

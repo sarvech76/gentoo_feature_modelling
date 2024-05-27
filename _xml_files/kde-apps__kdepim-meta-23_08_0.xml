@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-apps__kdepim-meta-23_08_0</name>
+      <children>
+        <options>bogofilter</options>
+        <options>clamav</options>
+        <options>spamassassin</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bogofilter</name>
+      <parent>kde-apps__kdepim-meta-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clamav</name>
+      <parent>kde-apps__kdepim-meta-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>spamassassin</name>
+      <parent>kde-apps__kdepim-meta-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

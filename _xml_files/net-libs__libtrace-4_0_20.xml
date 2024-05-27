@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__libtrace-4_0_20</name>
+      <children>
+        <options>doc</options>
+        <options>ncurses</options>
+        <options>numa</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-libs__libtrace-4_0_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>net-libs__libtrace-4_0_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>numa</name>
+      <parent>net-libs__libtrace-4_0_20</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-video__bino-1_6_8</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>lirc</options>
+        <options>video_cards_nvidia</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-video__bino-1_6_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-video__bino-1_6_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lirc</name>
+      <parent>media-video__bino-1_6_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_nvidia</name>
+      <parent>media-video__bino-1_6_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

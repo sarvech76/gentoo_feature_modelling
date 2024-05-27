@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__owncloud-client-4_1_0_11250</name>
+      <children>
+        <options>dolphin</options>
+        <options>keyring</options>
+        <options>nautilus</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dolphin</name>
+      <parent>net-misc__owncloud-client-4_1_0_11250</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>keyring</name>
+      <parent>net-misc__owncloud-client-4_1_0_11250</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nautilus</name>
+      <parent>net-misc__owncloud-client-4_1_0_11250</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-misc__owncloud-client-4_1_0_11250</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

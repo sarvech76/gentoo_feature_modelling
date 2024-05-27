@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-i18n__skk-jisyo-999999</name>
+      <children>
+        <options>cdb</options>
+        <options>ruby_targets_ruby26</options>
+        <options>ruby_targets_ruby27</options>
+        <options>ruby_targets_ruby30</options>
+        <options>ruby_targets_ruby31</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cdb</name>
+      <parent>app-i18n__skk-jisyo-999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby26</name>
+      <parent>app-i18n__skk-jisyo-999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby27</name>
+      <parent>app-i18n__skk-jisyo-999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby30</name>
+      <parent>app-i18n__skk-jisyo-999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby31</name>
+      <parent>app-i18n__skk-jisyo-999999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

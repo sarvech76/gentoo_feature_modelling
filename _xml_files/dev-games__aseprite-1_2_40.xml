@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-games__aseprite-1_2_40</name>
+      <children>
+        <options>kde</options>
+        <options>test</options>
+        <options>webp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kde</name>
+      <parent>dev-games__aseprite-1_2_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-games__aseprite-1_2_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webp</name>
+      <parent>dev-games__aseprite-1_2_40</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

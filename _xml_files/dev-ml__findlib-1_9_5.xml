@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-ml__findlib-1_9_5</name>
+      <children>
+        <options>doc</options>
+        <options>ocamlopt</options>
+        <options>tk</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-ml__findlib-1_9_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ocamlopt</name>
+      <parent>dev-ml__findlib-1_9_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tk</name>
+      <parent>dev-ml__findlib-1_9_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

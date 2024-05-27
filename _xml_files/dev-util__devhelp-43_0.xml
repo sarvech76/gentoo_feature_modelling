@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__devhelp-43_0</name>
+      <children>
+        <options>gedit</options>
+        <options>introspection</options>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gedit</name>
+      <parent>dev-util__devhelp-43_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>dev-util__devhelp-43_0</parent>
+      <children>
+        <options>gtk-doc</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>dev-util__devhelp-43_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>dev-util__devhelp-43_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(gedit =&gt; (python_single_target_python3_10 ^ python_single_target_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__zfs-auto-snapshot-1_2_4-r2</name>
+      <children>
+        <options>cron</options>
+        <options>default-exclude</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cron</name>
+      <parent>sys-fs__zfs-auto-snapshot-1_2_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>default-exclude</name>
+      <parent>sys-fs__zfs-auto-snapshot-1_2_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>sys-fs__zfs-auto-snapshot-1_2_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(!systemd =&gt; cron)</constraint>
+  </booleanConstraints>
+</vm>

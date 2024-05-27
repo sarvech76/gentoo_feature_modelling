@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emulation__winetricks-20230212</name>
+      <children>
+        <options>gtk</options>
+        <options>kde</options>
+        <options>rar</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>app-emulation__winetricks-20230212</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kde</name>
+      <parent>app-emulation__winetricks-20230212</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rar</name>
+      <parent>app-emulation__winetricks-20230212</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-emulation__winetricks-20230212</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

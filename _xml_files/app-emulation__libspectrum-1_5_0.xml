@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emulation__libspectrum-1_5_0</name>
+      <children>
+        <options>audiofile</options>
+        <options>bzip2</options>
+        <options>gcrypt</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>audiofile</name>
+      <parent>app-emulation__libspectrum-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>app-emulation__libspectrum-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gcrypt</name>
+      <parent>app-emulation__libspectrum-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>app-emulation__libspectrum-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

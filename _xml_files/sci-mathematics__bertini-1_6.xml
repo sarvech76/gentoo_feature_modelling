@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__bertini-1_6</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>optimization</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-mathematics__bertini-1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-mathematics__bertini-1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>optimization</name>
+      <parent>sci-mathematics__bertini-1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-firewall__arno-iptables-firewall-2_1_1a</name>
+      <children>
+        <options>plugins</options>
+        <options>rsyslog</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plugins</name>
+      <parent>net-firewall__arno-iptables-firewall-2_1_1a</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rsyslog</name>
+      <parent>net-firewall__arno-iptables-firewall-2_1_1a</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

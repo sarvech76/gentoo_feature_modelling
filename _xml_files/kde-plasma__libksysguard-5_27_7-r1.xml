@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-plasma__libksysguard-5_27_7-r1</name>
+      <children>
+        <options>debug</options>
+        <options>designer</options>
+        <options>test</options>
+        <options>webengine</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>kde-plasma__libksysguard-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>designer</name>
+      <parent>kde-plasma__libksysguard-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>kde-plasma__libksysguard-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webengine</name>
+      <parent>kde-plasma__libksysguard-5_27_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

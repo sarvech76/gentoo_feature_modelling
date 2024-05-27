@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-rpg__drascula-1_0-r4</name>
+      <children>
+        <options>l10n_de</options>
+        <options>l10n_es</options>
+        <options>l10n_fr</options>
+        <options>l10n_it</options>
+        <options>sound</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_de</name>
+      <parent>games-rpg__drascula-1_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_es</name>
+      <parent>games-rpg__drascula-1_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_fr</name>
+      <parent>games-rpg__drascula-1_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_it</name>
+      <parent>games-rpg__drascula-1_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sound</name>
+      <parent>games-rpg__drascula-1_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

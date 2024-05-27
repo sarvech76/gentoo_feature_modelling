@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__paho-mqtt-c-1_3_12</name>
+      <children>
+        <options>doc</options>
+        <options>high-performance</options>
+        <options>ssl</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-libs__paho-mqtt-c-1_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>high-performance</name>
+      <parent>net-libs__paho-mqtt-c-1_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-libs__paho-mqtt-c-1_3_12</parent>
+      <children>
+        <options>examples</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>ssl</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-libs__paho-mqtt-c-1_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

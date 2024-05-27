@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-apache__pwauth-2_3_10-r2</name>
+      <children>
+        <options>domain-aware</options>
+        <options>faillog</options>
+        <options>ignore-case</options>
+        <options>pam</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>domain-aware</name>
+      <parent>www-apache__pwauth-2_3_10-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>faillog</name>
+      <parent>www-apache__pwauth-2_3_10-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ignore-case</name>
+      <parent>www-apache__pwauth-2_3_10-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>www-apache__pwauth-2_3_10-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

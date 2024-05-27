@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__renderdoc-1_27</name>
+      <children>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+        <options>qt5</options>
+        <options>verify-sig</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>media-gfx__renderdoc-1_27</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>media-gfx__renderdoc-1_27</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>media-gfx__renderdoc-1_27</parent>
+      <children>
+        <options>doc</options>
+        <options>pyside2</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>qt5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pyside2</name>
+      <parent>qt5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>verify-sig</name>
+      <parent>media-gfx__renderdoc-1_27</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(qt5 =&gt; (python_single_target_python3_10 ^ python_single_target_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

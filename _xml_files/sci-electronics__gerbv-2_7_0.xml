@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-electronics__gerbv-2_7_0</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>unit-mm</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-electronics__gerbv-2_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-electronics__gerbv-2_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unit-mm</name>
+      <parent>sci-electronics__gerbv-2_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

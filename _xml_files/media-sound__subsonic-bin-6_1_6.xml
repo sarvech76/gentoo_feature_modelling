@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__subsonic-bin-6_1_6</name>
+      <children>
+        <options>ffmpeg</options>
+        <options>lame</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ffmpeg</name>
+      <parent>media-sound__subsonic-bin-6_1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lame</name>
+      <parent>media-sound__subsonic-bin-6_1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>media-sound__subsonic-bin-6_1_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

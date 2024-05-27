@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__phonon-4_11_1-r2</name>
+      <children>
+        <options>debug</options>
+        <options>designer</options>
+        <options>gstreamer</options>
+        <options>pulseaudio</options>
+        <options>vlc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-libs__phonon-4_11_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>designer</name>
+      <parent>media-libs__phonon-4_11_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gstreamer</name>
+      <parent>media-libs__phonon-4_11_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>media-libs__phonon-4_11_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vlc</name>
+      <parent>media-libs__phonon-4_11_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

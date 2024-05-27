@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__scanlogd-2_2_8-r1</name>
+      <children>
+        <options>abs_may_grp_1</options>
+        <options>savedconfig</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_may_grp_1</name>
+      <parent>net-analyzer__scanlogd-2_2_8-r1</parent>
+      <children>
+        <options>nids</options>
+        <options>pcap</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nids</name>
+      <parent>abs_may_grp_1</parent>
+      <excludedOptions>
+        <options>pcap</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcap</name>
+      <parent>abs_may_grp_1</parent>
+      <excludedOptions>
+        <options>nids</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>savedconfig</name>
+      <parent>net-analyzer__scanlogd-2_2_8-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

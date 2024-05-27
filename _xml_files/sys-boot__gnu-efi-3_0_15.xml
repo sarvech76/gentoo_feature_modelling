@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-boot__gnu-efi-3_0_15</name>
+      <children>
+        <options>abi_x86_32</options>
+        <options>abi_x86_64</options>
+        <options>amd64</options>
+        <options>custom-cflags</options>
+        <options>x86</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_32</name>
+      <parent>sys-boot__gnu-efi-3_0_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_64</name>
+      <parent>sys-boot__gnu-efi-3_0_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>amd64</name>
+      <parent>sys-boot__gnu-efi-3_0_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>custom-cflags</name>
+      <parent>sys-boot__gnu-efi-3_0_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x86</name>
+      <parent>sys-boot__gnu-efi-3_0_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(amd64 =&gt; (abi_x86_32 | abi_x86_64))</constraint>
+    <constraint>(x86 =&gt; (abi_x86_32 | abi_x86_64))</constraint>
+  </booleanConstraints>
+</vm>

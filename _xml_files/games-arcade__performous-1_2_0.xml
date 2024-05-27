@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-arcade__performous-1_2_0</name>
+      <children>
+        <options>midi</options>
+        <options>songs</options>
+        <options>webcam</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>midi</name>
+      <parent>games-arcade__performous-1_2_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>songs</name>
+      <parent>games-arcade__performous-1_2_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webcam</name>
+      <parent>games-arcade__performous-1_2_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

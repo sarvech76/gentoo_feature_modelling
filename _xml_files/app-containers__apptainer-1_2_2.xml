@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-containers__apptainer-1_2_2</name>
+      <children>
+        <options>examples</options>
+        <options>network</options>
+        <options>suid</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>app-containers__apptainer-1_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>network</name>
+      <parent>app-containers__apptainer-1_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>suid</name>
+      <parent>app-containers__apptainer-1_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>app-containers__apptainer-1_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

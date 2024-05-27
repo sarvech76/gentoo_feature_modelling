@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__gvm-libs-22_7_0</name>
+      <children>
+        <options>doc</options>
+        <options>ldap</options>
+        <options>radius</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-analyzer__gvm-libs-22_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ldap</name>
+      <parent>net-analyzer__gvm-libs-22_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>radius</name>
+      <parent>net-analyzer__gvm-libs-22_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-analyzer__gvm-libs-22_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

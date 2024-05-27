@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-office__mdbtools-1_0_0</name>
+      <children>
+        <options>glib</options>
+        <options>iconv</options>
+        <options>odbc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>glib</name>
+      <parent>app-office__mdbtools-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>iconv</name>
+      <parent>app-office__mdbtools-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>odbc</name>
+      <parent>app-office__mdbtools-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

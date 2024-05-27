@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__engauge-10_6</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>jpeg2k</options>
+        <options>pdf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-gfx__engauge-10_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>media-gfx__engauge-10_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg2k</name>
+      <parent>media-gfx__engauge-10_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pdf</name>
+      <parent>media-gfx__engauge-10_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

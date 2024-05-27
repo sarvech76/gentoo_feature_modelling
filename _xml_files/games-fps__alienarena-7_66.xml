@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-fps__alienarena-7_66</name>
+      <children>
+        <options>dedicated</options>
+        <options>dga</options>
+        <options>vidmode</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dedicated</name>
+      <parent>games-fps__alienarena-7_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dga</name>
+      <parent>games-fps__alienarena-7_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vidmode</name>
+      <parent>games-fps__alienarena-7_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>games-fps__alienarena-7_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

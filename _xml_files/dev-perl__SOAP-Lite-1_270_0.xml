@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-perl__SOAP-Lite-1_270_0</name>
+      <children>
+        <options>examples</options>
+        <options>ssl</options>
+        <options>test</options>
+        <options>xmpp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>dev-perl__SOAP-Lite-1_270_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>dev-perl__SOAP-Lite-1_270_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-perl__SOAP-Lite-1_270_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xmpp</name>
+      <parent>dev-perl__SOAP-Lite-1_270_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

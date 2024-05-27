@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__smc-sum-2_11_0_20230511</name>
+      <children>
+        <options>dist-kernel</options>
+        <options>module</options>
+        <options>modules-sign</options>
+        <options>strip</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>sys-apps__smc-sum-2_11_0_20230511</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>module</name>
+      <parent>sys-apps__smc-sum-2_11_0_20230511</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>modules-sign</name>
+      <parent>sys-apps__smc-sum-2_11_0_20230511</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>strip</name>
+      <parent>sys-apps__smc-sum-2_11_0_20230511</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

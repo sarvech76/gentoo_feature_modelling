@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__sipp-3_7_1</name>
+      <children>
+        <options>gsl</options>
+        <options>pcap</options>
+        <options>sctp</options>
+        <options>ssl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gsl</name>
+      <parent>net-misc__sipp-3_7_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcap</name>
+      <parent>net-misc__sipp-3_7_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sctp</name>
+      <parent>net-misc__sipp-3_7_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-misc__sipp-3_7_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

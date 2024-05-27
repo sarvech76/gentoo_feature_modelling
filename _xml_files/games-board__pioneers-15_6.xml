@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-board__pioneers-15_6</name>
+      <children>
+        <options>dedicated</options>
+        <options>help</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dedicated</name>
+      <parent>games-board__pioneers-15_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>help</name>
+      <parent>games-board__pioneers-15_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-board__pioneers-15_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

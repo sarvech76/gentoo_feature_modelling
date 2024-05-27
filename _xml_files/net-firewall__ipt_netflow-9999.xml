@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-firewall__ipt_netflow-9999</name>
+      <children>
+        <options>dist-kernel</options>
+        <options>modules-sign</options>
+        <options>natevents</options>
+        <options>snmp</options>
+        <options>strip</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>net-firewall__ipt_netflow-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>modules-sign</name>
+      <parent>net-firewall__ipt_netflow-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>natevents</name>
+      <parent>net-firewall__ipt_netflow-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>snmp</name>
+      <parent>net-firewall__ipt_netflow-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>strip</name>
+      <parent>net-firewall__ipt_netflow-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

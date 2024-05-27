@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__loop-aes-3_7z</name>
+      <children>
+        <options>cpu_flags_x86_aes</options>
+        <options>cpu_flags_x86_padlock</options>
+        <options>dist-kernel</options>
+        <options>extra-ciphers</options>
+        <options>keyscrub</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_aes</name>
+      <parent>sys-fs__loop-aes-3_7z</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_padlock</name>
+      <parent>sys-fs__loop-aes-3_7z</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>sys-fs__loop-aes-3_7z</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>extra-ciphers</name>
+      <parent>sys-fs__loop-aes-3_7z</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>keyscrub</name>
+      <parent>sys-fs__loop-aes-3_7z</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

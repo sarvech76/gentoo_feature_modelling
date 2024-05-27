@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libmediainfo-22_09</name>
+      <children>
+        <options>curl</options>
+        <options>doc</options>
+        <options>mms</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>media-libs__libmediainfo-22_09</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-libs__libmediainfo-22_09</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mms</name>
+      <parent>media-libs__libmediainfo-22_09</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

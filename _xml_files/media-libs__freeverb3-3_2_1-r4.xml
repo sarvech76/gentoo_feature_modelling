@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__freeverb3-3_2_1-r4</name>
+      <children>
+        <options>forcefpu</options>
+        <options>openmp</options>
+        <options>plugdouble</options>
+        <options>threads</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>forcefpu</name>
+      <parent>media-libs__freeverb3-3_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>media-libs__freeverb3-3_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plugdouble</name>
+      <parent>media-libs__freeverb3-3_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>media-libs__freeverb3-3_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

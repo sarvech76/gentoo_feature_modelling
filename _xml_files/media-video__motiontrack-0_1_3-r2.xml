@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-video__motiontrack-0_1_3-r2</name>
+      <children>
+        <options>debug</options>
+        <options>graphicsmagick</options>
+        <options>imagemagick</options>
+        <options>multiprocess</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-video__motiontrack-0_1_3-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>graphicsmagick</name>
+      <parent>media-video__motiontrack-0_1_3-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>imagemagick</name>
+      <parent>media-video__motiontrack-0_1_3-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>multiprocess</name>
+      <parent>media-video__motiontrack-0_1_3-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnome-base__gnome-desktop-44_0-r300</name>
+      <children>
+        <options>debug</options>
+        <options>introspection</options>
+        <options>seccomp</options>
+        <options>systemd</options>
+        <options>udev</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>gnome-base__gnome-desktop-44_0-r300</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>gnome-base__gnome-desktop-44_0-r300</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>seccomp</name>
+      <parent>gnome-base__gnome-desktop-44_0-r300</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>gnome-base__gnome-desktop-44_0-r300</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>gnome-base__gnome-desktop-44_0-r300</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

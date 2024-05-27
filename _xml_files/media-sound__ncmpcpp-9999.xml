@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__ncmpcpp-9999</name>
+      <children>
+        <options>clock</options>
+        <options>lto</options>
+        <options>outputs</options>
+        <options>taglib</options>
+        <options>visualizer</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clock</name>
+      <parent>media-sound__ncmpcpp-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lto</name>
+      <parent>media-sound__ncmpcpp-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>outputs</name>
+      <parent>media-sound__ncmpcpp-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>taglib</name>
+      <parent>media-sound__ncmpcpp-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>visualizer</name>
+      <parent>media-sound__ncmpcpp-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-emulation__mupen64plus-audio-sdl-2_5_9</name>
+      <children>
+        <options>libsamplerate</options>
+        <options>oss</options>
+        <options>speex</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libsamplerate</name>
+      <parent>games-emulation__mupen64plus-audio-sdl-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oss</name>
+      <parent>games-emulation__mupen64plus-audio-sdl-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>speex</name>
+      <parent>games-emulation__mupen64plus-audio-sdl-2_5_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

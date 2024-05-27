@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__vim-core-9_0_1678</name>
+      <children>
+        <options>acl</options>
+        <options>minimal</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acl</name>
+      <parent>app-editors__vim-core-9_0_1678</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>app-editors__vim-core-9_0_1678</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>app-editors__vim-core-9_0_1678</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__qxmpp-1_5_5</name>
+      <children>
+        <options>doc</options>
+        <options>gstreamer</options>
+        <options>omemo</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-libs__qxmpp-1_5_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gstreamer</name>
+      <parent>net-libs__qxmpp-1_5_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>omemo</name>
+      <parent>net-libs__qxmpp-1_5_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-libs__qxmpp-1_5_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

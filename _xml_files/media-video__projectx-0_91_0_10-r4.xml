@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-video__projectx-0_91_0_10-r4</name>
+      <children>
+        <options>cpu_flags_x86_mmx</options>
+        <options>cpu_flags_x86_sse</options>
+        <options>doc</options>
+        <options>source</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_mmx</name>
+      <parent>media-video__projectx-0_91_0_10-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse</name>
+      <parent>media-video__projectx-0_91_0_10-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-video__projectx-0_91_0_10-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>source</name>
+      <parent>media-video__projectx-0_91_0_10-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-video__projectx-0_91_0_10-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

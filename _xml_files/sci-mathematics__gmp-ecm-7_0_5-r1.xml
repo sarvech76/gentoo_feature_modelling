@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__gmp-ecm-7_0_5-r1</name>
+      <children>
+        <options>cpu_flags_x86_sse2</options>
+        <options>custom-tune</options>
+        <options>openmp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>sci-mathematics__gmp-ecm-7_0_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>custom-tune</name>
+      <parent>sci-mathematics__gmp-ecm-7_0_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>sci-mathematics__gmp-ecm-7_0_5-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

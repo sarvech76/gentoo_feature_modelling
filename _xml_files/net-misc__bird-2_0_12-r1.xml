@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__bird-2_0_12-r1</name>
+      <children>
+        <options>client</options>
+        <options>custom-cflags</options>
+        <options>debug</options>
+        <options>filecaps</options>
+        <options>libssh</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>client</name>
+      <parent>net-misc__bird-2_0_12-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>custom-cflags</name>
+      <parent>net-misc__bird-2_0_12-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-misc__bird-2_0_12-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>filecaps</name>
+      <parent>net-misc__bird-2_0_12-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libssh</name>
+      <parent>net-misc__bird-2_0_12-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

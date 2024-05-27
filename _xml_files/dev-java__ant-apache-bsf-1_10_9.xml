@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-java__ant-apache-bsf-1_10_9</name>
+      <children>
+        <options>javascript</options>
+        <options>python</options>
+        <options>tcl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>javascript</name>
+      <parent>dev-java__ant-apache-bsf-1_10_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>dev-java__ant-apache-bsf-1_10_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcl</name>
+      <parent>dev-java__ant-apache-bsf-1_10_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

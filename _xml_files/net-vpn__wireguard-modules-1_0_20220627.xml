@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-vpn__wireguard-modules-1_0_20220627</name>
+      <children>
+        <options>debug</options>
+        <options>dist-kernel</options>
+        <options>module</options>
+        <options>module-src</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-vpn__wireguard-modules-1_0_20220627</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>net-vpn__wireguard-modules-1_0_20220627</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>module</name>
+      <parent>net-vpn__wireguard-modules-1_0_20220627</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>module-src</name>
+      <parent>net-vpn__wireguard-modules-1_0_20220627</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

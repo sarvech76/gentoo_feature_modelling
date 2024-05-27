@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__texworks-0_6_7-r1</name>
+      <children>
+        <options>lua</options>
+        <options>lua_single_target_lua5-1</options>
+        <options>lua_single_target_lua5-3</options>
+        <options>python</options>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-3</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-editors__texworks-0_6_7-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(lua =&gt; (lua_single_target_lua5-1 ^ lua_single_target_lua5-3))</constraint>
+    <constraint>(python =&gt; (python_single_target_python3_10 ^ python_single_target_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

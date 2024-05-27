@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__cargo-audit-0_17_6</name>
+      <children>
+        <options>debug</options>
+        <options>fix</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-util__cargo-audit-0_17_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fix</name>
+      <parent>dev-util__cargo-audit-0_17_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

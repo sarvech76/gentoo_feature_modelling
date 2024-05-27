@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__kexec-tools-2_0_22</name>
+      <children>
+        <options>booke</options>
+        <options>xen</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>booke</name>
+      <parent>sys-apps__kexec-tools-2_0_22</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xen</name>
+      <parent>sys-apps__kexec-tools-2_0_22</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>sys-apps__kexec-tools-2_0_22</parent>
+      <children>
+        <options>lzma</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzma</name>
+      <parent>zlib</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

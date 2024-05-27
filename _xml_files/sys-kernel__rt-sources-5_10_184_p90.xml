@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-kernel__rt-sources-5_10_184_p90</name>
+      <children>
+        <options>build</options>
+        <options>deblob</options>
+        <options>symlink</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>build</name>
+      <parent>sys-kernel__rt-sources-5_10_184_p90</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>deblob</name>
+      <parent>sys-kernel__rt-sources-5_10_184_p90</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>symlink</name>
+      <parent>sys-kernel__rt-sources-5_10_184_p90</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-ada__ada_libfswatch-20201105-r1</name>
+      <children>
+        <options>ada_target_gcc_12</options>
+        <options>ada_target_gnat_2021</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ada_target_gcc_12</name>
+      <parent>dev-ada__ada_libfswatch-20201105-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ada_target_gnat_2021</name>
+      <parent>dev-ada__ada_libfswatch-20201105-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

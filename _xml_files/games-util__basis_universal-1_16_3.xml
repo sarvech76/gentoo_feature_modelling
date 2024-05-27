@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-util__basis_universal-1_16_3</name>
+      <children>
+        <options>cpu_flags_x86_sse4_1</options>
+        <options>opencl</options>
+        <options>zstd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse4_1</name>
+      <parent>games-util__basis_universal-1_16_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencl</name>
+      <parent>games-util__basis_universal-1_16_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zstd</name>
+      <parent>games-util__basis_universal-1_16_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

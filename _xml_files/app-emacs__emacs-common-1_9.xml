@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emacs__emacs-common-1_9</name>
+      <children>
+        <options>games</options>
+        <options>gsettings</options>
+        <options>gui</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>games</name>
+      <parent>app-emacs__emacs-common-1_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gsettings</name>
+      <parent>app-emacs__emacs-common-1_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gui</name>
+      <parent>app-emacs__emacs-common-1_9</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

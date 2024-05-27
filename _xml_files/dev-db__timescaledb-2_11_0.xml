@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-db__timescaledb-2_11_0</name>
+      <children>
+        <options>postgres_targets_postgres12</options>
+        <options>postgres_targets_postgres13</options>
+        <options>postgres_targets_postgres14</options>
+        <options>postgres_targets_postgres15</options>
+        <options>proprietary-extensions</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres_targets_postgres12</name>
+      <parent>dev-db__timescaledb-2_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres_targets_postgres13</name>
+      <parent>dev-db__timescaledb-2_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres_targets_postgres14</name>
+      <parent>dev-db__timescaledb-2_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres_targets_postgres15</name>
+      <parent>dev-db__timescaledb-2_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>proprietary-extensions</name>
+      <parent>dev-db__timescaledb-2_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__libqmi-1_32_4</name>
+      <children>
+        <options>gtk-doc</options>
+        <options>mbim</options>
+        <options>qrtr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>net-libs__libqmi-1_32_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mbim</name>
+      <parent>net-libs__libqmi-1_32_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qrtr</name>
+      <parent>net-libs__libqmi-1_32_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

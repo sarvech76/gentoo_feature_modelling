@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__raft-0_17_1</name>
+      <children>
+        <options>lz4</options>
+        <options>test</options>
+        <options>zfs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lz4</name>
+      <parent>dev-libs__raft-0_17_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__raft-0_17_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zfs</name>
+      <parent>dev-libs__raft-0_17_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

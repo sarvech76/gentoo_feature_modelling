@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-apps__wordpress-6_3_1</name>
+      <children>
+        <options>akismet</options>
+        <options>examples</options>
+        <options>themes</options>
+        <options>vhosts</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>akismet</name>
+      <parent>www-apps__wordpress-6_3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>www-apps__wordpress-6_3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>themes</name>
+      <parent>www-apps__wordpress-6_3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vhosts</name>
+      <parent>www-apps__wordpress-6_3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

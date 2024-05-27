@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-containers__snapd-2_57_6</name>
+      <children>
+        <options>apparmor</options>
+        <options>arm</options>
+        <options>forced-devmode</options>
+        <options>gtk</options>
+        <options>kde</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>apparmor</name>
+      <parent>app-containers__snapd-2_57_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>arm</name>
+      <parent>app-containers__snapd-2_57_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>forced-devmode</name>
+      <parent>app-containers__snapd-2_57_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>app-containers__snapd-2_57_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kde</name>
+      <parent>app-containers__snapd-2_57_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>app-containers__snapd-2_57_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(!forced-devmode =&gt; apparmor)</constraint>
+  </booleanConstraints>
+</vm>

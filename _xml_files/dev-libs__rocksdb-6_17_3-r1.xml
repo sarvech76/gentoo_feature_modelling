@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__rocksdb-6_17_3-r1</name>
+      <children>
+        <options>cpu_flags_x86_avx</options>
+        <options>cpu_flags_x86_avx2</options>
+        <options>cpu_flags_x86_sse4_2</options>
+        <options>jemalloc</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_avx</name>
+      <parent>dev-libs__rocksdb-6_17_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_avx2</name>
+      <parent>dev-libs__rocksdb-6_17_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse4_2</name>
+      <parent>dev-libs__rocksdb-6_17_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jemalloc</name>
+      <parent>dev-libs__rocksdb-6_17_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-libs__rocksdb-6_17_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

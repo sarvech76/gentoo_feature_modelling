@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__intel-hybrid-codec-driver-2_0_0</name>
+      <children>
+        <options>abs_or_grp_1</options>
+        <options>wayland</options>
+        <options>X</options>
+        <options>x86</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>media-libs__intel-hybrid-codec-driver-2_0_0</parent>
+      <children>
+        <options>abi_x86_64</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_64</name>
+      <parent>abs_or_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wayland</name>
+      <parent>media-libs__intel-hybrid-codec-driver-2_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-libs__intel-hybrid-codec-driver-2_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x86</name>
+      <parent>media-libs__intel-hybrid-codec-driver-2_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

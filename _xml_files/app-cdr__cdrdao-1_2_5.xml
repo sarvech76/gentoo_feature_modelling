@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-cdr__cdrdao-1_2_5</name>
+      <children>
+        <options>encode</options>
+        <options>mad</options>
+        <options>vorbis</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>encode</name>
+      <parent>app-cdr__cdrdao-1_2_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mad</name>
+      <parent>app-cdr__cdrdao-1_2_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vorbis</name>
+      <parent>app-cdr__cdrdao-1_2_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

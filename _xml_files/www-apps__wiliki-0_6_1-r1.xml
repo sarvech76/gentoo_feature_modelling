@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-apps__wiliki-0_6_1-r1</name>
+      <children>
+        <options>cgi</options>
+        <options>fastcgi</options>
+        <options>vhosts</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cgi</name>
+      <parent>www-apps__wiliki-0_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fastcgi</name>
+      <parent>www-apps__wiliki-0_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vhosts</name>
+      <parent>www-apps__wiliki-0_6_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

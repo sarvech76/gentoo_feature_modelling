@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-visualization__grace-5_1_25_p9-r3</name>
+      <children>
+        <options>fftw</options>
+        <options>fortran</options>
+        <options>jpeg</options>
+        <options>netcdf</options>
+        <options>png</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fftw</name>
+      <parent>sci-visualization__grace-5_1_25_p9-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fortran</name>
+      <parent>sci-visualization__grace-5_1_25_p9-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>sci-visualization__grace-5_1_25_p9-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>netcdf</name>
+      <parent>sci-visualization__grace-5_1_25_p9-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>sci-visualization__grace-5_1_25_p9-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

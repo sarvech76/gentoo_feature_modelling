@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__wxmaxima-23_07_0</name>
+      <children>
+        <options>test</options>
+        <options>webkit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-mathematics__wxmaxima-23_07_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webkit</name>
+      <parent>sci-mathematics__wxmaxima-23_07_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

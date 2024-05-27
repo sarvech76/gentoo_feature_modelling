@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__amdgpu-pro-vulkan-22_20_5_1511376</name>
+      <children>
+        <options>abi_x86_32</options>
+        <options>abi_x86_64</options>
+        <options>video_cards_amdgpu</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_32</name>
+      <parent>media-libs__amdgpu-pro-vulkan-22_20_5_1511376</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_64</name>
+      <parent>media-libs__amdgpu-pro-vulkan-22_20_5_1511376</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_amdgpu</name>
+      <parent>media-libs__amdgpu-pro-vulkan-22_20_5_1511376</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

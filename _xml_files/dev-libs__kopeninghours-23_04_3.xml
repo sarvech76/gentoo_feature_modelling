@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__kopeninghours-23_04_3</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>python</options>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-libs__kopeninghours-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-libs__kopeninghours-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>dev-libs__kopeninghours-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>dev-libs__kopeninghours-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>dev-libs__kopeninghours-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__kopeninghours-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(python =&gt; (python_single_target_python3_10 ^ python_single_target_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

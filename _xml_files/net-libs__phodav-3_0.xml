@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__phodav-3_0</name>
+      <children>
+        <options>gtk-doc</options>
+        <options>systemd</options>
+        <options>test</options>
+        <options>zeroconf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>net-libs__phodav-3_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>net-libs__phodav-3_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-libs__phodav-3_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zeroconf</name>
+      <parent>net-libs__phodav-3_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

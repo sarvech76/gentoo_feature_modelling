@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-emulation__mednafen-1_29_0-r1</name>
+      <children>
+        <options>alsa</options>
+        <options>cpu_flags_ppc_altivec</options>
+        <options>flac</options>
+        <options>jack</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>games-emulation__mednafen-1_29_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_ppc_altivec</name>
+      <parent>games-emulation__mednafen-1_29_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flac</name>
+      <parent>games-emulation__mednafen-1_29_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jack</name>
+      <parent>games-emulation__mednafen-1_29_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

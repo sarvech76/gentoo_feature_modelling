@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-apps__xdm-1_1_14</name>
+      <children>
+        <options>pam</options>
+        <options>systemd</options>
+        <options>truetype</options>
+        <options>xinerama</options>
+        <options>xpm</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>x11-apps__xdm-1_1_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>x11-apps__xdm-1_1_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>truetype</name>
+      <parent>x11-apps__xdm-1_1_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xinerama</name>
+      <parent>x11-apps__xdm-1_1_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xpm</name>
+      <parent>x11-apps__xdm-1_1_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

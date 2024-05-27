@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-server__pvpgn-1_99_7_2_1-r1</name>
+      <children>
+        <options>mysql</options>
+        <options>odbc</options>
+        <options>postgres</options>
+        <options>sqlite</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>games-server__pvpgn-1_99_7_2_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>odbc</name>
+      <parent>games-server__pvpgn-1_99_7_2_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres</name>
+      <parent>games-server__pvpgn-1_99_7_2_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sqlite</name>
+      <parent>games-server__pvpgn-1_99_7_2_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

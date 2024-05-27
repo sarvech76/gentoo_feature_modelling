@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-perl__Coro-6_570_0</name>
+      <children>
+        <options>ev</options>
+        <options>event</options>
+        <options>examples</options>
+        <options>valgrind</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ev</name>
+      <parent>dev-perl__Coro-6_570_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>event</name>
+      <parent>dev-perl__Coro-6_570_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>dev-perl__Coro-6_570_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>valgrind</name>
+      <parent>dev-perl__Coro-6_570_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

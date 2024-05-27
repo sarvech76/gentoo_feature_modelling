@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__qtgain-1_0_0</name>
+      <children>
+        <options>flac</options>
+        <options>mp3</options>
+        <options>mp4</options>
+        <options>vorbis</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flac</name>
+      <parent>media-sound__qtgain-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mp3</name>
+      <parent>media-sound__qtgain-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mp4</name>
+      <parent>media-sound__qtgain-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vorbis</name>
+      <parent>media-sound__qtgain-1_0_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

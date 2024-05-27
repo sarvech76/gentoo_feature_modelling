@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-filter__mimedefang-3_1</name>
+      <children>
+        <options>clamav</options>
+        <options>poll</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clamav</name>
+      <parent>mail-filter__mimedefang-3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>poll</name>
+      <parent>mail-filter__mimedefang-3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>mail-filter__mimedefang-3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

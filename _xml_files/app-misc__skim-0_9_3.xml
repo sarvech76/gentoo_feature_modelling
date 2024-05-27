@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-misc__skim-0_9_3</name>
+      <children>
+        <options>debug</options>
+        <options>tmux</options>
+        <options>vim</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>app-misc__skim-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tmux</name>
+      <parent>app-misc__skim-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vim</name>
+      <parent>app-misc__skim-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

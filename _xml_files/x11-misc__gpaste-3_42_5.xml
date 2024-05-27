@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__gpaste-3_42_5</name>
+      <children>
+        <options>introspection</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>x11-misc__gpaste-3_42_5</parent>
+      <children>
+        <options>gnome</options>
+        <options>vala</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnome</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vala</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>x11-misc__gpaste-3_42_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

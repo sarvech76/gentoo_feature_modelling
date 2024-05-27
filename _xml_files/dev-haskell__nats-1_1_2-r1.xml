@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-haskell__nats-1_1_2-r1</name>
+      <children>
+        <options>binary</options>
+        <options>hashable</options>
+        <options>profile</options>
+        <options>template-haskell</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>binary</name>
+      <parent>dev-haskell__nats-1_1_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hashable</name>
+      <parent>dev-haskell__nats-1_1_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profile</name>
+      <parent>dev-haskell__nats-1_1_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>template-haskell</name>
+      <parent>dev-haskell__nats-1_1_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

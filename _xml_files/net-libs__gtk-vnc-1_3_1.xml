@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-libs__gtk-vnc-1_3_1</name>
+      <children>
+        <options>introspection</options>
+        <options>pulseaudio</options>
+        <options>sasl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>net-libs__gtk-vnc-1_3_1</parent>
+      <children>
+        <options>vala</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vala</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>net-libs__gtk-vnc-1_3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sasl</name>
+      <parent>net-libs__gtk-vnc-1_3_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

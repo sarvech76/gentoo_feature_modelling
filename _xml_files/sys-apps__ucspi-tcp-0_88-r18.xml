@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__ucspi-tcp-0_88-r18</name>
+      <children>
+        <options>ipv6</options>
+        <options>qmail-spp</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>sys-apps__ucspi-tcp-0_88-r18</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qmail-spp</name>
+      <parent>sys-apps__ucspi-tcp-0_88-r18</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-apps__ucspi-tcp-0_88-r18</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

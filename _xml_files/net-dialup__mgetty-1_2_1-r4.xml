@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-dialup__mgetty-1_2_1-r4</name>
+      <children>
+        <options>fax</options>
+        <options>fidonet</options>
+        <options>split-usr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fax</name>
+      <parent>net-dialup__mgetty-1_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fidonet</name>
+      <parent>net-dialup__mgetty-1_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>split-usr</name>
+      <parent>net-dialup__mgetty-1_2_1-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

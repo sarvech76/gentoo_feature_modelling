@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__minidlna-1_3_3</name>
+      <children>
+        <options>netgear</options>
+        <options>readynas</options>
+        <options>zeroconf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>netgear</name>
+      <parent>net-misc__minidlna-1_3_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readynas</name>
+      <parent>net-misc__minidlna-1_3_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zeroconf</name>
+      <parent>net-misc__minidlna-1_3_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

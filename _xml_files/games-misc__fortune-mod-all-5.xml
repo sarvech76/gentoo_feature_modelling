@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-misc__fortune-mod-all-5</name>
+      <children>
+        <options>l10n_cs</options>
+        <options>l10n_de</options>
+        <options>l10n_it</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_cs</name>
+      <parent>games-misc__fortune-mod-all-5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_de</name>
+      <parent>games-misc__fortune-mod-all-5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_it</name>
+      <parent>games-misc__fortune-mod-all-5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

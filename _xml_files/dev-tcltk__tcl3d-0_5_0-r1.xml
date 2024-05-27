@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-tcltk__tcl3d-0_5_0-r1</name>
+      <children>
+        <options>debug</options>
+        <options>ode</options>
+        <options>osg</options>
+        <options>sdl</options>
+        <options>truetype</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-tcltk__tcl3d-0_5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ode</name>
+      <parent>dev-tcltk__tcl3d-0_5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>osg</name>
+      <parent>dev-tcltk__tcl3d-0_5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>dev-tcltk__tcl3d-0_5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>truetype</name>
+      <parent>dev-tcltk__tcl3d-0_5_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

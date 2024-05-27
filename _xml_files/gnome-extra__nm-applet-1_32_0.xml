@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnome-extra__nm-applet-1_32_0</name>
+      <children>
+        <options>appindicator</options>
+        <options>modemmanager</options>
+        <options>selinux</options>
+        <options>teamd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>appindicator</name>
+      <parent>gnome-extra__nm-applet-1_32_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>modemmanager</name>
+      <parent>gnome-extra__nm-applet-1_32_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>gnome-extra__nm-applet-1_32_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>teamd</name>
+      <parent>gnome-extra__nm-applet-1_32_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

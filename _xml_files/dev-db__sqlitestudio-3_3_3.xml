@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-db__sqlitestudio-3_3_3</name>
+      <children>
+        <options>cli</options>
+        <options>cups</options>
+        <options>tcl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cli</name>
+      <parent>dev-db__sqlitestudio-3_3_3</parent>
+      <children>
+        <options>test</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>cli</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cups</name>
+      <parent>dev-db__sqlitestudio-3_3_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcl</name>
+      <parent>dev-db__sqlitestudio-3_3_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

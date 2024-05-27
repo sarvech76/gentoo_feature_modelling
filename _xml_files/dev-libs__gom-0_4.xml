@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__gom-0_4</name>
+      <children>
+        <options>gtk-doc</options>
+        <options>introspection</options>
+        <options>python</options>
+        <options>python_targets_python3_10</options>
+        <options>python_targets_python3_11</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>dev-libs__gom-0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>dev-libs__gom-0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>dev-libs__gom-0_4</parent>
+      <impliedOptions>
+        <options>introspection</options>
+      </impliedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>dev-libs__gom-0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_11</name>
+      <parent>dev-libs__gom-0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-libs__gom-0_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(python =&gt; (python_targets_python3_10 | python_targets_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

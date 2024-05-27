@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__nvidia-cuda-toolkit-11_8_0-r4</name>
+      <children>
+        <options>debugger</options>
+        <options>nsight</options>
+        <options>profiler</options>
+        <options>sanitizer</options>
+        <options>vis-profiler</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debugger</name>
+      <parent>dev-util__nvidia-cuda-toolkit-11_8_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nsight</name>
+      <parent>dev-util__nvidia-cuda-toolkit-11_8_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profiler</name>
+      <parent>dev-util__nvidia-cuda-toolkit-11_8_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sanitizer</name>
+      <parent>dev-util__nvidia-cuda-toolkit-11_8_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vis-profiler</name>
+      <parent>dev-util__nvidia-cuda-toolkit-11_8_0-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

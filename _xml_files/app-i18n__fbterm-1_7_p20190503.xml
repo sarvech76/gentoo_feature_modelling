@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-i18n__fbterm-1_7_p20190503</name>
+      <children>
+        <options>filecaps</options>
+        <options>gpm</options>
+        <options>video_cards_vesa</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>filecaps</name>
+      <parent>app-i18n__fbterm-1_7_p20190503</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gpm</name>
+      <parent>app-i18n__fbterm-1_7_p20190503</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_vesa</name>
+      <parent>app-i18n__fbterm-1_7_p20190503</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

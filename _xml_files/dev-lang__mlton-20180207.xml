@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__mlton-20180207</name>
+      <children>
+        <options>binary</options>
+        <options>bootstrap-smlnj</options>
+        <options>doc</options>
+        <options>pax-kernel</options>
+        <options>stage3</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>binary</name>
+      <parent>dev-lang__mlton-20180207</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bootstrap-smlnj</name>
+      <parent>dev-lang__mlton-20180207</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-lang__mlton-20180207</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pax-kernel</name>
+      <parent>dev-lang__mlton-20180207</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>stage3</name>
+      <parent>dev-lang__mlton-20180207</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

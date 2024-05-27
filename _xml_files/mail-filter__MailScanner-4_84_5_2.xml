@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-filter__MailScanner-4_84_5_2</name>
+      <children>
+        <options>clamav</options>
+        <options>doc</options>
+        <options>exim</options>
+        <options>postfix</options>
+        <options>spamassassin</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>clamav</name>
+      <parent>mail-filter__MailScanner-4_84_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>mail-filter__MailScanner-4_84_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>exim</name>
+      <parent>mail-filter__MailScanner-4_84_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postfix</name>
+      <parent>mail-filter__MailScanner-4_84_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>spamassassin</name>
+      <parent>mail-filter__MailScanner-4_84_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

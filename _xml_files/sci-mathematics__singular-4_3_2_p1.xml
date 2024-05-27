@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__singular-4_3_2_p1</name>
+      <children>
+        <options>emacs</options>
+        <options>examples</options>
+        <options>polymake</options>
+        <options>readline</options>
+        <options>static-libs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>emacs</name>
+      <parent>sci-mathematics__singular-4_3_2_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-mathematics__singular-4_3_2_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>polymake</name>
+      <parent>sci-mathematics__singular-4_3_2_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>readline</name>
+      <parent>sci-mathematics__singular-4_3_2_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>sci-mathematics__singular-4_3_2_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

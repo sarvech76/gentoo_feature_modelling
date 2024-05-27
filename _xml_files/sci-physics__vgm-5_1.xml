@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-physics__vgm-5_1</name>
+      <children>
+        <options>doc</options>
+        <options>examples</options>
+        <options>geant4</options>
+        <options>root</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-physics__vgm-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-physics__vgm-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>geant4</name>
+      <parent>sci-physics__vgm-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>root</name>
+      <parent>sci-physics__vgm-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-physics__vgm-5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

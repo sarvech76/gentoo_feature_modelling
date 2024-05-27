@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__log4cxx-0_11_0</name>
+      <children>
+        <options>iodbc</options>
+        <options>odbc</options>
+        <options>smtp</options>
+        <options>unicode</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>iodbc</name>
+      <parent>dev-libs__log4cxx-0_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>odbc</name>
+      <parent>dev-libs__log4cxx-0_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>smtp</name>
+      <parent>dev-libs__log4cxx-0_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>unicode</name>
+      <parent>dev-libs__log4cxx-0_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(iodbc =&gt; !odbc)</constraint>
+  </booleanConstraints>
+</vm>

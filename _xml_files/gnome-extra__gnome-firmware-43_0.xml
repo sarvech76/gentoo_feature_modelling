@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnome-extra__gnome-firmware-43_0</name>
+      <children>
+        <options>elogind</options>
+        <options>man</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>elogind</name>
+      <parent>gnome-extra__gnome-firmware-43_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>gnome-extra__gnome-firmware-43_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>gnome-extra__gnome-firmware-43_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

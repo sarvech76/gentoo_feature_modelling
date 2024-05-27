@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libdvbcsa-1_1_0-r1</name>
+      <children>
+        <options>cpu_flags_ppc_altivec</options>
+        <options>cpu_flags_x86_mmx</options>
+        <options>cpu_flags_x86_sse2</options>
+        <options>debug</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_ppc_altivec</name>
+      <parent>media-libs__libdvbcsa-1_1_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_mmx</name>
+      <parent>media-libs__libdvbcsa-1_1_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>media-libs__libdvbcsa-1_1_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-libs__libdvbcsa-1_1_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

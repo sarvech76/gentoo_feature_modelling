@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__usbip-5_15</name>
+      <children>
+        <options>build</options>
+        <options>symlink</options>
+        <options>tcpd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>build</name>
+      <parent>net-misc__usbip-5_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>symlink</name>
+      <parent>net-misc__usbip-5_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcpd</name>
+      <parent>net-misc__usbip-5_15</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

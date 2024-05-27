@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__xfe-1_44</name>
+      <children>
+        <options>debug</options>
+        <options>nls</options>
+        <options>startup-notification</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>x11-misc__xfe-1_44</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>x11-misc__xfe-1_44</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>startup-notification</name>
+      <parent>x11-misc__xfe-1_44</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

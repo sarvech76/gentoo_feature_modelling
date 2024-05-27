@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-arch__drpm-0_5_2</name>
+      <children>
+        <options>lzip</options>
+        <options>test</options>
+        <options>zstd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzip</name>
+      <parent>app-arch__drpm-0_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-arch__drpm-0_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zstd</name>
+      <parent>app-arch__drpm-0_5_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

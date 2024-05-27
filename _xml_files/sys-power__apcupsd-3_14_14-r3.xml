@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-power__apcupsd-3_14_14-r3</name>
+      <children>
+        <options>cgi</options>
+        <options>modbus</options>
+        <options>selinux</options>
+        <options>snmp</options>
+        <options>usb</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cgi</name>
+      <parent>sys-power__apcupsd-3_14_14-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>modbus</name>
+      <parent>sys-power__apcupsd-3_14_14-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-power__apcupsd-3_14_14-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>snmp</name>
+      <parent>sys-power__apcupsd-3_14_14-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>usb</name>
+      <parent>sys-power__apcupsd-3_14_14-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

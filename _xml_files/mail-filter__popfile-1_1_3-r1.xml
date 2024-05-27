@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-filter__popfile-1_1_3-r1</name>
+      <children>
+        <options>cjk</options>
+        <options>ipv6</options>
+        <options>mysql</options>
+        <options>ssl</options>
+        <options>xmlrpc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cjk</name>
+      <parent>mail-filter__popfile-1_1_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>mail-filter__popfile-1_1_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>mail-filter__popfile-1_1_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>mail-filter__popfile-1_1_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xmlrpc</name>
+      <parent>mail-filter__popfile-1_1_3-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

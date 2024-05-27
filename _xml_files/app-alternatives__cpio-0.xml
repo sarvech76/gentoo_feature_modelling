@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-alternatives__cpio-0</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>split-usr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>app-alternatives__cpio-0</parent>
+      <children>
+        <options>gnu</options>
+        <options>libarchive</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnu</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>libarchive</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libarchive</name>
+      <parent>abs_xor_grp_1</parent>
+      <excludedOptions>
+        <options>gnu</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>split-usr</name>
+      <parent>app-alternatives__cpio-0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

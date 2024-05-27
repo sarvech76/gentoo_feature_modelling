@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-arcade__jazz2-data-0-r20200327</name>
+      <children>
+        <options>cc</options>
+        <options>demo</options>
+        <options>gles2-only</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cc</name>
+      <parent>games-arcade__jazz2-data-0-r20200327</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>demo</name>
+      <parent>games-arcade__jazz2-data-0-r20200327</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gles2-only</name>
+      <parent>games-arcade__jazz2-data-0-r20200327</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-php__maxmind-db-reader-1_11_0</name>
+      <children>
+        <options>extension</options>
+        <options>php_targets_php7-4</options>
+        <options>php_targets_php8-0</options>
+        <options>php_targets_php8-1</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>extension</name>
+      <parent>dev-php__maxmind-db-reader-1_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>php_targets_php7-4</name>
+      <parent>dev-php__maxmind-db-reader-1_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>php_targets_php8-0</name>
+      <parent>dev-php__maxmind-db-reader-1_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>php_targets_php8-1</name>
+      <parent>dev-php__maxmind-db-reader-1_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-php__maxmind-db-reader-1_11_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(extension =&gt; ((php_targets_php7-4 | php_targets_php8-0) | php_targets_php8-1))</constraint>
+  </booleanConstraints>
+</vm>

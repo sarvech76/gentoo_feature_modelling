@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__arping-2_23</name>
+      <children>
+        <options>filecaps</options>
+        <options>seccomp</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>filecaps</name>
+      <parent>net-analyzer__arping-2_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>seccomp</name>
+      <parent>net-analyzer__arping-2_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-analyzer__arping-2_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

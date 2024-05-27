@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__nsca-2_7_2-r103</name>
+      <children>
+        <options>crypt</options>
+        <options>minimal</options>
+        <options>tcpd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crypt</name>
+      <parent>net-analyzer__nsca-2_7_2-r103</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>net-analyzer__nsca-2_7_2-r103</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcpd</name>
+      <parent>net-analyzer__nsca-2_7_2-r103</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

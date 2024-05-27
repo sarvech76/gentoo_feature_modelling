@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-misc__carbon-c-relay-3_7_4-r2</name>
+      <children>
+        <options>lz4</options>
+        <options>oniguruma</options>
+        <options>pcre2</options>
+        <options>snappy</options>
+        <options>ssl</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lz4</name>
+      <parent>app-misc__carbon-c-relay-3_7_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oniguruma</name>
+      <parent>app-misc__carbon-c-relay-3_7_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcre2</name>
+      <parent>app-misc__carbon-c-relay-3_7_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>snappy</name>
+      <parent>app-misc__carbon-c-relay-3_7_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>app-misc__carbon-c-relay-3_7_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>app-misc__carbon-c-relay-3_7_4-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(pcre2 =&gt; !oniguruma)</constraint>
+    <constraint>(oniguruma =&gt; !pcre2)</constraint>
+  </booleanConstraints>
+</vm>

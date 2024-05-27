@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__ganv-1_8_2</name>
+      <children>
+        <options>fdgl</options>
+        <options>graphviz</options>
+        <options>introspection</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fdgl</name>
+      <parent>media-libs__ganv-1_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>graphviz</name>
+      <parent>media-libs__ganv-1_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>media-libs__ganv-1_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>media-libs__ganv-1_8_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

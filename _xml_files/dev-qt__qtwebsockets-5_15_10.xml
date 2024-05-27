@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-qt__qtwebsockets-5_15_10</name>
+      <children>
+        <options>debug</options>
+        <options>qml</options>
+        <options>ssl</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-qt__qtwebsockets-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qml</name>
+      <parent>dev-qt__qtwebsockets-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>dev-qt__qtwebsockets-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-qt__qtwebsockets-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

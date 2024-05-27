@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-electronics__gspiceui-1_1_0</name>
+      <children>
+        <options>examples</options>
+        <options>schematics</options>
+        <options>waveform</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-electronics__gspiceui-1_1_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>schematics</name>
+      <parent>sci-electronics__gspiceui-1_1_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>waveform</name>
+      <parent>sci-electronics__gspiceui-1_1_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

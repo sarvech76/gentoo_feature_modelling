@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-libs__minizip-ng-3_0_10</name>
+      <children>
+        <options>compat</options>
+        <options>openssl</options>
+        <options>test</options>
+        <options>zstd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>compat</name>
+      <parent>sys-libs__minizip-ng-3_0_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openssl</name>
+      <parent>sys-libs__minizip-ng-3_0_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sys-libs__minizip-ng-3_0_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zstd</name>
+      <parent>sys-libs__minizip-ng-3_0_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

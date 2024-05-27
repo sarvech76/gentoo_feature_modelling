@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-mobilephone__anyremote-6_5</name>
+      <children>
+        <options>bluetooth</options>
+        <options>dbus</options>
+        <options>zeroconf</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bluetooth</name>
+      <parent>app-mobilephone__anyremote-6_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>app-mobilephone__anyremote-6_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zeroconf</name>
+      <parent>app-mobilephone__anyremote-6_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

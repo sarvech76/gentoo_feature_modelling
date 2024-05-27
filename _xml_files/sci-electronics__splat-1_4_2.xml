@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-electronics__splat-1_4_2</name>
+      <children>
+        <options>doc</options>
+        <options>hires</options>
+        <options>l10n_es</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-electronics__splat-1_4_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hires</name>
+      <parent>sci-electronics__splat-1_4_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_es</name>
+      <parent>sci-electronics__splat-1_4_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

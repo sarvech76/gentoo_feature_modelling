@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__xmrig-6_20_0-r1</name>
+      <children>
+        <options>cpu_flags_x86_sse4_1</options>
+        <options>donate</options>
+        <options>hwloc</options>
+        <options>opencl</options>
+        <options>ssl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse4_1</name>
+      <parent>net-misc__xmrig-6_20_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>donate</name>
+      <parent>net-misc__xmrig-6_20_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hwloc</name>
+      <parent>net-misc__xmrig-6_20_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencl</name>
+      <parent>net-misc__xmrig-6_20_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>net-misc__xmrig-6_20_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

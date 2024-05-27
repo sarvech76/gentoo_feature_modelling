@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__coinor-symphony-5_6_17</name>
+      <children>
+        <options>doc</options>
+        <options>glpk</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-libs__coinor-symphony-5_6_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>glpk</name>
+      <parent>sci-libs__coinor-symphony-5_6_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-libs__coinor-symphony-5_6_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

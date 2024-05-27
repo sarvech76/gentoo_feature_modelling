@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-cluster__k3s-1_25_4_p1</name>
+      <children>
+        <options>abs_or_grp_1</options>
+        <options>kubectl-symlink</options>
+        <options>rootless</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>sys-cluster__k3s-1_25_4_p1</parent>
+      <children>
+        <options>amd64</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>amd64</name>
+      <parent>abs_or_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kubectl-symlink</name>
+      <parent>sys-cluster__k3s-1_25_4_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rootless</name>
+      <parent>sys-cluster__k3s-1_25_4_p1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

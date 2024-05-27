@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>mail-mta__opensmtpd-6_8_0_p2-r3</name>
+      <children>
+        <options>berkdb</options>
+        <options>mta</options>
+        <options>pam</options>
+        <options>split-usr</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>berkdb</name>
+      <parent>mail-mta__opensmtpd-6_8_0_p2-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mta</name>
+      <parent>mail-mta__opensmtpd-6_8_0_p2-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>mail-mta__opensmtpd-6_8_0_p2-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>split-usr</name>
+      <parent>mail-mta__opensmtpd-6_8_0_p2-r3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

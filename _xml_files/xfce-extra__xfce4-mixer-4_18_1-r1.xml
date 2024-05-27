@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>xfce-extra__xfce4-mixer-4_18_1-r1</name>
+      <children>
+        <options>alsa</options>
+        <options>keybinder</options>
+        <options>pulseaudio</options>
+        <options>sndio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>xfce-extra__xfce4-mixer-4_18_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>keybinder</name>
+      <parent>xfce-extra__xfce4-mixer-4_18_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>xfce-extra__xfce4-mixer-4_18_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sndio</name>
+      <parent>xfce-extra__xfce4-mixer-4_18_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

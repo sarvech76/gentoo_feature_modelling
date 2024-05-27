@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-calculators__units-2_21-r1</name>
+      <children>
+        <options>python_targets_python3_10</options>
+        <options>python_targets_python3_11</options>
+        <options>units-cur</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>sci-calculators__units-2_21-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_11</name>
+      <parent>sci-calculators__units-2_21-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>units-cur</name>
+      <parent>sci-calculators__units-2_21-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(units-cur =&gt; (python_targets_python3_10 | python_targets_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__nextcloud-client-3_8_2-r1</name>
+      <children>
+        <options>doc</options>
+        <options>dolphin</options>
+        <options>nautilus</options>
+        <options>test</options>
+        <options>webengine</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-misc__nextcloud-client-3_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dolphin</name>
+      <parent>net-misc__nextcloud-client-3_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nautilus</name>
+      <parent>net-misc__nextcloud-client-3_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-misc__nextcloud-client-3_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webengine</name>
+      <parent>net-misc__nextcloud-client-3_8_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

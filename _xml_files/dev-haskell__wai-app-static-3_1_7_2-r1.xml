@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-haskell__wai-app-static-3_1_7_2-r1</name>
+      <children>
+        <options>doc</options>
+        <options>hscolour</options>
+        <options>print</options>
+        <options>profile</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-haskell__wai-app-static-3_1_7_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hscolour</name>
+      <parent>dev-haskell__wai-app-static-3_1_7_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>print</name>
+      <parent>dev-haskell__wai-app-static-3_1_7_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profile</name>
+      <parent>dev-haskell__wai-app-static-3_1_7_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-haskell__wai-app-static-3_1_7_2-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-board__cockatrice-20210126</name>
+      <children>
+        <options>client</options>
+        <options>oracle</options>
+        <options>server</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>client</name>
+      <parent>games-board__cockatrice-20210126</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oracle</name>
+      <parent>games-board__cockatrice-20210126</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>server</name>
+      <parent>games-board__cockatrice-20210126</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>games-board__cockatrice-20210126</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

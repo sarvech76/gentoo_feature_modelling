@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-arch__wimlib-1_14_1</name>
+      <children>
+        <options>fuse</options>
+        <options>iso</options>
+        <options>ntfs</options>
+        <options>test</options>
+        <options>yasm</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fuse</name>
+      <parent>app-arch__wimlib-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>iso</name>
+      <parent>app-arch__wimlib-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ntfs</name>
+      <parent>app-arch__wimlib-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-arch__wimlib-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>yasm</name>
+      <parent>app-arch__wimlib-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__quarter-1_1_0-r1</name>
+      <children>
+        <options>debug</options>
+        <options>designer</options>
+        <options>doc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-libs__quarter-1_1_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>designer</name>
+      <parent>media-libs__quarter-1_1_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-libs__quarter-1_1_0-r1</parent>
+      <children>
+        <options>man</options>
+        <options>qthelp</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>doc</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qthelp</name>
+      <parent>doc</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__pstoedit-3_75</name>
+      <children>
+        <options>emf</options>
+        <options>imagemagick</options>
+        <options>plotutils</options>
+        <options>pptx</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>emf</name>
+      <parent>media-gfx__pstoedit-3_75</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>imagemagick</name>
+      <parent>media-gfx__pstoedit-3_75</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plotutils</name>
+      <parent>media-gfx__pstoedit-3_75</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pptx</name>
+      <parent>media-gfx__pstoedit-3_75</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

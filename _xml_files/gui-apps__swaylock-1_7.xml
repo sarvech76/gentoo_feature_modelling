@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gui-apps__swaylock-1_7</name>
+      <children>
+        <options>filecaps</options>
+        <options>gdk-pixbuf</options>
+        <options>man</options>
+        <options>pam</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>filecaps</name>
+      <parent>gui-apps__swaylock-1_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gdk-pixbuf</name>
+      <parent>gui-apps__swaylock-1_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>gui-apps__swaylock-1_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>gui-apps__swaylock-1_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

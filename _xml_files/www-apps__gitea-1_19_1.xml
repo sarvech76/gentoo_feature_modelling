@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-apps__gitea-1_19_1</name>
+      <children>
+        <options>acct</options>
+        <options>filecaps</options>
+        <options>pam</options>
+        <options>pie</options>
+        <options>sqlite</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>acct</name>
+      <parent>www-apps__gitea-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>filecaps</name>
+      <parent>www-apps__gitea-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>www-apps__gitea-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pie</name>
+      <parent>www-apps__gitea-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sqlite</name>
+      <parent>www-apps__gitea-1_19_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

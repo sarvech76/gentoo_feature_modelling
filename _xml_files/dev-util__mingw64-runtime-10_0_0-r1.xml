@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-util__mingw64-runtime-10_0_0-r1</name>
+      <children>
+        <options>default-ucrt</options>
+        <options>headers-only</options>
+        <options>idl</options>
+        <options>libraries</options>
+        <options>tools</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>default-ucrt</name>
+      <parent>dev-util__mingw64-runtime-10_0_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>headers-only</name>
+      <parent>dev-util__mingw64-runtime-10_0_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>idl</name>
+      <parent>dev-util__mingw64-runtime-10_0_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libraries</name>
+      <parent>dev-util__mingw64-runtime-10_0_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>dev-util__mingw64-runtime-10_0_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

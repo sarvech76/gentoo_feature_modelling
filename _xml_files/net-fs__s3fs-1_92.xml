@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-fs__s3fs-1_92</name>
+      <children>
+        <options>gnutls</options>
+        <options>nettle</options>
+        <options>nss</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>net-fs__s3fs-1_92</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nettle</name>
+      <parent>net-fs__s3fs-1_92</parent>
+      <impliedOptions>
+        <options>gnutls</options>
+      </impliedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nss</name>
+      <parent>net-fs__s3fs-1_92</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(nettle =&gt; !nss)</constraint>
+  </booleanConstraints>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__exa-0_10_1</name>
+      <children>
+        <options>debug</options>
+        <options>git</options>
+        <options>man</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sys-apps__exa-0_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>git</name>
+      <parent>sys-apps__exa-0_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>sys-apps__exa-0_10_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

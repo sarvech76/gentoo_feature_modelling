@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emacs__bbdb-3_2_2b</name>
+      <children>
+        <options>doc</options>
+        <options>tex</options>
+        <options>vm</options>
+        <options>wanderlust</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>app-emacs__bbdb-3_2_2b</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tex</name>
+      <parent>app-emacs__bbdb-3_2_2b</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vm</name>
+      <parent>app-emacs__bbdb-3_2_2b</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wanderlust</name>
+      <parent>app-emacs__bbdb-3_2_2b</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

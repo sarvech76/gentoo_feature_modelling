@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-containers__cri-o-1_26_0</name>
+      <children>
+        <options>btrfs</options>
+        <options>device-mapper</options>
+        <options>selinux</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>btrfs</name>
+      <parent>app-containers__cri-o-1_26_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>device-mapper</name>
+      <parent>app-containers__cri-o-1_26_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>app-containers__cri-o-1_26_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>app-containers__cri-o-1_26_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

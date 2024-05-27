@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__guayadeque-0_4_7</name>
+      <children>
+        <options>appindicator</options>
+        <options>ipod</options>
+        <options>minimal</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>appindicator</name>
+      <parent>media-sound__guayadeque-0_4_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipod</name>
+      <parent>media-sound__guayadeque-0_4_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>media-sound__guayadeque-0_4_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

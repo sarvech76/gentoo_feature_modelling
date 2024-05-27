@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-crypt__ekeyd-1_1_5-r101</name>
+      <children>
+        <options>abs_xor_grp_1</options>
+        <options>minimal</options>
+        <options>munin</options>
+        <options>usb</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_xor_grp_1</name>
+      <parent>app-crypt__ekeyd-1_1_5-r101</parent>
+      <children>
+        <options>lua_single_target_lua5-1</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>abs_xor_grp_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>app-crypt__ekeyd-1_1_5-r101</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>munin</name>
+      <parent>app-crypt__ekeyd-1_1_5-r101</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>usb</name>
+      <parent>app-crypt__ekeyd-1_1_5-r101</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(minimal =&gt; !munin)</constraint>
+  </booleanConstraints>
+</vm>

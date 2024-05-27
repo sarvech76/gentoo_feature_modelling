@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>lxqt-base__lxqt-config-1_3_0</name>
+      <children>
+        <options>monitor</options>
+        <options>touchpad</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>monitor</name>
+      <parent>lxqt-base__lxqt-config-1_3_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>touchpad</name>
+      <parent>lxqt-base__lxqt-config-1_3_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

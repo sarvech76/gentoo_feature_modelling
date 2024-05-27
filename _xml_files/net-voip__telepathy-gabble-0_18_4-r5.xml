@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-voip__telepathy-gabble-0_18_4-r5</name>
+      <children>
+        <options>gnutls</options>
+        <options>jingle</options>
+        <options>plugins</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>net-voip__telepathy-gabble-0_18_4-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jingle</name>
+      <parent>net-voip__telepathy-gabble-0_18_4-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plugins</name>
+      <parent>net-voip__telepathy-gabble-0_18_4-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-voip__telepathy-gabble-0_18_4-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

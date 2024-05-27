@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-video__noad-0_8_8</name>
+      <children>
+        <options>abs_or_grp_1</options>
+        <options>imagemagick</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>media-video__noad-0_8_8</parent>
+      <children>
+        <options>ffmpeg</options>
+        <options>libmpeg2</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ffmpeg</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>libmpeg2</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libmpeg2</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>ffmpeg</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>imagemagick</name>
+      <parent>media-video__noad-0_8_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

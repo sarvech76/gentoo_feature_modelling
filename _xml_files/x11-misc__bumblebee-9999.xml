@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-misc__bumblebee-9999</name>
+      <children>
+        <options>abs_or_grp_1</options>
+        <options>bbswitch</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>x11-misc__bumblebee-9999</parent>
+      <children>
+        <options>video_cards_nouveau</options>
+        <options>video_cards_nvidia</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_nouveau</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>video_cards_nvidia</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_nvidia</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>video_cards_nouveau</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bbswitch</name>
+      <parent>x11-misc__bumblebee-9999</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

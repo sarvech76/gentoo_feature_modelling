@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-crypt__zulucrypt-5_5_0_pre20180223</name>
+      <children>
+        <options>keyring</options>
+        <options>qt5</options>
+        <options>udev</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>keyring</name>
+      <parent>app-crypt__zulucrypt-5_5_0_pre20180223</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>app-crypt__zulucrypt-5_5_0_pre20180223</parent>
+      <children>
+        <options>kwallet</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kwallet</name>
+      <parent>qt5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>app-crypt__zulucrypt-5_5_0_pre20180223</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

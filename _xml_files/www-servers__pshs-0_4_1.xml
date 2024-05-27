@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-servers__pshs-0_4_1</name>
+      <children>
+        <options>magic</options>
+        <options>qrcode</options>
+        <options>ssl</options>
+        <options>upnp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>magic</name>
+      <parent>www-servers__pshs-0_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qrcode</name>
+      <parent>www-servers__pshs-0_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>www-servers__pshs-0_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>upnp</name>
+      <parent>www-servers__pshs-0_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

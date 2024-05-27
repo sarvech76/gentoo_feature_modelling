@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-python__pypy-exe-7_3_12</name>
+      <children>
+        <options>bzip2</options>
+        <options>cpu_flags_x86_sse2</options>
+        <options>jit</options>
+        <options>low-memory</options>
+        <options>ncurses</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>dev-python__pypy-exe-7_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>dev-python__pypy-exe-7_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jit</name>
+      <parent>dev-python__pypy-exe-7_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>low-memory</name>
+      <parent>dev-python__pypy-exe-7_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>dev-python__pypy-exe-7_3_12</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

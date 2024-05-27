@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__orocos_kdl-1_5_1</name>
+      <children>
+        <options>doc</options>
+        <options>models</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-libs__orocos_kdl-1_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>models</name>
+      <parent>sci-libs__orocos_kdl-1_5_1</parent>
+      <children>
+        <options>examples</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>models</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-libs__orocos_kdl-1_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

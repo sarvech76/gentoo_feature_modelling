@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-p2p__cpuminer-opt-3_22_3</name>
+      <children>
+        <options>cpu_flags_x86_sse2</options>
+        <options>curl</options>
+        <options>x86</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>net-p2p__cpuminer-opt-3_22_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>net-p2p__cpuminer-opt-3_22_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x86</name>
+      <parent>net-p2p__cpuminer-opt-3_22_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

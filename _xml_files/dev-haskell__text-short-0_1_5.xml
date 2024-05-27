@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-haskell__text-short-0_1_5</name>
+      <children>
+        <options>asserts</options>
+        <options>doc</options>
+        <options>hscolour</options>
+        <options>profile</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>asserts</name>
+      <parent>dev-haskell__text-short-0_1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-haskell__text-short-0_1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hscolour</name>
+      <parent>dev-haskell__text-short-0_1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>profile</name>
+      <parent>dev-haskell__text-short-0_1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-haskell__text-short-0_1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

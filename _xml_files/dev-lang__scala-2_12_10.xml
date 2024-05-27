@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__scala-2_12_10</name>
+      <children>
+        <options>binary</options>
+        <options>doc</options>
+        <options>emacs</options>
+        <options>source</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>binary</name>
+      <parent>dev-lang__scala-2_12_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-lang__scala-2_12_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>emacs</name>
+      <parent>dev-lang__scala-2_12_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>source</name>
+      <parent>dev-lang__scala-2_12_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

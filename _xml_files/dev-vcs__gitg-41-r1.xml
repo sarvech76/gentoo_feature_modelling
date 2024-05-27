@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-vcs__gitg-41-r1</name>
+      <children>
+        <options>glade</options>
+        <options>python</options>
+        <options>python_targets_python3_10</options>
+        <options>python_targets_python3_11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>glade</name>
+      <parent>dev-vcs__gitg-41-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>dev-vcs__gitg-41-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>dev-vcs__gitg-41-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_11</name>
+      <parent>dev-vcs__gitg-41-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(python =&gt; (python_targets_python3_10 | python_targets_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

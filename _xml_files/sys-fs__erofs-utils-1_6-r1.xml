@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__erofs-utils-1_6-r1</name>
+      <children>
+        <options>fuse</options>
+        <options>lz4</options>
+        <options>lzma</options>
+        <options>selinux</options>
+        <options>uuid</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fuse</name>
+      <parent>sys-fs__erofs-utils-1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lz4</name>
+      <parent>sys-fs__erofs-utils-1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzma</name>
+      <parent>sys-fs__erofs-utils-1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-fs__erofs-utils-1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>uuid</name>
+      <parent>sys-fs__erofs-utils-1_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

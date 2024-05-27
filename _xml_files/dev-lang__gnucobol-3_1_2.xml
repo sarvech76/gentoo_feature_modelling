@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__gnucobol-3_1_2</name>
+      <children>
+        <options>berkdb</options>
+        <options>json</options>
+        <options>nls</options>
+        <options>xml</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>berkdb</name>
+      <parent>dev-lang__gnucobol-3_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>json</name>
+      <parent>dev-lang__gnucobol-3_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>dev-lang__gnucobol-3_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xml</name>
+      <parent>dev-lang__gnucobol-3_1_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

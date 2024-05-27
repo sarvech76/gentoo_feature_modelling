@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__vorbis-tools-1_4_2-r2</name>
+      <children>
+        <options>flac</options>
+        <options>kate</options>
+        <options>nls</options>
+        <options>ogg123</options>
+        <options>speex</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flac</name>
+      <parent>media-sound__vorbis-tools-1_4_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kate</name>
+      <parent>media-sound__vorbis-tools-1_4_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>media-sound__vorbis-tools-1_4_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ogg123</name>
+      <parent>media-sound__vorbis-tools-1_4_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>speex</name>
+      <parent>media-sound__vorbis-tools-1_4_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__qemacs-0_4_1_pre20170225</name>
+      <children>
+        <options>gui</options>
+        <options>png</options>
+        <options>xv</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gui</name>
+      <parent>app-editors__qemacs-0_4_1_pre20170225</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>app-editors__qemacs-0_4_1_pre20170225</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xv</name>
+      <parent>app-editors__qemacs-0_4_1_pre20170225</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

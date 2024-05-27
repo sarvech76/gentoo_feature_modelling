@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__input-pad-1_0_99_pre20140916</name>
+      <children>
+        <options>eekboard</options>
+        <options>introspection</options>
+        <options>static-libs</options>
+        <options>xtest</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>eekboard</name>
+      <parent>dev-libs__input-pad-1_0_99_pre20140916</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>dev-libs__input-pad-1_0_99_pre20140916</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-libs__input-pad-1_0_99_pre20140916</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xtest</name>
+      <parent>dev-libs__input-pad-1_0_99_pre20140916</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

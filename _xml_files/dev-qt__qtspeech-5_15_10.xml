@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-qt__qtspeech-5_15_10</name>
+      <children>
+        <options>alsa</options>
+        <options>debug</options>
+        <options>flite</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>dev-qt__qtspeech-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-qt__qtspeech-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flite</name>
+      <parent>dev-qt__qtspeech-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-qt__qtspeech-5_15_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

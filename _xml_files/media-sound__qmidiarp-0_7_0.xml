@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__qmidiarp-0_7_0</name>
+      <children>
+        <options>lv2</options>
+        <options>nls</options>
+        <options>osc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lv2</name>
+      <parent>media-sound__qmidiarp-0_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>media-sound__qmidiarp-0_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>osc</name>
+      <parent>media-sound__qmidiarp-0_7_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

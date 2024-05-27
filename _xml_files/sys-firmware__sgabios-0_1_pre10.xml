@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-firmware__sgabios-0_1_pre10</name>
+      <children>
+        <options>amd64</options>
+        <options>binary</options>
+        <options>x86</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>amd64</name>
+      <parent>sys-firmware__sgabios-0_1_pre10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>binary</name>
+      <parent>sys-firmware__sgabios-0_1_pre10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x86</name>
+      <parent>sys-firmware__sgabios-0_1_pre10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(!amd64 =&gt; (!x86 =&gt; binary))</constraint>
+  </booleanConstraints>
+</vm>

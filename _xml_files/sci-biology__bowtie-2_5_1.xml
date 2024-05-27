@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-biology__bowtie-2_5_1</name>
+      <children>
+        <options>cpu_flags_x86_sse2</options>
+        <options>examples</options>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+        <options>test</options>
+        <options>x86</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>sci-biology__bowtie-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>examples</name>
+      <parent>sci-biology__bowtie-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>sci-biology__bowtie-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>sci-biology__bowtie-2_5_1</parent>
+      <children>
+        <options>cpu_flags_x86_sse2 ^^ ( python_single_target_python3_10 python_single_target_python3_11</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2 ^^ ( python_single_target_python3_10 python_single_target_python3_11</name>
+      <parent>python_single_target_python3_11</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-biology__bowtie-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>x86</name>
+      <parent>sci-biology__bowtie-2_5_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

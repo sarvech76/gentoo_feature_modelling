@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__kile-2_9_93_p20221123</name>
+      <children>
+        <options>debug</options>
+        <options>handbook</options>
+        <options>pdf</options>
+        <options>png</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>app-editors__kile-2_9_93_p20221123</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handbook</name>
+      <parent>app-editors__kile-2_9_93_p20221123</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pdf</name>
+      <parent>app-editors__kile-2_9_93_p20221123</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>app-editors__kile-2_9_93_p20221123</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

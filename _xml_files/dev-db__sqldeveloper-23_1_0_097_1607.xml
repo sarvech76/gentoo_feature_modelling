@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-db__sqldeveloper-23_1_0_097_1607</name>
+      <children>
+        <options>mssql</options>
+        <options>mysql</options>
+        <options>postgres</options>
+        <options>sybase</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mssql</name>
+      <parent>dev-db__sqldeveloper-23_1_0_097_1607</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>dev-db__sqldeveloper-23_1_0_097_1607</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres</name>
+      <parent>dev-db__sqldeveloper-23_1_0_097_1607</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sybase</name>
+      <parent>dev-db__sqldeveloper-23_1_0_097_1607</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

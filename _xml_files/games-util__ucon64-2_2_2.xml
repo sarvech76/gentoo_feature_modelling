@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-util__ucon64-2_2_2</name>
+      <children>
+        <options>debug</options>
+        <options>usb</options>
+        <options>zlib</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-util__ucon64-2_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>usb</name>
+      <parent>games-util__ucon64-2_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zlib</name>
+      <parent>games-util__ucon64-2_2_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

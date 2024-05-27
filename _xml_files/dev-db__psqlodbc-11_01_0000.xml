@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-db__psqlodbc-11_01_0000</name>
+      <children>
+        <options>doc</options>
+        <options>iodbc</options>
+        <options>ssl</options>
+        <options>threads</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-db__psqlodbc-11_01_0000</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>iodbc</name>
+      <parent>dev-db__psqlodbc-11_01_0000</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>dev-db__psqlodbc-11_01_0000</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>dev-db__psqlodbc-11_01_0000</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

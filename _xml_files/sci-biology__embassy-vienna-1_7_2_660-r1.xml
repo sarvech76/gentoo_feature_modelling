@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-biology__embassy-vienna-1_7_2_660-r1</name>
+      <children>
+        <options>mysql</options>
+        <options>pdf</options>
+        <options>png</options>
+        <options>postgres</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>sci-biology__embassy-vienna-1_7_2_660-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pdf</name>
+      <parent>sci-biology__embassy-vienna-1_7_2_660-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>png</name>
+      <parent>sci-biology__embassy-vienna-1_7_2_660-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postgres</name>
+      <parent>sci-biology__embassy-vienna-1_7_2_660-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>sci-biology__embassy-vienna-1_7_2_660-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

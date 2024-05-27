@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-plugins__wmudmount-3_0-r2</name>
+      <children>
+        <options>gcr</options>
+        <options>keyring</options>
+        <options>libnotify</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gcr</name>
+      <parent>x11-plugins__wmudmount-3_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>keyring</name>
+      <parent>x11-plugins__wmudmount-3_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libnotify</name>
+      <parent>x11-plugins__wmudmount-3_0-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

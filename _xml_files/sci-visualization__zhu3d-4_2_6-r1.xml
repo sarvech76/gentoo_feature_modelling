@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-visualization__zhu3d-4_2_6-r1</name>
+      <children>
+        <options>l10n_cs</options>
+        <options>l10n_de</options>
+        <options>l10n_es</options>
+        <options>l10n_fr</options>
+        <options>l10n_zh</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_cs</name>
+      <parent>sci-visualization__zhu3d-4_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_de</name>
+      <parent>sci-visualization__zhu3d-4_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_es</name>
+      <parent>sci-visualization__zhu3d-4_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_fr</name>
+      <parent>sci-visualization__zhu3d-4_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>l10n_zh</name>
+      <parent>sci-visualization__zhu3d-4_2_6-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

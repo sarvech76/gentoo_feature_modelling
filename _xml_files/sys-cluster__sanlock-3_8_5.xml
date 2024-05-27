@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-cluster__sanlock-3_8_5</name>
+      <children>
+        <options>python</options>
+        <options>python_targets_python3_10</options>
+        <options>python_targets_python3_11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python</name>
+      <parent>sys-cluster__sanlock-3_8_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_10</name>
+      <parent>sys-cluster__sanlock-3_8_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_targets_python3_11</name>
+      <parent>sys-cluster__sanlock-3_8_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(python =&gt; (python_targets_python3_10 | python_targets_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

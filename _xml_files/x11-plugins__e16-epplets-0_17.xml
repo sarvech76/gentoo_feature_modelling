@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-plugins__e16-epplets-0_17</name>
+      <children>
+        <options>cdaudio</options>
+        <options>libgtop</options>
+        <options>opengl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cdaudio</name>
+      <parent>x11-plugins__e16-epplets-0_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libgtop</name>
+      <parent>x11-plugins__e16-epplets-0_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>x11-plugins__e16-epplets-0_17</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

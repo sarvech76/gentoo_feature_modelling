@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__casync-2_p20190407</name>
+      <children>
+        <options>fuse</options>
+        <options>man</options>
+        <options>selinux</options>
+        <options>test</options>
+        <options>udev</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fuse</name>
+      <parent>net-misc__casync-2_p20190407</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>man</name>
+      <parent>net-misc__casync-2_p20190407</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>net-misc__casync-2_p20190407</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-misc__casync-2_p20190407</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>udev</name>
+      <parent>net-misc__casync-2_p20190407</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

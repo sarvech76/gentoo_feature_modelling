@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-wireless__gnome-bluetooth-42_6</name>
+      <children>
+        <options>gtk-doc</options>
+        <options>introspection</options>
+        <options>sendto</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk-doc</name>
+      <parent>net-wireless__gnome-bluetooth-42_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>net-wireless__gnome-bluetooth-42_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sendto</name>
+      <parent>net-wireless__gnome-bluetooth-42_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>net-wireless__gnome-bluetooth-42_6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

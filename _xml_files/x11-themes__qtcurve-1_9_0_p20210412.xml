@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-themes__qtcurve-1_9_0_p20210412</name>
+      <children>
+        <options>nls</options>
+        <options>qt5</options>
+        <options>test</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>x11-themes__qtcurve-1_9_0_p20210412</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qt5</name>
+      <parent>x11-themes__qtcurve-1_9_0_p20210412</parent>
+      <children>
+        <options>plasma</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plasma</name>
+      <parent>qt5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>x11-themes__qtcurve-1_9_0_p20210412</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>x11-themes__qtcurve-1_9_0_p20210412</parent>
+      <children>
+        <options>gtk</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>X</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(x11-themes__qtcurve-1_9_0_p20210412 =&gt; (gtk | qt5))</constraint>
+  </booleanConstraints>
+</vm>

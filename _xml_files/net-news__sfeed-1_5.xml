@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-news__sfeed-1_5</name>
+      <children>
+        <options>ncurses</options>
+        <options>savedconfig</options>
+        <options>theme-mono</options>
+        <options>theme-mono-highlight</options>
+        <options>theme-newsboat</options>
+        <options>theme-templeos</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>net-news__sfeed-1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>savedconfig</name>
+      <parent>net-news__sfeed-1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>theme-mono</name>
+      <parent>net-news__sfeed-1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>theme-mono-highlight</name>
+      <parent>net-news__sfeed-1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>theme-newsboat</name>
+      <parent>net-news__sfeed-1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>theme-templeos</name>
+      <parent>net-news__sfeed-1_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(ncurses =&gt; (((theme-mono ^ theme-mono-highlight) ^ theme-newsboat) ^ theme-templeos))</constraint>
+  </booleanConstraints>
+</vm>

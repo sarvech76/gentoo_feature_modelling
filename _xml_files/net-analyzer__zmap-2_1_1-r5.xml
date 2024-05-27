@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__zmap-2_1_1-r5</name>
+      <children>
+        <options>filecaps</options>
+        <options>mongo</options>
+        <options>redis</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>filecaps</name>
+      <parent>net-analyzer__zmap-2_1_1-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mongo</name>
+      <parent>net-analyzer__zmap-2_1_1-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>redis</name>
+      <parent>net-analyzer__zmap-2_1_1-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

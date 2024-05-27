@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-wm__ctwm-4_0_3</name>
+      <children>
+        <options>jpeg</options>
+        <options>test</options>
+        <options>xpm</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jpeg</name>
+      <parent>x11-wm__ctwm-4_0_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>x11-wm__ctwm-4_0_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xpm</name>
+      <parent>x11-wm__ctwm-4_0_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

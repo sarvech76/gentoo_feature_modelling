@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-util__xqf-1_0_6_2</name>
+      <children>
+        <options>bzip2</options>
+        <options>geoip</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bzip2</name>
+      <parent>games-util__xqf-1_0_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>geoip</name>
+      <parent>games-util__xqf-1_0_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-util__xqf-1_0_6_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

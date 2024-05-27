@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>kde-apps__thumbnailers-23_08_0</name>
+      <children>
+        <options>debug</options>
+        <options>mobi</options>
+        <options>raw</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>kde-apps__thumbnailers-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mobi</name>
+      <parent>kde-apps__thumbnailers-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>raw</name>
+      <parent>kde-apps__thumbnailers-23_08_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

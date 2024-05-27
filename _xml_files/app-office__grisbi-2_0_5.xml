@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-office__grisbi-2_0_5</name>
+      <children>
+        <options>goffice</options>
+        <options>nls</options>
+        <options>ofx</options>
+        <options>ssl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>goffice</name>
+      <parent>app-office__grisbi-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>app-office__grisbi-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ofx</name>
+      <parent>app-office__grisbi-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ssl</name>
+      <parent>app-office__grisbi-2_0_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

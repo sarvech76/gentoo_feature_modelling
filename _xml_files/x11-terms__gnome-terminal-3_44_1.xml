@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-terms__gnome-terminal-3_44_1</name>
+      <children>
+        <options>debug</options>
+        <options>gnome-shell</options>
+        <options>nautilus</options>
+        <options>vanilla</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>x11-terms__gnome-terminal-3_44_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnome-shell</name>
+      <parent>x11-terms__gnome-terminal-3_44_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nautilus</name>
+      <parent>x11-terms__gnome-terminal-3_44_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vanilla</name>
+      <parent>x11-terms__gnome-terminal-3_44_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

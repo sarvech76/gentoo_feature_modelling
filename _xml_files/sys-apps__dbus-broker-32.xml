@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-apps__dbus-broker-32</name>
+      <children>
+        <options>apparmor</options>
+        <options>audit</options>
+        <options>doc</options>
+        <options>launcher</options>
+        <options>selinux</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>apparmor</name>
+      <parent>sys-apps__dbus-broker-32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>audit</name>
+      <parent>sys-apps__dbus-broker-32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sys-apps__dbus-broker-32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>launcher</name>
+      <parent>sys-apps__dbus-broker-32</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>sys-apps__dbus-broker-32</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

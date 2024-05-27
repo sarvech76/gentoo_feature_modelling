@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-mathematics__eclib-20230424</name>
+      <children>
+        <options>boost</options>
+        <options>flint</options>
+        <options>minimal</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>boost</name>
+      <parent>sci-mathematics__eclib-20230424</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flint</name>
+      <parent>sci-mathematics__eclib-20230424</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>sci-mathematics__eclib-20230424</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sci-mathematics__eclib-20230424</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

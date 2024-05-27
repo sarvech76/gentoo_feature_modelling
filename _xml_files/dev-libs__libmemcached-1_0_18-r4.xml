@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__libmemcached-1_0_18-r4</name>
+      <children>
+        <options>debug</options>
+        <options>hsieh</options>
+        <options>libevent</options>
+        <options>sasl</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>dev-libs__libmemcached-1_0_18-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hsieh</name>
+      <parent>dev-libs__libmemcached-1_0_18-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libevent</name>
+      <parent>dev-libs__libmemcached-1_0_18-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sasl</name>
+      <parent>dev-libs__libmemcached-1_0_18-r4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

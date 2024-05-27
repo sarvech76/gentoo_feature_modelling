@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>xfce-extra__xfce4-screensaver-4_18_2</name>
+      <children>
+        <options>elogind</options>
+        <options>locking</options>
+        <options>opengl</options>
+        <options>pam</options>
+        <options>systemd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>elogind</name>
+      <parent>xfce-extra__xfce4-screensaver-4_18_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>locking</name>
+      <parent>xfce-extra__xfce4-screensaver-4_18_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>xfce-extra__xfce4-screensaver-4_18_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pam</name>
+      <parent>xfce-extra__xfce4-screensaver-4_18_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>systemd</name>
+      <parent>xfce-extra__xfce4-screensaver-4_18_2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-p2p__transmission-remote-gtk-1_5_1-r1</name>
+      <children>
+        <options>appindicator</options>
+        <options>debug</options>
+        <options>geoip</options>
+        <options>libproxy</options>
+        <options>rss</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>appindicator</name>
+      <parent>net-p2p__transmission-remote-gtk-1_5_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-p2p__transmission-remote-gtk-1_5_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>geoip</name>
+      <parent>net-p2p__transmission-remote-gtk-1_5_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libproxy</name>
+      <parent>net-p2p__transmission-remote-gtk-1_5_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rss</name>
+      <parent>net-p2p__transmission-remote-gtk-1_5_1-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>xfce-base__libxfce4ui-4_18_4</name>
+      <children>
+        <options>glade</options>
+        <options>introspection</options>
+        <options>startup-notification</options>
+        <options>system-info</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>glade</name>
+      <parent>xfce-base__libxfce4ui-4_18_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>introspection</name>
+      <parent>xfce-base__libxfce4ui-4_18_4</parent>
+      <children>
+        <options>vala</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vala</name>
+      <parent>introspection</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>startup-notification</name>
+      <parent>xfce-base__libxfce4ui-4_18_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>system-info</name>
+      <parent>xfce-base__libxfce4ui-4_18_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

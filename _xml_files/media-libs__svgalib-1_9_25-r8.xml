@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__svgalib-1_9_25-r8</name>
+      <children>
+        <options>build</options>
+        <options>dist-kernel</options>
+        <options>kernel-helper</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>build</name>
+      <parent>media-libs__svgalib-1_9_25-r8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dist-kernel</name>
+      <parent>media-libs__svgalib-1_9_25-r8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kernel-helper</name>
+      <parent>media-libs__svgalib-1_9_25-r8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

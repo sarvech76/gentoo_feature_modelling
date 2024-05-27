@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>xfce-extra__xfce4-pulseaudio-plugin-0_4_5</name>
+      <children>
+        <options>keybinder</options>
+        <options>libcanberra</options>
+        <options>libnotify</options>
+        <options>wnck</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>keybinder</name>
+      <parent>xfce-extra__xfce4-pulseaudio-plugin-0_4_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libcanberra</name>
+      <parent>xfce-extra__xfce4-pulseaudio-plugin-0_4_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libnotify</name>
+      <parent>xfce-extra__xfce4-pulseaudio-plugin-0_4_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wnck</name>
+      <parent>xfce-extra__xfce4-pulseaudio-plugin-0_4_5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

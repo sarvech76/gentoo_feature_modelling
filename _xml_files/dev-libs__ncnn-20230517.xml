@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__ncnn-20230517</name>
+      <children>
+        <options>tools</options>
+        <options>vulkan</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>dev-libs__ncnn-20230517</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vulkan</name>
+      <parent>dev-libs__ncnn-20230517</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

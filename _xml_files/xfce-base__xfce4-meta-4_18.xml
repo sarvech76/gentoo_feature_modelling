@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>xfce-base__xfce4-meta-4_18</name>
+      <children>
+        <options>minimal</options>
+        <options>pulseaudio</options>
+        <options>svg</options>
+        <options>upower</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>minimal</name>
+      <parent>xfce-base__xfce4-meta-4_18</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>xfce-base__xfce4-meta-4_18</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>svg</name>
+      <parent>xfce-base__xfce4-meta-4_18</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>upower</name>
+      <parent>xfce-base__xfce4-meta-4_18</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

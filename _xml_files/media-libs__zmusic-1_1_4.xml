@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__zmusic-1_1_4</name>
+      <children>
+        <options>alsa</options>
+        <options>fluidsynth</options>
+        <options>mpg123</options>
+        <options>sndfile</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>media-libs__zmusic-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fluidsynth</name>
+      <parent>media-libs__zmusic-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mpg123</name>
+      <parent>media-libs__zmusic-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sndfile</name>
+      <parent>media-libs__zmusic-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

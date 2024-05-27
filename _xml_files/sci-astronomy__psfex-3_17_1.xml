@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-astronomy__psfex-3_17_1</name>
+      <children>
+        <options>doc</options>
+        <options>plplot</options>
+        <options>threads</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-astronomy__psfex-3_17_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plplot</name>
+      <parent>sci-astronomy__psfex-3_17_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>threads</name>
+      <parent>sci-astronomy__psfex-3_17_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

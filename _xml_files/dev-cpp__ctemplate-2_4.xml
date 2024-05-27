@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-cpp__ctemplate-2_4</name>
+      <children>
+        <options>doc</options>
+        <options>emacs</options>
+        <options>static-libs</options>
+        <options>test</options>
+        <options>vim-syntax</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>dev-cpp__ctemplate-2_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>emacs</name>
+      <parent>dev-cpp__ctemplate-2_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static-libs</name>
+      <parent>dev-cpp__ctemplate-2_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-cpp__ctemplate-2_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vim-syntax</name>
+      <parent>dev-cpp__ctemplate-2_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

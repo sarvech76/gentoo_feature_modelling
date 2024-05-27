@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__gocr-0_52</name>
+      <children>
+        <options>doc</options>
+        <options>scanner</options>
+        <options>tk</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>app-text__gocr-0_52</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>scanner</name>
+      <parent>app-text__gocr-0_52</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tk</name>
+      <parent>app-text__gocr-0_52</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

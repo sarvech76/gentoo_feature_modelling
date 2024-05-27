@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__muse-0_9_2_p20161002</name>
+      <children>
+        <options>doc</options>
+        <options>gtk</options>
+        <options>jack</options>
+        <options>ncurses</options>
+        <options>portaudio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-sound__muse-0_9_2_p20161002</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gtk</name>
+      <parent>media-sound__muse-0_9_2_p20161002</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jack</name>
+      <parent>media-sound__muse-0_9_2_p20161002</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>media-sound__muse-0_9_2_p20161002</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>portaudio</name>
+      <parent>media-sound__muse-0_9_2_p20161002</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

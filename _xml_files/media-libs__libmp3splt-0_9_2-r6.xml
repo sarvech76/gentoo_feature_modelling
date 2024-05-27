@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libmp3splt-0_9_2-r6</name>
+      <children>
+        <options>doc</options>
+        <options>flac</options>
+        <options>pcre</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-libs__libmp3splt-0_9_2-r6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>flac</name>
+      <parent>media-libs__libmp3splt-0_9_2-r6</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pcre</name>
+      <parent>media-libs__libmp3splt-0_9_2-r6</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

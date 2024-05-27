@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>x11-apps__xdpyinfo-1_3_4</name>
+      <children>
+        <options>dga</options>
+        <options>dmx</options>
+        <options>xinerama</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dga</name>
+      <parent>x11-apps__xdpyinfo-1_3_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dmx</name>
+      <parent>x11-apps__xdpyinfo-1_3_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xinerama</name>
+      <parent>x11-apps__xdpyinfo-1_3_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

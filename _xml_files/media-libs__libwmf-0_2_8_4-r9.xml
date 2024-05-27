@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-libs__libwmf-0_2_8_4-r9</name>
+      <children>
+        <options>debug</options>
+        <options>doc</options>
+        <options>expat</options>
+        <options>X</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-libs__libwmf-0_2_8_4-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-libs__libwmf-0_2_8_4-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>expat</name>
+      <parent>media-libs__libwmf-0_2_8_4-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>X</name>
+      <parent>media-libs__libwmf-0_2_8_4-r9</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

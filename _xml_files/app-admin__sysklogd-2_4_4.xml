@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-admin__sysklogd-2_4_4</name>
+      <children>
+        <options>logger</options>
+        <options>logrotate</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>logger</name>
+      <parent>app-admin__sysklogd-2_4_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>logrotate</name>
+      <parent>app-admin__sysklogd-2_4_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-perl__POE-1_368_0</name>
+      <children>
+        <options>ipv6</options>
+        <options>libwww</options>
+        <options>ncurses</options>
+        <options>test</options>
+        <options>tk</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ipv6</name>
+      <parent>dev-perl__POE-1_368_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>libwww</name>
+      <parent>dev-perl__POE-1_368_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ncurses</name>
+      <parent>dev-perl__POE-1_368_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>dev-perl__POE-1_368_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tk</name>
+      <parent>dev-perl__POE-1_368_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

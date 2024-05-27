@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-libs__libclc-18_0_0_pre20230825</name>
+      <children>
+        <options>spirv</options>
+        <options>video_cards_nvidia</options>
+        <options>video_cards_r600</options>
+        <options>video_cards_radeonsi</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>spirv</name>
+      <parent>dev-libs__libclc-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_nvidia</name>
+      <parent>dev-libs__libclc-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_r600</name>
+      <parent>dev-libs__libclc-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video_cards_radeonsi</name>
+      <parent>dev-libs__libclc-18_0_0_pre20230825</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

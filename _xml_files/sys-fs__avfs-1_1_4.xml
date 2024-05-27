@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-fs__avfs-1_1_4</name>
+      <children>
+        <options>lzip</options>
+        <options>lzma</options>
+        <options>webdav</options>
+        <options>zstd</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzip</name>
+      <parent>sys-fs__avfs-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lzma</name>
+      <parent>sys-fs__avfs-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>webdav</name>
+      <parent>sys-fs__avfs-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zstd</name>
+      <parent>sys-fs__avfs-1_1_4</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

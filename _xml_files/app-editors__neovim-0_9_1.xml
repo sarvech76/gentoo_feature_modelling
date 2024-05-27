@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-editors__neovim-0_9_1</name>
+      <children>
+        <options>lto</options>
+        <options>lua_single_target_lua5-1</options>
+        <options>lua_single_target_luajit</options>
+        <options>nvimpager</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lto</name>
+      <parent>app-editors__neovim-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>app-editors__neovim-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_luajit</name>
+      <parent>app-editors__neovim-0_9_1</parent>
+      <children>
+        <options>test</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>lua_single_target_luajit</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nvimpager</name>
+      <parent>app-editors__neovim-0_9_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

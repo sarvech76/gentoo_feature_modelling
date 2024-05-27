@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-devel__clang-toolchain-symlinks-15-r2</name>
+      <children>
+        <options>gcc-symlinks</options>
+        <options>multilib-symlinks</options>
+        <options>native-symlinks</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gcc-symlinks</name>
+      <parent>sys-devel__clang-toolchain-symlinks-15-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>multilib-symlinks</name>
+      <parent>sys-devel__clang-toolchain-symlinks-15-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>native-symlinks</name>
+      <parent>sys-devel__clang-toolchain-symlinks-15-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

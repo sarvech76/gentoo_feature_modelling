@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-roguelike__crossfire-client-1_71_0-r100</name>
+      <children>
+        <options>lua</options>
+        <options>opengl</options>
+        <options>sdl</options>
+        <options>sound</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua</name>
+      <parent>games-roguelike__crossfire-client-1_71_0-r100</parent>
+      <children>
+        <options>lua_single_target_lua5-1</options>
+      </children>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lua_single_target_lua5-1</name>
+      <parent>lua</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>games-roguelike__crossfire-client-1_71_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sdl</name>
+      <parent>games-roguelike__crossfire-client-1_71_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sound</name>
+      <parent>games-roguelike__crossfire-client-1_71_0-r100</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

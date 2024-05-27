@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-misc__note-1_3_26</name>
+      <children>
+        <options>crypt</options>
+        <options>dbm</options>
+        <options>general</options>
+        <options>mysql</options>
+        <options>text</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crypt</name>
+      <parent>app-misc__note-1_3_26</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbm</name>
+      <parent>app-misc__note-1_3_26</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>general</name>
+      <parent>app-misc__note-1_3_26</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mysql</name>
+      <parent>app-misc__note-1_3_26</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>text</name>
+      <parent>app-misc__note-1_3_26</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

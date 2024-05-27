@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>xfce-base__xfwm4-4_18_0</name>
+      <children>
+        <options>opengl</options>
+        <options>startup-notification</options>
+        <options>xcomposite</options>
+        <options>xpresent</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opengl</name>
+      <parent>xfce-base__xfwm4-4_18_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>startup-notification</name>
+      <parent>xfce-base__xfwm4-4_18_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xcomposite</name>
+      <parent>xfce-base__xfwm4-4_18_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xpresent</name>
+      <parent>xfce-base__xfwm4-4_18_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

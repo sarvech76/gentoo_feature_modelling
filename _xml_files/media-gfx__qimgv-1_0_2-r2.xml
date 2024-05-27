@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__qimgv-1_0_2-r2</name>
+      <children>
+        <options>exif</options>
+        <options>kde</options>
+        <options>opencv</options>
+        <options>video</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>exif</name>
+      <parent>media-gfx__qimgv-1_0_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>kde</name>
+      <parent>media-gfx__qimgv-1_0_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencv</name>
+      <parent>media-gfx__qimgv-1_0_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>video</name>
+      <parent>media-gfx__qimgv-1_0_2-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

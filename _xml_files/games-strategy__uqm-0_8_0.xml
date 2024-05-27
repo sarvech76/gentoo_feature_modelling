@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-strategy__uqm-0_8_0</name>
+      <children>
+        <options>music</options>
+        <options>remix</options>
+        <options>voice</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>music</name>
+      <parent>games-strategy__uqm-0_8_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>remix</name>
+      <parent>games-strategy__uqm-0_8_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>voice</name>
+      <parent>games-strategy__uqm-0_8_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

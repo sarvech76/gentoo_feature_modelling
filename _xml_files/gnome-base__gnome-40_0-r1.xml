@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>gnome-base__gnome-40_0-r1</name>
+      <children>
+        <options>accessibility</options>
+        <options>bluetooth</options>
+        <options>classic</options>
+        <options>cups</options>
+        <options>extras</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>accessibility</name>
+      <parent>gnome-base__gnome-40_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bluetooth</name>
+      <parent>gnome-base__gnome-40_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>classic</name>
+      <parent>gnome-base__gnome-40_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cups</name>
+      <parent>gnome-base__gnome-40_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>extras</name>
+      <parent>gnome-base__gnome-40_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

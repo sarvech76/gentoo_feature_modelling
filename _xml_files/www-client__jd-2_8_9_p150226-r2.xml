@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>www-client__jd-2_8_9_p150226-r2</name>
+      <children>
+        <options>alsa</options>
+        <options>gnutls</options>
+        <options>migemo</options>
+        <options>oniguruma</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>www-client__jd-2_8_9_p150226-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>www-client__jd-2_8_9_p150226-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>migemo</name>
+      <parent>www-client__jd-2_8_9_p150226-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>oniguruma</name>
+      <parent>www-client__jd-2_8_9_p150226-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

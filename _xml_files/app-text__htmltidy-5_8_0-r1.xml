@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__htmltidy-5_8_0-r1</name>
+      <children>
+        <options>deprecated</options>
+        <options>ruby_targets_ruby30</options>
+        <options>ruby_targets_ruby31</options>
+        <options>ruby_targets_ruby32</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>deprecated</name>
+      <parent>app-text__htmltidy-5_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby30</name>
+      <parent>app-text__htmltidy-5_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby31</name>
+      <parent>app-text__htmltidy-5_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ruby_targets_ruby32</name>
+      <parent>app-text__htmltidy-5_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>app-text__htmltidy-5_8_0-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

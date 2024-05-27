@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-chemistry__chemtool-1_6_14</name>
+      <children>
+        <options>emf</options>
+        <options>gnome</options>
+        <options>nls</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>emf</name>
+      <parent>sci-chemistry__chemtool-1_6_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnome</name>
+      <parent>sci-chemistry__chemtool-1_6_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>sci-chemistry__chemtool-1_6_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-process__bottom-0_9_3</name>
+      <children>
+        <options>battery</options>
+        <options>debug</options>
+        <options>gpu</options>
+        <options>zfs</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>battery</name>
+      <parent>sys-process__bottom-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>sys-process__bottom-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gpu</name>
+      <parent>sys-process__bottom-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zfs</name>
+      <parent>sys-process__bottom-0_9_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

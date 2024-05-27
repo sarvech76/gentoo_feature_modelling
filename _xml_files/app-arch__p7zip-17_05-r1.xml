@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-arch__p7zip-17_05-r1</name>
+      <children>
+        <options>abi_x86_x32</options>
+        <options>natspec</options>
+        <options>pch</options>
+        <options>rar</options>
+        <options>static</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abi_x86_x32</name>
+      <parent>app-arch__p7zip-17_05-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>natspec</name>
+      <parent>app-arch__p7zip-17_05-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pch</name>
+      <parent>app-arch__p7zip-17_05-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>rar</name>
+      <parent>app-arch__p7zip-17_05-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>static</name>
+      <parent>app-arch__p7zip-17_05-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-im__zoom-5_15_7_6521</name>
+      <children>
+        <options>bundled-libjpeg-turbo</options>
+        <options>bundled-qt</options>
+        <options>opencl</options>
+        <options>pulseaudio</options>
+        <options>wayland</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bundled-libjpeg-turbo</name>
+      <parent>net-im__zoom-5_15_7_6521</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bundled-qt</name>
+      <parent>net-im__zoom-5_15_7_6521</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>opencl</name>
+      <parent>net-im__zoom-5_15_7_6521</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pulseaudio</name>
+      <parent>net-im__zoom-5_15_7_6521</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>wayland</name>
+      <parent>net-im__zoom-5_15_7_6521</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

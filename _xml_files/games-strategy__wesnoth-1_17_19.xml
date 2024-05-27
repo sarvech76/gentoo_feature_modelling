@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-strategy__wesnoth-1_17_19</name>
+      <children>
+        <options>dbus</options>
+        <options>dedicated</options>
+        <options>doc</options>
+        <options>nls</options>
+        <options>server</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dbus</name>
+      <parent>games-strategy__wesnoth-1_17_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>dedicated</name>
+      <parent>games-strategy__wesnoth-1_17_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>games-strategy__wesnoth-1_17_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>games-strategy__wesnoth-1_17_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>server</name>
+      <parent>games-strategy__wesnoth-1_17_19</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

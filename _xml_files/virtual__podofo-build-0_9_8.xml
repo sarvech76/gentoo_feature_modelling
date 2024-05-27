@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>virtual__podofo-build-0_9_8</name>
+      <children>
+        <options>boost</options>
+        <options>debug</options>
+        <options>idn</options>
+        <options>test</options>
+        <options>tools</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>boost</name>
+      <parent>virtual__podofo-build-0_9_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>virtual__podofo-build-0_9_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>idn</name>
+      <parent>virtual__podofo-build-0_9_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>virtual__podofo-build-0_9_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tools</name>
+      <parent>virtual__podofo-build-0_9_8</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

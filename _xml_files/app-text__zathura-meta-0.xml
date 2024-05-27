@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-text__zathura-meta-0</name>
+      <children>
+        <options>cb</options>
+        <options>djvu</options>
+        <options>pdf</options>
+        <options>postscript</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cb</name>
+      <parent>app-text__zathura-meta-0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>djvu</name>
+      <parent>app-text__zathura-meta-0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>pdf</name>
+      <parent>app-text__zathura-meta-0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>postscript</name>
+      <parent>app-text__zathura-meta-0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

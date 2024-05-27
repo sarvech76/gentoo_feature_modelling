@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-java__openjdk-bin-17_0_6_p10</name>
+      <children>
+        <options>alsa</options>
+        <options>cups</options>
+        <options>headless-awt</options>
+        <options>selinux</options>
+        <options>source</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>alsa</name>
+      <parent>dev-java__openjdk-bin-17_0_6_p10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cups</name>
+      <parent>dev-java__openjdk-bin-17_0_6_p10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>headless-awt</name>
+      <parent>dev-java__openjdk-bin-17_0_6_p10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>selinux</name>
+      <parent>dev-java__openjdk-bin-17_0_6_p10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>source</name>
+      <parent>dev-java__openjdk-bin-17_0_6_p10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

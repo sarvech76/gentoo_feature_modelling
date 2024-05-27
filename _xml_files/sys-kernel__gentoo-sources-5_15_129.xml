@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-kernel__gentoo-sources-5_15_129</name>
+      <children>
+        <options>build</options>
+        <options>experimental</options>
+        <options>symlink</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>build</name>
+      <parent>sys-kernel__gentoo-sources-5_15_129</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>experimental</name>
+      <parent>sys-kernel__gentoo-sources-5_15_129</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>symlink</name>
+      <parent>sys-kernel__gentoo-sources-5_15_129</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

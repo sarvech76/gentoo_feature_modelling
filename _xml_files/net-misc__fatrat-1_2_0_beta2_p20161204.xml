@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__fatrat-1_2_0_beta2_p20161204</name>
+      <children>
+        <options>bittorrent</options>
+        <options>curl</options>
+        <options>doc</options>
+        <options>nls</options>
+        <options>xmpp</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bittorrent</name>
+      <parent>net-misc__fatrat-1_2_0_beta2_p20161204</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>curl</name>
+      <parent>net-misc__fatrat-1_2_0_beta2_p20161204</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>net-misc__fatrat-1_2_0_beta2_p20161204</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>nls</name>
+      <parent>net-misc__fatrat-1_2_0_beta2_p20161204</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>xmpp</name>
+      <parent>net-misc__fatrat-1_2_0_beta2_p20161204</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

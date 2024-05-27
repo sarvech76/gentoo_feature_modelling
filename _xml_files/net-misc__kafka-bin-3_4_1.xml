@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__kafka-bin-3_4_1</name>
+      <children>
+        <options>connect</options>
+        <options>internal-zookeeper</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>connect</name>
+      <parent>net-misc__kafka-bin-3_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>internal-zookeeper</name>
+      <parent>net-misc__kafka-bin-3_4_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-benchmarks__bootchart2-0_14_9-r1</name>
+      <children>
+        <options>cairo</options>
+        <options>python_single_target_pypy3</options>
+        <options>python_single_target_python3_10</options>
+        <options>python_single_target_python3_11</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cairo</name>
+      <parent>app-benchmarks__bootchart2-0_14_9-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_pypy3</name>
+      <parent>app-benchmarks__bootchart2-0_14_9-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_10</name>
+      <parent>app-benchmarks__bootchart2-0_14_9-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>python_single_target_python3_11</name>
+      <parent>app-benchmarks__bootchart2-0_14_9-r1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(cairo =&gt; ((python_single_target_pypy3 ^ python_single_target_python3_10) ^ python_single_target_python3_11))</constraint>
+  </booleanConstraints>
+</vm>

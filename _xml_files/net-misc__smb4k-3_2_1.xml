@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__smb4k-3_2_1</name>
+      <children>
+        <options>debug</options>
+        <options>discovery</options>
+        <options>handbook</options>
+        <options>plasma</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>net-misc__smb4k-3_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>discovery</name>
+      <parent>net-misc__smb4k-3_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>handbook</name>
+      <parent>net-misc__smb4k-3_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>plasma</name>
+      <parent>net-misc__smb4k-3_2_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

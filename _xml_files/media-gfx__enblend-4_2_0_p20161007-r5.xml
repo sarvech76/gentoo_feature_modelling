@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-gfx__enblend-4_2_0_p20161007-r5</name>
+      <children>
+        <options>cpu_flags_x86_sse2</options>
+        <options>debug</options>
+        <options>doc</options>
+        <options>openmp</options>
+        <options>tcmalloc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse2</name>
+      <parent>media-gfx__enblend-4_2_0_p20161007-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-gfx__enblend-4_2_0_p20161007-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-gfx__enblend-4_2_0_p20161007-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>openmp</name>
+      <parent>media-gfx__enblend-4_2_0_p20161007-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tcmalloc</name>
+      <parent>media-gfx__enblend-4_2_0_p20161007-r5</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(tcmalloc =&gt; !debug)</constraint>
+  </booleanConstraints>
+</vm>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-libs__libnbd-1_14_1</name>
+      <children>
+        <options>fuse</options>
+        <options>gnutls</options>
+        <options>test</options>
+        <options>uri-support</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fuse</name>
+      <parent>sys-libs__libnbd-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gnutls</name>
+      <parent>sys-libs__libnbd-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sys-libs__libnbd-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>uri-support</name>
+      <parent>sys-libs__libnbd-1_14_1</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

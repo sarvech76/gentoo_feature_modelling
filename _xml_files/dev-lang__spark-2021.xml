@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>dev-lang__spark-2021</name>
+      <children>
+        <options>ada_target_gcc_12</options>
+        <options>ada_target_gnat_2021</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ada_target_gcc_12</name>
+      <parent>dev-lang__spark-2021</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ada_target_gnat_2021</name>
+      <parent>dev-lang__spark-2021</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

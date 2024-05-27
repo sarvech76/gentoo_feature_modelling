@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-mail__courier-makedat-3_1_0</name>
+      <children>
+        <options>abs_or_grp_1</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>abs_or_grp_1</name>
+      <parent>net-mail__courier-makedat-3_1_0</parent>
+      <children>
+        <options>berkdb</options>
+        <options>gdbm</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>berkdb</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>gdbm</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gdbm</name>
+      <parent>abs_or_grp_1</parent>
+      <excludedOptions>
+        <options>berkdb</options>
+      </excludedOptions>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

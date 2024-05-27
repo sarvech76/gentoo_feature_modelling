@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sci-libs__qd-2_3_23</name>
+      <children>
+        <options>cpu_flags_x86_fma3</options>
+        <options>cpu_flags_x86_fma4</options>
+        <options>doc</options>
+        <options>fortran</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_fma3</name>
+      <parent>sci-libs__qd-2_3_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_fma4</name>
+      <parent>sci-libs__qd-2_3_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>sci-libs__qd-2_3_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fortran</name>
+      <parent>sci-libs__qd-2_3_23</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

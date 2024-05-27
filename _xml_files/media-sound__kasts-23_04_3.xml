@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__kasts-23_04_3</name>
+      <children>
+        <options>debug</options>
+        <options>gstreamer</options>
+        <options>networkmanager</options>
+        <options>vlc</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>media-sound__kasts-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>gstreamer</name>
+      <parent>media-sound__kasts-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>networkmanager</name>
+      <parent>media-sound__kasts-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vlc</name>
+      <parent>media-sound__kasts-23_04_3</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

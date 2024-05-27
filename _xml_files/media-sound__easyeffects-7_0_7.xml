@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>media-sound__easyeffects-7_0_7</name>
+      <children>
+        <options>calf</options>
+        <options>doc</options>
+        <options>mda-lv2</options>
+        <options>zamaudio</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>calf</name>
+      <parent>media-sound__easyeffects-7_0_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>doc</name>
+      <parent>media-sound__easyeffects-7_0_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>mda-lv2</name>
+      <parent>media-sound__easyeffects-7_0_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zamaudio</name>
+      <parent>media-sound__easyeffects-7_0_7</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

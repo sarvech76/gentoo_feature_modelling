@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-analyzer__nagios-core-4_4_10</name>
+      <children>
+        <options>apache2</options>
+        <options>classicui</options>
+        <options>lighttpd</options>
+        <options>vim-syntax</options>
+        <options>web</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>apache2</name>
+      <parent>net-analyzer__nagios-core-4_4_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>classicui</name>
+      <parent>net-analyzer__nagios-core-4_4_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>lighttpd</name>
+      <parent>net-analyzer__nagios-core-4_4_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>vim-syntax</name>
+      <parent>net-analyzer__nagios-core-4_4_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>web</name>
+      <parent>net-analyzer__nagios-core-4_4_10</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+  <booleanConstraints>
+    <constraint>(apache2 =&gt; !lighttpd)</constraint>
+  </booleanConstraints>
+</vm>

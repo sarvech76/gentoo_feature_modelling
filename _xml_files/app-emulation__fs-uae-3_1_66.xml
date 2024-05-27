@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>app-emulation__fs-uae-3_1_66</name>
+      <children>
+        <options>fmv</options>
+        <options>glew</options>
+        <options>jit</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>fmv</name>
+      <parent>app-emulation__fs-uae-3_1_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>glew</name>
+      <parent>app-emulation__fs-uae-3_1_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>jit</name>
+      <parent>app-emulation__fs-uae-3_1_66</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

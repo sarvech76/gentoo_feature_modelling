@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>sys-cluster__galera-26_4_14</name>
+      <children>
+        <options>cpu_flags_x86_sse4_2</options>
+        <options>garbd</options>
+        <options>test</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>cpu_flags_x86_sse4_2</name>
+      <parent>sys-cluster__galera-26_4_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>garbd</name>
+      <parent>sys-cluster__galera-26_4_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>sys-cluster__galera-26_4_14</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

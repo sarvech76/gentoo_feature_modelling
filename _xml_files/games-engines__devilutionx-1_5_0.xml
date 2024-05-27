@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>games-engines__devilutionx-1_5_0</name>
+      <children>
+        <options>debug</options>
+        <options>sodium</options>
+        <options>test</options>
+        <options>zerotier</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>debug</name>
+      <parent>games-engines__devilutionx-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sodium</name>
+      <parent>games-engines__devilutionx-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>test</name>
+      <parent>games-engines__devilutionx-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>zerotier</name>
+      <parent>games-engines__devilutionx-1_5_0</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>

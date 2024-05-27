@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vm
+SYSTEM "vm.dtd">
+<vm name="FeatureModel" root="">
+  <binaryOptions>
+    <configurationOption>
+      <name>net-misc__ps3mediaserver-1_90_1-r2</name>
+      <children>
+        <options>multiuser</options>
+        <options>transcode</options>
+        <options>tsmuxer</options>
+      </children>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>multiuser</name>
+      <parent>net-misc__ps3mediaserver-1_90_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>transcode</name>
+      <parent>net-misc__ps3mediaserver-1_90_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>tsmuxer</name>
+      <parent>net-misc__ps3mediaserver-1_90_1-r2</parent>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions/>
+</vm>
