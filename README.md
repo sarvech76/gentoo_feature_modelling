@@ -26,7 +26,7 @@ This repository aims to provide transparency and reproducibility for the researc
 ## Getting Started
 
 #### Prerequisites: 
-This repository needs to run within Gentoo Linux as it utilizes the [Portage API](https://dev.gentoo.org/~zmedico/portage/doc/api/portage.dbapi.html) to access the repository. 
+The code needs to run within Gentoo Linux as it utilizes the [Portage API](https://dev.gentoo.org/~zmedico/portage/doc/api/portage.dbapi.html) to access the Portage package repository. 
 
 I have also used [vara-feature](https://github.com/se-sic/vara-feature) to create the feature models. Make sure it is installed by heading to the link above, it contains detailed instructions for installing as well as compiling the package.  
 
@@ -49,9 +49,8 @@ This reseach lays the groundwork for further exploration in several areas which 
 - analysing the repository over time
 - and more
 
-I welcome any contributions to this project. Feel free to submit pull requests for bug fixes, enhancements, or alternative approaches to any of the process steps. Please use the dev branch for that.
-
-
+I welcome any contributions to this project. Feel free to submit pull requests for bug fixes, enhancements, or alternative approaches to any of the process steps. 
+Please use the ***dev*** branch for that.
 
 
 ## Housekeeping
