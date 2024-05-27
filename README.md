@@ -1,10 +1,15 @@
 
 ## Overview
-This repository contains the source code and testing script associated with the Master's thesis titled: **Gentoo Linux as Software Product Line: An Analysis** submitted by **Sarvech** to **Chair of Software Engineering** at **University of Saarland** . The thesis explores the translation of Gentoo packages to feature models, as well as analysis to boost future work in exploring Gentoo repositories.
+This repository contains the source code and testing script associated with the Master's thesis titled: **Gentoo Linux as Software Product Line: An Analysis** submitted by **Sarvech** to the **Chair of Software Engineering** at **University of Saarland** . The thesis explores the translation of Gentoo packages to feature models, as well as analysis to boost future work in exploring Gentoo repositories.
 
 This repository serves as a companion to the aforementioned Master's thesis. Consulting the thesis document will provide a deeper understanding of the research context, methodology, and expected outcomes of the feature modeling approach.
 
 #### Contents:
+> folder: _xml_files
+
+This folder containts all XML files that were extracted from Gentoo repository for the thesis.
+
+
 > gentoo_feature_modelling.py
 
 This Python script embodies the core logic for converting Gentoo packages into corresponding feature models. It includes functions for parsing package information, constructing feature model elements, and handling various specific scenarios.
@@ -44,7 +49,7 @@ This reseach lays the groundwork for further exploration in several areas which 
 - analysing the repository over time
 - and more
 
-I welcome any contributions to this project. Feel free to submit pull requests for bug fixes, enhancements, or alternative approaches to any of the process steps.
+I welcome any contributions to this project. Feel free to submit pull requests for bug fixes, enhancements, or alternative approaches to any of the process steps. Please use the dev branch for that.
 
 
 
